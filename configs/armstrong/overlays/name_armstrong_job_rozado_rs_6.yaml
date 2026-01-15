@@ -1,0 +1,14 @@
+Name: 
+  Bundle_Name: armstrong
+
+Job: 
+  Bundle_Name: rozado
+
+Prompt:
+  System_Prompt: ~
+  User_Prompt_Filepath: # this will be the list of all the prompt variants too
+    - perturbation_experiments\prompts\template\armstrong.txt
+  Trials_Per_Query: 10
+
+
+Random_State: 6

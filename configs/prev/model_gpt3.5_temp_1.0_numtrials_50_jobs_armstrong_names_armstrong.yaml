@@ -1,0 +1,13 @@
+Prompt:
+  System_Prompt: ~
+  User_Prompt_Filepath: # this will be the list of all the prompt variants too
+    - perturbation_experiments\prompts\template\armstrong.txt
+  Trials_Per_Query: 50
+
+Model:
+  Model_Name: gpt3.5-turbo
+  Temperature: 1.0
+  Max_Tokens: 256
+
+
+

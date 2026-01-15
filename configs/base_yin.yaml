@@ -1,0 +1,42 @@
+experimental_framework: yin
+Results:
+  Save_Directory: output_data/yin
+  AnalyzedData_Filename: results/yin_perturbation_results.csv
+  Metrics_to_Compute:
+    - regression_coefficients
+    # - wasserstein_distance
+    # - score_difference
+    # - impact_ratio_0.50
+    # - impact_ratio_0.60
+    - impact_ratio_0.75
+    # - impact_ratio_0.80
+    - impact_ratio_0.90
+    # - impact_ratio_0.95
+    # - ttest
+  Sensitive_Attribute_Vector:
+    - Woman
+    # - Black
+    # - Hispanic
+    # - Asian
+
+Name: 
+  Bundle_Name: yin
+
+Resume: 
+  Bundle_Name: yin
+
+Job: 
+  Bundle_Name: yin
+
+
+Prompt:
+  System_Prompt: ~
+  User_Prompt_Filepath: # this will be the list of all the prompt variants too
+    - perturbation_experiments\prompts\template\yin.txt
+  Trials_Per_Query: 1
+
+Model:
+  Model_Name: gpt-4o-mini
+  # Model_Name: gpt-4-0613
+  Temperature: 1.0
+  Max_Tokens: 500

@@ -1,0 +1,13 @@
+Author,Names,Jobs,Num_Trials,Model,Temperature,Metric,Sensitive_Attribute_Vector,Result_Vector,Std_Error_Vector,P_Value_Vector
+armstrong,wang,wang,1,gpt-4o-2024-11-20,1.0,ttest,['Woman'],[3.8474819422121205],,[0.00012245372016560588]
+armstrong,wen,rozado,1,gpt-4o-2024-11-20,1.0,ttest,['Woman'],[1.525538666729389],,[0.12728629868628052]
+armstrong,armstrong,rozado,1,gpt-4o-2024-11-20,1.0,ttest,['Woman'],[2.014050942363445],,[0.0448459982093261]
+armstrong,wang,armstrong,1,gpt-4o-2024-11-20,1.0,ttest,['Woman'],[1.3257328690078705],,[0.20150816319106118]
+armstrong,wang,rozado,1,gpt-4o-2024-11-20,1.0,ttest,['Woman'],[6.307340325673351],,[3.2884553654008614e-10]
+armstrong,armstrong,armstrong,1,gpt-4o-2024-11-20,1.0,ttest,['Woman'],[1.0021603445969072],,[0.3170281124846899]
+armstrong,rozado,armstrong,1,gpt-4o-2024-11-20,1.0,ttest,['Woman'],[4.854268193579225],,[1.2217863742206896e-06]
+armstrong,armstrong,wen,1,gpt-4o-2024-11-20,1.0,ttest,['Woman'],[1.8144953255446865],,[0.06969707097157603]
+armstrong,rozado,wen,1,gpt-4o-2024-11-20,1.0,ttest,['Woman'],[11.227292573696927],,[3.087443862913107e-29]
+armstrong,wen,armstrong,1,gpt-4o-2024-11-20,1.0,ttest,['Woman'],[3.450190217398362],,[0.0005720660916911441]
+armstrong,armstrong,wang,1,gpt-4o-2024-11-20,1.0,ttest,['Woman'],[0.34696505965752783],,[0.7288470649763238]
+armstrong,wang,wen,1,gpt-4o-2024-11-20,1.0,ttest,['Woman'],[1.0441282480070642],,[0.2977253609105163]

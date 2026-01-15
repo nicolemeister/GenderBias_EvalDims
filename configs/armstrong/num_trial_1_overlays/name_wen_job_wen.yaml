@@ -1,0 +1,11 @@
+Name: 
+  Bundle_Name: wen
+
+Job: 
+  Bundle_Name: wen
+
+Prompt:
+  System_Prompt: ~
+  User_Prompt_Filepath: # this will be the list of all the prompt variants too
+    - perturbation_experiments\prompts\template\armstrong.txt
+  Trials_Per_Query: 1

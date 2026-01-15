@@ -1,0 +1,3 @@
+#!/bin/bash
+
+python main.py --base_config_path /nlp/scr/nmeist/EvalDims/configs/armstrong/base.yaml --overlay_config_path /nlp/scr/nmeist/EvalDims/configs/armstrong/overlays/name_wen_job_armstrong.yaml; python main.py --base_config_path /nlp/scr/nmeist/EvalDims/configs/armstrong/base.yaml --overlay_config_path /nlp/scr/nmeist/EvalDims/configs/armstrong/overlays/name_wen_job_rozado.yaml; python main.py --base_config_path /nlp/scr/nmeist/EvalDims/configs/armstrong/base.yaml --overlay_config_path /nlp/scr/nmeist/EvalDims/configs/armstrong/overlays/name_wen_job_wen.yaml; python main.py --base_config_path /nlp/scr/nmeist/EvalDims/configs/armstrong/base.yaml --overlay_config_path /nlp/scr/nmeist/EvalDims/configs/armstrong/overlays/name_wen_job_wang.yaml; 

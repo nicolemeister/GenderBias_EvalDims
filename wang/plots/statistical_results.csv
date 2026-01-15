@@ -1,0 +1,2 @@
+Metric,Value
+Disparate Impact Ratios,"{'Avg_Score': {'Privilege': 0.9761737673744737, 'Protect': 1.0, 'Neutral': 0.9681600036220401}, 'Rank': {'Privilege': 0.9679027427490543, 'Protect': 0.869423865069357, 'Neutral': 1.0}}"
