@@ -10,6 +10,7 @@ from utils.merge_config import merge_config
 from pathlib import Path
 import json
 from together import Together
+from utils.variables import MODELS, NAMES, JOBS
 
 def main():
     # read in the config file path as an argument
@@ -32,12 +33,9 @@ def main():
     names = ['armstrong', 'karvonen', 'gaeb', 'lippens', 'rozado', 'wang', 'wen', 'seshadri', 'zollo', 'yin']
     jobs = ['armstrong', 'rozado', 'wen', 'wang', 'karvonen', 'zollo', 'yin']
 
+    author = args.author
+    base_config_path = os.path.join('configs', f'base_{author}.yaml')
     if args.all:
-        # for author in os.listdir('configs'):
-        # for author in os.listdir('configs/armstrong'):
-        author = args.author
-        base_config_path = os.path.join('configs', author, 'base.yaml')
-        # TO DO : EDIT THIS TO JUST RETRIVE THE NAMES AND JOB FROM A LIST 
 
         for name in names:
             for job in jobs:
@@ -50,25 +48,17 @@ def main():
 
 
     if args.all_together:
-        author = args.author
-        base_config_path = os.path.join('configs', author, 'base.yaml')
-        config = yaml.load(open(base_config_path), Loader=yaml.FullLoader)
-        MODELS = {
-            "meta-llama-3.1-8b-instruct-turbo": "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
-            # "gemma-3-12b": "google/gemma-3-12b-it",
-            # "gemma-3-27b": "google/gemma-3-27b-it",
-            "meta-llama-3.3-70b-instruct-turbo": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
-            "mistral-small-24b": "mistralai/Mistral-Small-24B-Instruct-2501",
-            "mistral-7b-v0.3": "mistralai/Mistral-7B-Instruct-v0.3",
-        }
 
-        METADATA_PATH = Path("/nlp/scr/nmeist/EvalDims/output_data/armstrong/together/batch_inputs/batch_info.json")
+
+        METADATA_PATH = Path(f"/nlp/scr/nmeist/EvalDims/output_data/{author}/together/batch_inputs/batch_info.json")
 
         client = Together(api_key=os.environ["TOGETHER_API_KEY"])
 
         data = json.loads(METADATA_PATH.read_text())
 
         for item in data:
+            config = yaml.load(open(base_config_path), Loader=yaml.FullLoader)
+
             batch_id = item["batch_id"]
             # grab the name and job value from parsing the filepath (e.g., '/nlp/scr/nmeist/EvalDims/output_data/armstrong/together/batch_inputs/batch_input_armstrong_armstrong_meta_llama_Meta_Llama_3.1_8B_Instruct_Turbo.jsonl')
 

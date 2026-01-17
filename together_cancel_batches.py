@@ -24,4 +24,5 @@ for batch in all_batches:
             print(f"Failed to cancel {batch.id}: {e}")
             
     else:
-        print(f"Skipping {batch.id} (Status: {batch.status})")
+        pass 
+        # print(f"Skipping {batch.id} (Status: {batch.status})")

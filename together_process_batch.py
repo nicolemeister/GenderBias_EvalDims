@@ -18,6 +18,13 @@ for item in data:
     name = item["file_path"].split("/")[-1].split("_")[2]
     job = item["file_path"].split("/")[-1].split("_")[3]
     model = item["model"].split("/")[-1]
+    # check if there contains a part
+    if "part" in item["file_path"]:
+        batch_num = item["file_path"].split("/")[-1].split("_")[-1].split(".")[0]
+    else: 
+        batch_num = "part01"
+    # file_path: "/nlp/scr/nmeist/EvalDims/output_data/yin/together/batch_inputs/batch_input_armstrong_rozado_meta_llama_3.3_70b_instruct_turbo_part02.jsonl",
+
     if model not in ["Llama-3.3-70B-Instruct-Turbo", "Meta-Llama-3.1-8B-Instruct-Turbo", "Mistral-7B-Instruct-v0.3", "Mistral-Small-24B-Instruct-2501"]:
         continue
 
@@ -28,10 +35,10 @@ for item in data:
     # batch = client.batches.retrieve(batch_id) # :contentReference[oaicite:5]{index=5}
 
     item["status"] = batch.status
+    breakpoint()
 
     try:
         if batch.status == "FAILED":
-            breakpoint()
             # Check for error file
             error_file_id = getattr(batch, 'error_file_id', None)
         
@@ -81,7 +88,7 @@ for item in data:
 
         os.makedirs(f"/nlp/scr/nmeist/EvalDims/output_data/yin/together/batch_outputs/{model}/", exist_ok=True)
 
-        client.files.retrieve_content(id=batch.output_file_id, output=f"/nlp/scr/nmeist/EvalDims/output_data/yin/together/batch_outputs/{model}/name_{name}_job_{job}.jsonl")
+        client.files.retrieve_content(id=batch.output_file_id, output=f"/nlp/scr/nmeist/EvalDims/output_data/yin/together/batch_outputs/{model}/name_{name}_job_{job}_{batch_num}.jsonl")
 
     except Exception as e:
 

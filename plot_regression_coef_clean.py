@@ -152,7 +152,7 @@ def main() -> None:
     parser.add_argument("--sampling", type=str, default="downsampling", help="Sampling method to use.")
     parser.add_argument("--analysis", type=str, default="original", help="Analysis to perform.")
     parser.add_argument("--exp_framework", type=str, default="armstrong", help="Experiment framework to use.")
-    parser.add_argument("--model", type=str, default="gpt-5-nano-2025-08-07", help="Model to use.")
+    parser.add_argument("--model", type=str, default="all", help="Model to use.")
     args = parser.parse_args()
 
     in_path = f"results/{args.exp_framework}_sampling_{args.sampling}_analysis_{args.analysis}.csv"
@@ -165,7 +165,10 @@ def main() -> None:
     df["P_Value_Vector"] = df["P_Value_Vector"].apply(parse_p_values)
 
     # Filter model
-    df = df[df["Model"] == args.model].copy()
+    if model == "all":
+        df = df.copy()
+    else:
+        df = df[df["Model"] == args.model].copy()
 
     # Your fixed grid definition (10×7)
     row_labels = ["armstrong", "rozado", "wen", "wang", "gaeb", "lippens", "seshadri", "karvonen", "zollo", "yin"]

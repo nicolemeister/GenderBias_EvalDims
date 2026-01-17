@@ -209,9 +209,8 @@ def generate_yin(config):
             '/' + str(config["Model"]["Model_Name"]) + '/' +  
             'temp_' + str(config["Model"]["Temperature"]) + 
             '_names_' + str(config["Name"]["Bundle_Name"]) + 
-            '_jobresumes_' + str(config["Job"]["Bundle_Name"]) )
+            '_jobresumes_' + str(config["Job"]["Bundle_Name"]) + '/' + job + '/')
         os.makedirs(dir_out, exist_ok=True)
-
         
         random.seed(200)
         for i in tqdm(range(1000)):

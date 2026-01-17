@@ -9,21 +9,11 @@ from tqdm import tqdm
 from together import Together
 from utils.names import Names   
 from utils.jobs import Jobs
+from utils.variables import MODELS, NAMES, JOBS
 
 # -----------------------------------------------------------------------------
 # CONSTANTS & CONFIG
 # -----------------------------------------------------------------------------
-
-MODELS = {
-    # "meta-llama-3.1-8b-instruct-turbo": "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
-    "meta-llama-3.3-70b-instruct-turbo": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
-    "mistral-small-24b": "mistralai/Mistral-Small-24B-Instruct-2501",
-    "mistral-7b-v0.3": "mistralai/Mistral-7B-Instruct-v0.3",
-    #"meta-llama-3.3-405b-instruct-turbo": "meta-llama/Llama-3.3-405B-Instruct-Turbo",
-    #"deepseek-r1": "deepseek-ai/DeepSeek-R1",
-    #"deepseek-v3": "deepseek-ai/DeepSeek-V3",
-    # Add others as needed
-}
 
 def load_config(path):
     with open(path, 'r') as f:
@@ -232,6 +222,10 @@ def check_if_entry_exists(output_dir, file_path):
                 return True
     return False
 
+def check_if_filepath_exists(filepath):
+    if os.path.exists(filepath):
+        return True
+    return False
 
 
 def save_and_launch(batch_requests, metadata_list, output_dir, filename_prefix, config, model_full_name, launch=False):
@@ -560,9 +554,12 @@ def generate_yin_batch_inputs(config):
 
     return batch_requests, metadata_rows, output_dir, filename_prefix, model_full
 
+
+
 # -----------------------------------------------------------------------------
 # MAIN
-# -----------------------------------------------------------------------------
+# ----------------------------------------------------------------------------
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate and Launch Together AI Batch Jobs")
@@ -591,19 +588,21 @@ if __name__ == "__main__":
     
     print(f"Framework detected: {framework}")
 
-    names = ['armstrong', 'rozado', 'wen', 'wang', 'seshadri', 'karvonen', 'zollo', 'yin']
-    jobs = ['armstrong', 'rozado', 'wen', 'wang', 'karvonen', 'zollo', 'yin']
-    
     for model in MODELS.keys():
         config['Model']['Model_Name'] = model.replace(' ', '_')
-        for name_bundle in names:
-            for job_bundle in jobs:
+        for name_bundle in NAMES:
+            for job_bundle in JOBS:
 
+                # check if the entry exists already in /nlp/scr/nmeist/EvalDims/output_data/yin/together/batch_outputs
+                if check_if_filepath_exists(f"/nlp/scr/nmeist/EvalDims/output_data/{framework}/together/batch_outputs/{MODELS[model].split('/')[-1]}/name_{name_bundle}_job_{job_bundle}.jsonl"):
+                    print(f"Entry name_{name_bundle}_job_{job_bundle} already exists in /nlp/scr/nmeist/EvalDims/output_data/{framework}/together/batch_outputs/{MODELS[model].split('/')[-1]}")
+                    continue
 
                 config['Name']['Bundle_Name'] = name_bundle
                 config['Job']['Bundle_Name'] = job_bundle
                 print(f"Generating {name_bundle} {job_bundle}")
                 print(f"Model: {model}")
+                
                 
                 # 2. Select Generator
                 if framework == 'yin':
