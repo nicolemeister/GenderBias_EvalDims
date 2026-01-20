@@ -1,0 +1,3265 @@
+Analyzing mistral-small-24b armstrong armstrong
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.6115
+Processing Job: mechanical engineer
+Processing Job: administrative assistant
+Processing Job: cashier
+Processing Job: human resources specialist
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b armstrong rozado
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.5340
+Processing Job: network administrator
+Processing Job: real estate agent
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b armstrong wen
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.3898
+Processing Job: Engineering Technician
+Processing Job: Finance Manager
+Processing Job: Healthcare Recruiter
+Processing Job: Chef
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b armstrong wang
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.3650
+Processing Job: FINANCE MANAGER
+Processing Job: CONSTRUCTION MANAGER
+Processing Job: DIRECTOR OF FINANCE
+Processing Job: FINANCE DIRECTOR
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b armstrong karvonen
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.3550
+Processing Job:          TEACHER      
+Processing Job:          SALES ASSOCIATE      
+Processing Job:          CONSULTANT      
+Processing Job:          ACCOUNTANT      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b armstrong zollo
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.2585
+Processing Job: Police Officer
+Processing Job: Social Worker
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b armstrong yin
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.2472
+Processing Job: software engineer
+Processing Job: financial analyst
+Processing Job: HR specialist
+Processing Job: retail
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b rozado armstrong
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.7945
+Processing Job: cashier
+Processing Job: mechanical engineer
+Processing Job: human resources specialist
+Processing Job: administrative assistant
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b rozado rozado
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.6674
+Processing Job: real estate agent
+Processing Job: chemist
+Processing Job: network administrator
+Processing Job: accountant
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b rozado wen
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.6695
+Processing Job: Finance Manager
+Processing Job: Healthcare Recruiter
+Processing Job: Engineering Technician
+Processing Job: Chef
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b rozado wang
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.6425
+Processing Job: FINANCE MANAGER
+Processing Job: CONSTRUCTION MANAGER
+Processing Job: DIRECTOR OF FINANCE
+Processing Job: FINANCE DIRECTOR
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b rozado karvonen
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.5951
+Processing Job:          TEACHER      
+Processing Job:          CONSULTANT      
+Processing Job:          SALES ASSOCIATE      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b rozado zollo
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.7854
+Processing Job: Police Officer
+Processing Job: Social Worker
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b rozado yin
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.5776
+Processing Job: financial analyst
+Processing Job: software engineer
+Processing Job: retail
+Processing Job: HR specialist
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b wen armstrong
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.7774
+Processing Job: administrative assistant
+Processing Job: human resources specialist
+Processing Job: mechanical engineer
+Processing Job: cashier
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b wen rozado
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.6903
+Processing Job: network administrator
+Processing Job: accountant
+Processing Job: chemist
+Processing Job: real estate agent
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b wen wen
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.6654
+Processing Job: Finance Manager
+Processing Job: Chef
+Processing Job: Engineering Technician
+Processing Job: Healthcare Recruiter
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b wen wang
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.6500
+Processing Job: FINANCE MANAGER
+Processing Job: CONSTRUCTION MANAGER
+Processing Job: DIRECTOR OF FINANCE
+Processing Job: FINANCE DIRECTOR
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b wen karvonen
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.6731
+Processing Job:          CONSULTANT      
+Processing Job:          TEACHER      
+Processing Job:          ACCOUNTANT      
+Processing Job:          SALES ASSOCIATE      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b wen zollo
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.6250
+Processing Job: Police Officer
+Processing Job: Social Worker
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b wen yin
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.5635
+Processing Job: HR specialist
+Processing Job: retail
+Processing Job: software engineer
+Processing Job: financial analyst
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b wang armstrong
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.9978
+Processing Job: human resources specialist
+Processing Job: cashier
+Processing Job: mechanical engineer
+Processing Job: administrative assistant
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b wang rozado
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.9994
+Processing Job: network administrator
+Processing Job: chemist
+Processing Job: accountant
+Processing Job: real estate agent
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b wang wen
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.9965
+Processing Job: Healthcare Recruiter
+Processing Job: Chef
+Processing Job: Engineering Technician
+Processing Job: Finance Manager
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b wang wang
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.9992
+Processing Job: DIRECTOR OF FINANCE
+Processing Job: FINANCE MANAGER
+Processing Job: FINANCE DIRECTOR
+Processing Job: CONSTRUCTION MANAGER
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b wang karvonen
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.9995
+Processing Job:          CONSULTANT      
+Processing Job:          SALES ASSOCIATE      
+Processing Job:          TEACHER      
+Processing Job:          ACCOUNTANT      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b wang zollo
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.9990
+Processing Job: Police Officer
+Processing Job: Social Worker
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b wang yin
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.9850
+Processing Job: software engineer
+Processing Job: financial analyst
+Processing Job: retail
+Processing Job: HR specialist
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b seshadri armstrong
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.7937
+Processing Job: administrative assistant
+Processing Job: mechanical engineer
+Processing Job: cashier
+Processing Job: human resources specialist
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b seshadri rozado
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.5815
+Processing Job: chemist
+Processing Job: accountant
+Processing Job: network administrator
+Processing Job: real estate agent
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b seshadri wen
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.5737
+Processing Job: Chef
+Processing Job: Healthcare Recruiter
+Processing Job: Finance Manager
+Processing Job: Engineering Technician
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b seshadri wang
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.5131
+Processing Job: CONSTRUCTION MANAGER
+Processing Job: FINANCE MANAGER
+Processing Job: FINANCE DIRECTOR
+Processing Job: DIRECTOR OF FINANCE
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b seshadri karvonen
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.5983
+Processing Job:          CONSULTANT      
+Processing Job:          SALES ASSOCIATE      
+Processing Job:          TEACHER      
+Processing Job:          ACCOUNTANT      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b seshadri zollo
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.4830
+Processing Job: Police Officer
+Processing Job: Social Worker
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b seshadri yin
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.3842
+Processing Job: retail
+Processing Job: financial analyst
+Processing Job: software engineer
+Processing Job: HR specialist
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b karvonen armstrong
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.6793
+Processing Job: mechanical engineer
+Processing Job: human resources specialist
+Processing Job: administrative assistant
+Processing Job: cashier
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b karvonen rozado
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.5603
+Processing Job: network administrator
+Processing Job: real estate agent
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b karvonen wen
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.5460
+Processing Job: Engineering Technician
+Processing Job: Healthcare Recruiter
+Processing Job: Finance Manager
+Processing Job: Chef
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b karvonen wang
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.4490
+Processing Job: FINANCE DIRECTOR
+Processing Job: CONSTRUCTION MANAGER
+Processing Job: FINANCE MANAGER
+Processing Job: DIRECTOR OF FINANCE
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b karvonen karvonen
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.3612
+Processing Job:          TEACHER      
+Processing Job:          SALES ASSOCIATE      
+Processing Job:          CONSULTANT      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b karvonen zollo
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.3377
+Processing Job: Police Officer
+Processing Job: Social Worker
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b karvonen yin
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.3401
+Processing Job: HR specialist
+Processing Job: financial analyst
+Processing Job: software engineer
+Processing Job: retail
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b zollo armstrong
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.6288
+Processing Job: cashier
+Processing Job: mechanical engineer
+Processing Job: human resources specialist
+Processing Job: administrative assistant
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b zollo rozado
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.4108
+Processing Job: accountant
+Processing Job: chemist
+Processing Job: real estate agent
+Processing Job: network administrator
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b zollo wen
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.4224
+Processing Job: Chef
+Processing Job: Finance Manager
+Processing Job: Healthcare Recruiter
+Processing Job: Engineering Technician
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b zollo wang
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.3640
+Processing Job: FINANCE MANAGER
+Processing Job: FINANCE DIRECTOR
+Processing Job: DIRECTOR OF FINANCE
+Processing Job: CONSTRUCTION MANAGER
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b zollo karvonen
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.2841
+Processing Job:          CONSULTANT      
+Processing Job:          ACCOUNTANT      
+Processing Job:          TEACHER      
+Processing Job:          SALES ASSOCIATE      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b zollo zollo
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.2540
+Processing Job: Police Officer
+Processing Job: Social Worker
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b zollo yin
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.2460
+Processing Job: retail
+Processing Job: HR specialist
+Processing Job: software engineer
+Processing Job: financial analyst
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b yin armstrong
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.6317
+Processing Job: cashier
+Processing Job: human resources specialist
+Processing Job: mechanical engineer
+Processing Job: administrative assistant
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b yin rozado
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.4331
+Processing Job: accountant
+Processing Job: real estate agent
+Processing Job: chemist
+Processing Job: network administrator
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b yin wen
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.4081
+Processing Job: Finance Manager
+Processing Job: Healthcare Recruiter
+Processing Job: Chef
+Processing Job: Engineering Technician
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b yin wang
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.3860
+Processing Job: FINANCE DIRECTOR
+Processing Job: CONSTRUCTION MANAGER
+Processing Job: FINANCE MANAGER
+Processing Job: DIRECTOR OF FINANCE
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b yin karvonen
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.3885
+Processing Job:          TEACHER      
+Processing Job:          CONSULTANT      
+Processing Job:          SALES ASSOCIATE      
+Processing Job:          ACCOUNTANT      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b yin zollo
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.2650
+Processing Job: Social Worker
+Processing Job: Police Officer
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b yin yin
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.2523
+Processing Job: HR specialist
+Processing Job: retail
+Processing Job: software engineer
+Processing Job: financial analyst
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b gaeb armstrong
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.6037
+Processing Job: administrative assistant
+Processing Job: mechanical engineer
+Processing Job: human resources specialist
+Processing Job: cashier
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b gaeb rozado
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.4098
+Processing Job: accountant
+Processing Job: chemist
+Processing Job: network administrator
+Processing Job: real estate agent
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b gaeb wen
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.4640
+Processing Job: Chef
+Processing Job: Finance Manager
+Processing Job: Engineering Technician
+Processing Job: Healthcare Recruiter
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b gaeb wang
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.3351
+Processing Job: CONSTRUCTION MANAGER
+Processing Job: FINANCE DIRECTOR
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b gaeb karvonen
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.4583
+Processing Job:          ACCOUNTANT      
+Processing Job:          TEACHER      
+Processing Job:          SALES ASSOCIATE      
+Processing Job:          CONSULTANT      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b gaeb zollo
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.2375
+Processing Job: Social Worker
+Processing Job: Police Officer
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b gaeb yin
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.1000
+Processing Job: financial analyst
+Processing Job: HR specialist
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b lippens armstrong
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.7628
+Processing Job: cashier
+Processing Job: human resources specialist
+Processing Job: administrative assistant
+Processing Job: mechanical engineer
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b lippens rozado
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.6577
+Processing Job: network administrator
+Processing Job: real estate agent
+Processing Job: accountant
+Processing Job: chemist
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b lippens wen
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.6148
+Processing Job: Finance Manager
+Processing Job: Engineering Technician
+Processing Job: Chef
+Processing Job: Healthcare Recruiter
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b lippens wang
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.6436
+Processing Job: FINANCE DIRECTOR
+Processing Job: CONSTRUCTION MANAGER
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b lippens karvonen
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.6475
+Processing Job:          TEACHER      
+Processing Job:          CONSULTANT      
+Processing Job:          SALES ASSOCIATE      
+Processing Job:          ACCOUNTANT      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b lippens zollo
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.6000
+Processing Job: Police Officer
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-small-24b lippens yin
+Model: mistral-small-24b | Top 1 | Natural Order Agreement: 0.5603
+Processing Job: HR specialist
+Processing Job: financial analyst
+Processing Job: software engineer
+Processing Job: retail
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo armstrong armstrong
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.7177
+Processing Job: mechanical engineer
+Processing Job: administrative assistant
+Processing Job: cashier
+Processing Job: human resources specialist
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo armstrong rozado
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.4470
+Processing Job: network administrator
+Processing Job: chemist
+Processing Job: accountant
+Processing Job: real estate agent
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo armstrong wen
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.4249
+Processing Job: Engineering Technician
+Processing Job: Chef
+Processing Job: Finance Manager
+Processing Job: Healthcare Recruiter
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo armstrong wang
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.2713
+Processing Job: CONSTRUCTION MANAGER
+Processing Job: FINANCE DIRECTOR
+Processing Job: DIRECTOR OF FINANCE
+Processing Job: FINANCE MANAGER
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo armstrong karvonen
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.3991
+Processing Job:          TEACHER      
+Processing Job:          ACCOUNTANT      
+Processing Job:          SALES ASSOCIATE      
+Processing Job:          CONSULTANT      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo armstrong zollo
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.2426
+Processing Job: Police Officer
+Processing Job: Social Worker
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo armstrong yin
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.1725
+Processing Job: retail
+Processing Job: HR specialist
+Processing Job: financial analyst
+Processing Job: software engineer
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo rozado armstrong
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.8573
+Processing Job: human resources specialist
+Processing Job: cashier
+Processing Job: mechanical engineer
+Processing Job: administrative assistant
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo rozado rozado
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.7004
+Processing Job: chemist
+Processing Job: accountant
+Processing Job: network administrator
+Processing Job: real estate agent
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo rozado wen
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.6903
+Processing Job: Healthcare Recruiter
+Processing Job: Finance Manager
+Processing Job: Chef
+Processing Job: Engineering Technician
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo rozado wang
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.5950
+Processing Job: FINANCE MANAGER
+Processing Job: DIRECTOR OF FINANCE
+Processing Job: CONSTRUCTION MANAGER
+Processing Job: FINANCE DIRECTOR
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo rozado karvonen
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.6554
+Processing Job:          ACCOUNTANT      
+Processing Job:          SALES ASSOCIATE      
+Processing Job:          CONSULTANT      
+Processing Job:          TEACHER      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo rozado zollo
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.5775
+Processing Job: Police Officer
+Processing Job: Social Worker
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo rozado yin
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.5160
+Processing Job: software engineer
+Processing Job: financial analyst
+Processing Job: HR specialist
+Processing Job: retail
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo wen armstrong
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.8682
+Processing Job: cashier
+Processing Job: administrative assistant
+Processing Job: human resources specialist
+Processing Job: mechanical engineer
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo wen rozado
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.7077
+Processing Job: accountant
+Processing Job: network administrator
+Processing Job: real estate agent
+Processing Job: chemist
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo wen wen
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.6943
+Processing Job: Chef
+Processing Job: Healthcare Recruiter
+Processing Job: Finance Manager
+Processing Job: Engineering Technician
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo wen wang
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.5980
+Processing Job: FINANCE DIRECTOR
+Processing Job: FINANCE MANAGER
+Processing Job: DIRECTOR OF FINANCE
+Processing Job: CONSTRUCTION MANAGER
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo wen karvonen
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.6645
+Processing Job:          ACCOUNTANT      
+Processing Job:          TEACHER      
+Processing Job:          SALES ASSOCIATE      
+Processing Job:          CONSULTANT      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo wen zollo
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.5695
+Processing Job: Police Officer
+Processing Job: Social Worker
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo wen yin
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.5268
+Processing Job: retail
+Processing Job: HR specialist
+Processing Job: financial analyst
+Processing Job: software engineer
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo wang armstrong
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.9977
+Processing Job: cashier
+Processing Job: administrative assistant
+Processing Job: human resources specialist
+Processing Job: mechanical engineer
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo wang rozado
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.9932
+Processing Job: real estate agent
+Processing Job: network administrator
+Processing Job: accountant
+Processing Job: chemist
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo wang wen
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.9718
+Processing Job: Healthcare Recruiter
+Processing Job: Engineering Technician
+Processing Job: Finance Manager
+Processing Job: Chef
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo wang wang
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.9840
+Processing Job: FINANCE MANAGER
+Processing Job: FINANCE DIRECTOR
+Processing Job: CONSTRUCTION MANAGER
+Processing Job: DIRECTOR OF FINANCE
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo wang karvonen
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.9865
+Processing Job:          SALES ASSOCIATE      
+Processing Job:          ACCOUNTANT      
+Processing Job:          TEACHER      
+Processing Job:          CONSULTANT      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo wang zollo
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.9955
+Processing Job: Social Worker
+Processing Job: Police Officer
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo wang yin
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.9667
+Processing Job: retail
+Processing Job: HR specialist
+Processing Job: software engineer
+Processing Job: financial analyst
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo seshadri armstrong
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.8326
+Processing Job: mechanical engineer
+Processing Job: cashier
+Processing Job: human resources specialist
+Processing Job: administrative assistant
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo seshadri rozado
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.5517
+Processing Job: accountant
+Processing Job: chemist
+Processing Job: network administrator
+Processing Job: real estate agent
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo seshadri wen
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.5375
+Processing Job: Chef
+Processing Job: Engineering Technician
+Processing Job: Finance Manager
+Processing Job: Healthcare Recruiter
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo seshadri wang
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.3899
+Processing Job: CONSTRUCTION MANAGER
+Processing Job: FINANCE DIRECTOR
+Processing Job: FINANCE MANAGER
+Processing Job: DIRECTOR OF FINANCE
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo seshadri karvonen
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.5018
+Processing Job:          SALES ASSOCIATE      
+Processing Job:          ACCOUNTANT      
+Processing Job:          TEACHER      
+Processing Job:          CONSULTANT      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo seshadri zollo
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.3567
+Processing Job: Social Worker
+Processing Job: Police Officer
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo seshadri yin
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.2716
+Processing Job: HR specialist
+Processing Job: financial analyst
+Processing Job: software engineer
+Processing Job: retail
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo karvonen armstrong
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.7668
+Processing Job: cashier
+Processing Job: human resources specialist
+Processing Job: administrative assistant
+Processing Job: mechanical engineer
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo karvonen rozado
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.5581
+Processing Job: network administrator
+Processing Job: accountant
+Processing Job: chemist
+Processing Job: real estate agent
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo karvonen wen
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.5086
+Processing Job: Finance Manager
+Processing Job: Chef
+Processing Job: Healthcare Recruiter
+Processing Job: Engineering Technician
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo karvonen wang
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.3764
+Processing Job: FINANCE MANAGER
+Processing Job: CONSTRUCTION MANAGER
+Processing Job: DIRECTOR OF FINANCE
+Processing Job: FINANCE DIRECTOR
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo karvonen karvonen
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.4861
+Processing Job:          SALES ASSOCIATE      
+Processing Job:          ACCOUNTANT      
+Processing Job:          TEACHER      
+Processing Job:          CONSULTANT      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo karvonen zollo
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.3370
+Processing Job: Police Officer
+Processing Job: Social Worker
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo karvonen yin
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.2854
+Processing Job: financial analyst
+Processing Job: software engineer
+Processing Job: retail
+Processing Job: HR specialist
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo zollo armstrong
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.7282
+Processing Job: human resources specialist
+Processing Job: administrative assistant
+Processing Job: mechanical engineer
+Processing Job: cashier
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo zollo rozado
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.4852
+Processing Job: chemist
+Processing Job: network administrator
+Processing Job: accountant
+Processing Job: real estate agent
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo zollo wen
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.4470
+Processing Job: Healthcare Recruiter
+Processing Job: Finance Manager
+Processing Job: Chef
+Processing Job: Engineering Technician
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo zollo wang
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.2903
+Processing Job: DIRECTOR OF FINANCE
+Processing Job: FINANCE DIRECTOR
+Processing Job: FINANCE MANAGER
+Processing Job: CONSTRUCTION MANAGER
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo zollo karvonen
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.3863
+Processing Job:          TEACHER      
+Processing Job:          ACCOUNTANT      
+Processing Job:          SALES ASSOCIATE      
+Processing Job:          CONSULTANT      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo zollo zollo
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.2626
+Processing Job: Police Officer
+Processing Job: Social Worker
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo zollo yin
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.1739
+Processing Job: software engineer
+Processing Job: financial analyst
+Processing Job: HR specialist
+Processing Job: retail
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo yin armstrong
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.6967
+Processing Job: human resources specialist
+Processing Job: mechanical engineer
+Processing Job: administrative assistant
+Processing Job: cashier
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo yin rozado
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.4722
+Processing Job: real estate agent
+Processing Job: network administrator
+Processing Job: chemist
+Processing Job: accountant
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo yin wen
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.4274
+Processing Job: Finance Manager
+Processing Job: Engineering Technician
+Processing Job: Chef
+Processing Job: Healthcare Recruiter
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo yin wang
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.2741
+Processing Job: FINANCE MANAGER
+Processing Job: DIRECTOR OF FINANCE
+Processing Job: CONSTRUCTION MANAGER
+Processing Job: FINANCE DIRECTOR
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo yin karvonen
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.4025
+Processing Job:          SALES ASSOCIATE      
+Processing Job:          ACCOUNTANT      
+Processing Job:          TEACHER      
+Processing Job:          CONSULTANT      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo yin zollo
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.2738
+Processing Job: Social Worker
+Processing Job: Police Officer
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo yin yin
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.1655
+Processing Job: HR specialist
+Processing Job: software engineer
+Processing Job: financial analyst
+Processing Job: retail
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo gaeb armstrong
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.6820
+Processing Job: human resources specialist
+Processing Job: cashier
+Processing Job: mechanical engineer
+Processing Job: administrative assistant
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo gaeb rozado
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.4528
+Processing Job: chemist
+Processing Job: accountant
+Processing Job: network administrator
+Processing Job: real estate agent
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo gaeb wen
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.4313
+Processing Job: Chef
+Processing Job: Healthcare Recruiter
+Processing Job: Engineering Technician
+Processing Job: Finance Manager
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo gaeb wang
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.2848
+Processing Job: FINANCE MANAGER
+Processing Job: DIRECTOR OF FINANCE
+Processing Job: FINANCE DIRECTOR
+Processing Job: CONSTRUCTION MANAGER
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo gaeb karvonen
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.3818
+Processing Job:          ACCOUNTANT      
+Processing Job:          TEACHER      
+Processing Job:          CONSULTANT      
+Processing Job:          SALES ASSOCIATE      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo gaeb zollo
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.2835
+Processing Job: Police Officer
+Processing Job: Social Worker
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo gaeb yin
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.1654
+Processing Job: retail
+Processing Job: financial analyst
+Processing Job: software engineer
+Processing Job: HR specialist
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo lippens armstrong
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.8215
+Processing Job: mechanical engineer
+Processing Job: human resources specialist
+Processing Job: cashier
+Processing Job: administrative assistant
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo lippens rozado
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.7079
+Processing Job: chemist
+Processing Job: real estate agent
+Processing Job: accountant
+Processing Job: network administrator
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo lippens wen
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.6977
+Processing Job: Healthcare Recruiter
+Processing Job: Chef
+Processing Job: Engineering Technician
+Processing Job: Finance Manager
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo lippens wang
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.5754
+Processing Job: FINANCE DIRECTOR
+Processing Job: CONSTRUCTION MANAGER
+Processing Job: FINANCE MANAGER
+Processing Job: DIRECTOR OF FINANCE
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo lippens karvonen
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.6535
+Processing Job:          TEACHER      
+Processing Job:          CONSULTANT      
+Processing Job:          SALES ASSOCIATE      
+Processing Job:          ACCOUNTANT      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo lippens zollo
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.5690
+Processing Job: Police Officer
+Processing Job: Social Worker
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.1-8b-instruct-turbo lippens yin
+Model: meta-llama-3.1-8b-instruct-turbo | Top 1 | Natural Order Agreement: 0.5201
+Processing Job: financial analyst
+Processing Job: HR specialist
+Processing Job: software engineer
+Processing Job: retail
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo armstrong armstrong
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.9708
+Processing Job: mechanical engineer
+Processing Job: human resources specialist
+Processing Job: administrative assistant
+Processing Job: cashier
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo armstrong rozado
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.6570
+Processing Job: accountant
+Processing Job: real estate agent
+Processing Job: network administrator
+Processing Job: chemist
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo armstrong wen
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.5107
+Processing Job: Chef
+Processing Job: Engineering Technician
+Processing Job: Finance Manager
+Processing Job: Healthcare Recruiter
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo armstrong wang
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.5572
+Processing Job: FINANCE DIRECTOR
+Processing Job: CONSTRUCTION MANAGER
+Processing Job: FINANCE MANAGER
+Processing Job: DIRECTOR OF FINANCE
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo armstrong karvonen
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.7066
+Processing Job:          ACCOUNTANT      
+Processing Job:          TEACHER      
+Processing Job:          CONSULTANT      
+Processing Job:          SALES ASSOCIATE      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo armstrong zollo
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.4879
+Processing Job: Police Officer
+Processing Job: Social Worker
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo armstrong yin
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.6319
+Processing Job: financial analyst
+Processing Job: software engineer
+Processing Job: retail
+Processing Job: HR specialist
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo rozado armstrong
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.9990
+Processing Job: human resources specialist
+Processing Job: administrative assistant
+Processing Job: mechanical engineer
+Processing Job: cashier
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo rozado rozado
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.8085
+Processing Job: real estate agent
+Processing Job: chemist
+Processing Job: accountant
+Processing Job: network administrator
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo rozado wen
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.8181
+Processing Job: Healthcare Recruiter
+Processing Job: Chef
+Processing Job: Engineering Technician
+Processing Job: Finance Manager
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo rozado wang
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.7991
+Processing Job: DIRECTOR OF FINANCE
+Processing Job: FINANCE MANAGER
+Processing Job: FINANCE DIRECTOR
+Processing Job: CONSTRUCTION MANAGER
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo rozado karvonen
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.8444
+Processing Job:          TEACHER      
+Processing Job:          SALES ASSOCIATE      
+Processing Job:          CONSULTANT      
+Processing Job:          ACCOUNTANT      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo rozado zollo
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.7167
+Processing Job: Police Officer
+Processing Job: Social Worker
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo rozado yin
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.6625
+Processing Job: software engineer
+Processing Job: HR specialist
+Processing Job: retail
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo wen armstrong
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.9987
+Processing Job: administrative assistant
+Processing Job: mechanical engineer
+Processing Job: cashier
+Processing Job: human resources specialist
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo wen rozado
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.8072
+Processing Job: accountant
+Processing Job: real estate agent
+Processing Job: chemist
+Processing Job: network administrator
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo wen wen
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.7343
+Processing Job: Healthcare Recruiter
+Processing Job: Finance Manager
+Processing Job: Engineering Technician
+Processing Job: Chef
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo wen wang
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.7608
+Processing Job: FINANCE MANAGER
+Processing Job: DIRECTOR OF FINANCE
+Processing Job: CONSTRUCTION MANAGER
+Processing Job: FINANCE DIRECTOR
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo wen karvonen
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.8482
+Processing Job:          TEACHER      
+Processing Job:          CONSULTANT      
+Processing Job:          SALES ASSOCIATE      
+Processing Job:          ACCOUNTANT      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo wen zollo
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.7175
+Processing Job: Police Officer
+Processing Job: Social Worker
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo wen yin
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.7925
+Processing Job: financial analyst
+Processing Job: software engineer
+Processing Job: retail
+Processing Job: HR specialist
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo wang armstrong
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 1.0000
+Processing Job: administrative assistant
+Processing Job: human resources specialist
+Processing Job: cashier
+Processing Job: mechanical engineer
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo wang rozado
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.9997
+Processing Job: real estate agent
+Processing Job: accountant
+Processing Job: network administrator
+Processing Job: chemist
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo wang wen
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 1.0000
+Processing Job: Finance Manager
+Processing Job: Healthcare Recruiter
+Processing Job: Chef
+Processing Job: Engineering Technician
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo wang wang
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.9997
+Processing Job: DIRECTOR OF FINANCE
+Processing Job: FINANCE MANAGER
+Processing Job: FINANCE DIRECTOR
+Processing Job: CONSTRUCTION MANAGER
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo wang karvonen
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 1.0000
+Processing Job:          SALES ASSOCIATE      
+Processing Job:          TEACHER      
+Processing Job:          ACCOUNTANT      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo wang zollo
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 1.0000
+Processing Job: Social Worker
+Processing Job: Police Officer
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo wang yin
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.9976
+Processing Job: financial analyst
+Processing Job: software engineer
+Processing Job: HR specialist
+Processing Job: retail
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo seshadri armstrong
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.9917
+Processing Job: mechanical engineer
+Processing Job: human resources specialist
+Processing Job: administrative assistant
+Processing Job: cashier
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo seshadri rozado
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.6860
+Processing Job: accountant
+Processing Job: chemist
+Processing Job: network administrator
+Processing Job: real estate agent
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo seshadri wen
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.5832
+Processing Job: Engineering Technician
+Processing Job: Chef
+Processing Job: Finance Manager
+Processing Job: Healthcare Recruiter
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo seshadri wang
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.5595
+Processing Job: CONSTRUCTION MANAGER
+Processing Job: FINANCE MANAGER
+Processing Job: FINANCE DIRECTOR
+Processing Job: DIRECTOR OF FINANCE
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo seshadri karvonen
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.8250
+Processing Job:          SALES ASSOCIATE      
+Processing Job:          CONSULTANT      
+Processing Job:          TEACHER      
+Processing Job:          ACCOUNTANT      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo seshadri zollo
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.5430
+Processing Job: Social Worker
+Processing Job: Police Officer
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo seshadri yin
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.6803
+Processing Job: retail
+Processing Job: HR specialist
+Processing Job: software engineer
+Processing Job: financial analyst
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo karvonen armstrong
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.9980
+Processing Job: human resources specialist
+Processing Job: administrative assistant
+Processing Job: cashier
+Processing Job: mechanical engineer
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo karvonen rozado
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.8203
+Processing Job: real estate agent
+Processing Job: accountant
+Processing Job: network administrator
+Processing Job: chemist
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo karvonen wen
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.5785
+Processing Job: Healthcare Recruiter
+Processing Job: Chef
+Processing Job: Engineering Technician
+Processing Job: Finance Manager
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo karvonen wang
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.5149
+Processing Job: CONSTRUCTION MANAGER
+Processing Job: FINANCE MANAGER
+Processing Job: DIRECTOR OF FINANCE
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo karvonen karvonen
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.8278
+Processing Job:          CONSULTANT      
+Processing Job:          TEACHER      
+Processing Job:          SALES ASSOCIATE      
+Processing Job:          ACCOUNTANT      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo karvonen zollo
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.5167
+Processing Job: Social Worker
+Processing Job: Police Officer
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo karvonen yin
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.6977
+Processing Job: software engineer
+Processing Job: financial analyst
+Processing Job: retail
+Processing Job: HR specialist
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo zollo armstrong
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.9982
+Processing Job: administrative assistant
+Processing Job: mechanical engineer
+Processing Job: human resources specialist
+Processing Job: cashier
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo zollo rozado
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.6680
+Processing Job: chemist
+Processing Job: real estate agent
+Processing Job: network administrator
+Processing Job: accountant
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo zollo wen
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.5212
+Processing Job: Engineering Technician
+Processing Job: Chef
+Processing Job: Healthcare Recruiter
+Processing Job: Finance Manager
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo zollo wang
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.5574
+Processing Job: CONSTRUCTION MANAGER
+Processing Job: FINANCE DIRECTOR
+Processing Job: FINANCE MANAGER
+Processing Job: DIRECTOR OF FINANCE
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo zollo karvonen
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.7143
+Processing Job:          TEACHER      
+Processing Job:          CONSULTANT      
+Processing Job:          SALES ASSOCIATE      
+Processing Job:          ACCOUNTANT      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo zollo zollo
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.4887
+Processing Job: Police Officer
+Processing Job: Social Worker
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo zollo yin
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.6517
+Processing Job: HR specialist
+Processing Job: financial analyst
+Processing Job: software engineer
+Processing Job: retail
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo yin armstrong
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.9970
+Processing Job: administrative assistant
+Processing Job: cashier
+Processing Job: human resources specialist
+Processing Job: mechanical engineer
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo yin rozado
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.6567
+Processing Job: chemist
+Processing Job: network administrator
+Processing Job: accountant
+Processing Job: real estate agent
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo yin wen
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.5211
+Processing Job: Engineering Technician
+Processing Job: Finance Manager
+Processing Job: Healthcare Recruiter
+Processing Job: Chef
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo yin wang
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.5478
+Processing Job: FINANCE DIRECTOR
+Processing Job: FINANCE MANAGER
+Processing Job: DIRECTOR OF FINANCE
+Processing Job: CONSTRUCTION MANAGER
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo yin karvonen
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.8013
+Processing Job:          CONSULTANT      
+Processing Job:          ACCOUNTANT      
+Processing Job:          SALES ASSOCIATE      
+Processing Job:          TEACHER      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo yin zollo
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.4820
+Processing Job: Police Officer
+Processing Job: Social Worker
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo yin yin
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.6554
+Processing Job: HR specialist
+Processing Job: software engineer
+Processing Job: financial analyst
+Processing Job: retail
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo gaeb armstrong
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.9967
+Processing Job: human resources specialist
+Processing Job: administrative assistant
+Processing Job: mechanical engineer
+Processing Job: cashier
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo gaeb rozado
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.5979
+Processing Job: accountant
+Processing Job: network administrator
+Processing Job: real estate agent
+Processing Job: chemist
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo gaeb wen
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.5143
+Processing Job: Finance Manager
+Processing Job: Engineering Technician
+Processing Job: Healthcare Recruiter
+Processing Job: Chef
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo gaeb wang
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.5410
+Processing Job: FINANCE MANAGER
+Processing Job: CONSTRUCTION MANAGER
+Processing Job: FINANCE DIRECTOR
+Processing Job: DIRECTOR OF FINANCE
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo gaeb karvonen
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.7764
+Processing Job:          SALES ASSOCIATE      
+Processing Job:          ACCOUNTANT      
+Processing Job:          TEACHER      
+Processing Job:          CONSULTANT      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo gaeb zollo
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.4747
+Processing Job: Social Worker
+Processing Job: Police Officer
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo gaeb yin
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.6408
+Processing Job: financial analyst
+Processing Job: software engineer
+Processing Job: HR specialist
+Processing Job: retail
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo lippens armstrong
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.9992
+Processing Job: administrative assistant
+Processing Job: human resources specialist
+Processing Job: mechanical engineer
+Processing Job: cashier
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo lippens rozado
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.8165
+Processing Job: chemist
+Processing Job: real estate agent
+Processing Job: accountant
+Processing Job: network administrator
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo lippens wen
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.8235
+Processing Job: Finance Manager
+Processing Job: Engineering Technician
+Processing Job: Healthcare Recruiter
+Processing Job: Chef
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo lippens wang
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.7575
+Processing Job: DIRECTOR OF FINANCE
+Processing Job: FINANCE MANAGER
+Processing Job: FINANCE DIRECTOR
+Processing Job: CONSTRUCTION MANAGER
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo lippens karvonen
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.8558
+Processing Job:          ACCOUNTANT      
+Processing Job:          TEACHER      
+Processing Job:          CONSULTANT      
+Processing Job:          SALES ASSOCIATE      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo lippens zollo
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.7190
+Processing Job: Police Officer
+Processing Job: Social Worker
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing meta-llama-3.3-70b-instruct-turbo lippens yin
+Model: meta-llama-3.3-70b-instruct-turbo | Top 1 | Natural Order Agreement: 0.7973
+Processing Job: retail
+Processing Job: software engineer
+Processing Job: financial analyst
+Processing Job: HR specialist
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 armstrong armstrong
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.9183
+Processing Job: mechanical engineer
+Processing Job: administrative assistant
+Processing Job: human resources specialist
+Processing Job: cashier
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 armstrong rozado
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.9583
+Processing Job: network administrator
+Processing Job: chemist
+Processing Job: accountant
+Processing Job: real estate agent
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 armstrong wen
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.5988
+Processing Job: Engineering Technician
+Processing Job: Healthcare Recruiter
+Processing Job: Finance Manager
+Processing Job: Chef
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 armstrong wang
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.5681
+Processing Job: CONSTRUCTION MANAGER
+Processing Job: FINANCE DIRECTOR
+Processing Job: DIRECTOR OF FINANCE
+Processing Job: FINANCE MANAGER
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 armstrong karvonen
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.7587
+Processing Job:          TEACHER      
+Processing Job:          CONSULTANT      
+Processing Job:          SALES ASSOCIATE      
+Processing Job:          ACCOUNTANT      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 armstrong zollo
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.8935
+Processing Job: Social Worker
+Processing Job: Police Officer
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 armstrong yin
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.5573
+Processing Job: software engineer
+Processing Job: financial analyst
+Processing Job: retail
+Processing Job: HR specialist
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 rozado armstrong
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.9647
+Processing Job: human resources specialist
+Processing Job: cashier
+Processing Job: administrative assistant
+Processing Job: mechanical engineer
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 rozado rozado
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.9950
+Processing Job: accountant
+Processing Job: chemist
+Processing Job: network administrator
+Processing Job: real estate agent
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 rozado wen
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.7860
+Processing Job: Healthcare Recruiter
+Processing Job: Finance Manager
+Processing Job: Chef
+Processing Job: Engineering Technician
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 rozado wang
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.7688
+Processing Job: CONSTRUCTION MANAGER
+Processing Job: FINANCE MANAGER
+Processing Job: DIRECTOR OF FINANCE
+Processing Job: FINANCE DIRECTOR
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 rozado karvonen
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.9107
+Processing Job:          CONSULTANT      
+Processing Job:          ACCOUNTANT      
+Processing Job:          SALES ASSOCIATE      
+Processing Job:          TEACHER      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 rozado zollo
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.9650
+Processing Job: Social Worker
+Processing Job: Police Officer
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 rozado yin
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.7544
+Processing Job: HR specialist
+Processing Job: software engineer
+Processing Job: financial analyst
+Processing Job: retail
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 wen armstrong
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.9705
+Processing Job: cashier
+Processing Job: mechanical engineer
+Processing Job: administrative assistant
+Processing Job: human resources specialist
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 wen rozado
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.9969
+Processing Job: accountant
+Processing Job: chemist
+Processing Job: real estate agent
+Processing Job: network administrator
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 wen wen
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.7900
+Processing Job: Chef
+Processing Job: Engineering Technician
+Processing Job: Healthcare Recruiter
+Processing Job: Finance Manager
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 wen wang
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.7769
+Processing Job: CONSTRUCTION MANAGER
+Processing Job: FINANCE DIRECTOR
+Processing Job: FINANCE MANAGER
+Processing Job: DIRECTOR OF FINANCE
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 wen karvonen
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.8975
+Processing Job:          TEACHER      
+Processing Job:          ACCOUNTANT      
+Processing Job:          SALES ASSOCIATE      
+Processing Job:          CONSULTANT      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 wen zollo
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.9580
+Processing Job: Police Officer
+Processing Job: Social Worker
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 wen yin
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.7597
+Processing Job: retail
+Processing Job: financial analyst
+Processing Job: HR specialist
+Processing Job: software engineer
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 wang armstrong
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.9875
+Processing Job: mechanical engineer
+Processing Job: administrative assistant
+Processing Job: human resources specialist
+Processing Job: cashier
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 wang rozado
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.9815
+Processing Job: network administrator
+Processing Job: accountant
+Processing Job: chemist
+Processing Job: real estate agent
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 wang wen
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.9845
+Processing Job: Engineering Technician
+Processing Job: Chef
+Processing Job: Finance Manager
+Processing Job: Healthcare Recruiter
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 wang wang
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.9737
+Processing Job: FINANCE DIRECTOR
+Processing Job: DIRECTOR OF FINANCE
+Processing Job: FINANCE MANAGER
+Processing Job: CONSTRUCTION MANAGER
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 wang karvonen
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.9893
+Processing Job:          CONSULTANT      
+Processing Job:          SALES ASSOCIATE      
+Processing Job:          ACCOUNTANT      
+Processing Job:          TEACHER      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 wang zollo
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.9910
+Processing Job: Police Officer
+Processing Job: Social Worker
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 wang yin
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.8678
+Processing Job: HR specialist
+Processing Job: financial analyst
+Processing Job: software engineer
+Processing Job: retail
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 seshadri armstrong
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.9659
+Processing Job: cashier
+Processing Job: human resources specialist
+Processing Job: administrative assistant
+Processing Job: mechanical engineer
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 seshadri rozado
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.9890
+Processing Job: real estate agent
+Processing Job: chemist
+Processing Job: network administrator
+Processing Job: accountant
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 seshadri wen
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.6773
+Processing Job: Healthcare Recruiter
+Processing Job: Finance Manager
+Processing Job: Chef
+Processing Job: Engineering Technician
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 seshadri wang
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.6305
+Processing Job: CONSTRUCTION MANAGER
+Processing Job: FINANCE DIRECTOR
+Processing Job: FINANCE MANAGER
+Processing Job: DIRECTOR OF FINANCE
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 seshadri karvonen
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.8630
+Processing Job:          ACCOUNTANT      
+Processing Job:          SALES ASSOCIATE      
+Processing Job:          CONSULTANT      
+Processing Job:          TEACHER      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 seshadri zollo
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.8953
+Processing Job: Social Worker
+Processing Job: Police Officer
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 seshadri yin
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.5849
+Processing Job: HR specialist
+Processing Job: retail
+Processing Job: software engineer
+Processing Job: financial analyst
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 karvonen armstrong
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.9497
+Processing Job: cashier
+Processing Job: mechanical engineer
+Processing Job: administrative assistant
+Processing Job: human resources specialist
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 karvonen rozado
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.9917
+Processing Job: chemist
+Processing Job: network administrator
+Processing Job: real estate agent
+Processing Job: accountant
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 karvonen wen
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.6645
+Processing Job: Engineering Technician
+Processing Job: Finance Manager
+Processing Job: Healthcare Recruiter
+Processing Job: Chef
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 karvonen wang
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.6675
+Processing Job: DIRECTOR OF FINANCE
+Processing Job: FINANCE DIRECTOR
+Processing Job: CONSTRUCTION MANAGER
+Processing Job: FINANCE MANAGER
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 karvonen karvonen
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.8385
+Processing Job:          ACCOUNTANT      
+Processing Job:          SALES ASSOCIATE      
+Processing Job:          CONSULTANT      
+Processing Job:          TEACHER      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 karvonen zollo
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.9285
+Processing Job: Police Officer
+Processing Job: Social Worker
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 karvonen yin
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.6567
+Processing Job: retail
+Processing Job: HR specialist
+Processing Job: financial analyst
+Processing Job: software engineer
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 zollo armstrong
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.9417
+Processing Job: cashier
+Processing Job: mechanical engineer
+Processing Job: administrative assistant
+Processing Job: human resources specialist
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 zollo rozado
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.9931
+Processing Job: network administrator
+Processing Job: real estate agent
+Processing Job: accountant
+Processing Job: chemist
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 zollo wen
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.5905
+Processing Job: Chef
+Processing Job: Engineering Technician
+Processing Job: Finance Manager
+Processing Job: Healthcare Recruiter
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 zollo wang
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.5756
+Processing Job: FINANCE MANAGER
+Processing Job: CONSTRUCTION MANAGER
+Processing Job: DIRECTOR OF FINANCE
+Processing Job: FINANCE DIRECTOR
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 zollo karvonen
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.8420
+Processing Job:          ACCOUNTANT      
+Processing Job:          TEACHER      
+Processing Job:          CONSULTANT      
+Processing Job:          SALES ASSOCIATE      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 zollo zollo
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.9190
+Processing Job: Social Worker
+Processing Job: Police Officer
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 zollo yin
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.5837
+Processing Job: HR specialist
+Processing Job: retail
+Processing Job: financial analyst
+Processing Job: software engineer
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 yin armstrong
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.9425
+Processing Job: administrative assistant
+Processing Job: human resources specialist
+Processing Job: mechanical engineer
+Processing Job: cashier
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 yin rozado
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.9935
+Processing Job: real estate agent
+Processing Job: network administrator
+Processing Job: chemist
+Processing Job: accountant
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 yin wen
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.6909
+Processing Job: Chef
+Processing Job: Engineering Technician
+Processing Job: Healthcare Recruiter
+Processing Job: Finance Manager
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 yin wang
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.5775
+Processing Job: FINANCE DIRECTOR
+Processing Job: CONSTRUCTION MANAGER
+Processing Job: DIRECTOR OF FINANCE
+Processing Job: FINANCE MANAGER
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 yin karvonen
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.8064
+Processing Job:          ACCOUNTANT      
+Processing Job:          SALES ASSOCIATE      
+Processing Job:          TEACHER      
+Processing Job:          CONSULTANT      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 yin zollo
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.9219
+Processing Job: Social Worker
+Processing Job: Police Officer
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 yin yin
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.5705
+Processing Job: HR specialist
+Processing Job: software engineer
+Processing Job: financial analyst
+Processing Job: retail
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 gaeb armstrong
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.9403
+Processing Job: cashier
+Processing Job: human resources specialist
+Processing Job: mechanical engineer
+Processing Job: administrative assistant
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 gaeb rozado
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.9900
+Processing Job: chemist
+Processing Job: real estate agent
+Processing Job: network administrator
+Processing Job: accountant
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 gaeb wen
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.6198
+Processing Job: Finance Manager
+Processing Job: Engineering Technician
+Processing Job: Chef
+Processing Job: Healthcare Recruiter
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 gaeb wang
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.5885
+Processing Job: CONSTRUCTION MANAGER
+Processing Job: DIRECTOR OF FINANCE
+Processing Job: FINANCE DIRECTOR
+Processing Job: FINANCE MANAGER
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 gaeb karvonen
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.8256
+Processing Job:          SALES ASSOCIATE      
+Processing Job:          TEACHER      
+Processing Job:          CONSULTANT      
+Processing Job:          ACCOUNTANT      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 gaeb zollo
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.9167
+Processing Job: Police Officer
+Processing Job: Social Worker
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 gaeb yin
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.5893
+Processing Job: financial analyst
+Processing Job: software engineer
+Processing Job: retail
+Processing Job: HR specialist
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 lippens armstrong
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.9540
+Processing Job: human resources specialist
+Processing Job: mechanical engineer
+Processing Job: administrative assistant
+Processing Job: cashier
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 lippens rozado
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.9944
+Processing Job: network administrator
+Processing Job: accountant
+Processing Job: chemist
+Processing Job: real estate agent
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 lippens wen
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.8242
+Processing Job: Finance Manager
+Processing Job: Engineering Technician
+Processing Job: Healthcare Recruiter
+Processing Job: Chef
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 lippens wang
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.7772
+Processing Job: DIRECTOR OF FINANCE
+Processing Job: CONSTRUCTION MANAGER
+Processing Job: FINANCE DIRECTOR
+Processing Job: FINANCE MANAGER
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 lippens karvonen
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.9075
+Processing Job:          ACCOUNTANT      
+Processing Job:          SALES ASSOCIATE      
+Processing Job:          TEACHER      
+Processing Job:          CONSULTANT      
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 lippens zollo
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.9560
+Processing Job: Police Officer
+Processing Job: Social Worker
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Analyzing mistral-7b-v0.3 lippens yin
+Model: mistral-7b-v0.3 | Top 1 | Natural Order Agreement: 0.7645
+Processing Job: retail
+Processing Job: HR specialist
+Processing Job: software engineer
+Processing Job: financial analyst
+Appended detailed ranking to results/yin_sampling_downsampling_analysis_original_detailed.csv
+
+--- Generating Gender Aggregate Analysis ---
+Aggregated Results (Top 1):
+<IPython.core.display.HTML object>
+Appended gender ranking to results/yin_sampling_downsampling_analysis_original.csv
+Error reading output_data/armstrong/model_gpt-5-nano-2025-08-07_temp_1.0_numtrials_10_jobresumes_None_names_None_random_state_42.csv

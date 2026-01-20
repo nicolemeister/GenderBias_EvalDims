@@ -41,6 +41,7 @@ def main():
                     config['Model']['Model_Name'] = model
                     config['Name']['Bundle_Name'] = name
                     config['Job']['Bundle_Name'] = job
+                    config['experimental_framework'] = author
                     print(f"Analyzing {model} {name} {job}")
                     analyze_results.analyze(args, config)
                     
@@ -52,7 +53,7 @@ def main():
                     config['Model']['Model_Name'] = model
                     config['Name']['Bundle_Name'] = name
                     config['Job']['Bundle_Name'] = job
-
+                    config['experimental_framework'] = author
                     print(f"Analyzing {model} {name} {job}")
                     analyze_results.analyze(args, config, all_together=True)
 
@@ -61,6 +62,7 @@ def main():
         config = yaml.load(open(args.config_path), Loader=yaml.FullLoader)
         config['Name']['Bundle_Name'] = args.name
         config['Job']['Bundle_Name'] = args.job
+        config['experimental_framework'] = author
         analyze_results.analyze(args, config)
 
 if __name__ == "__main__":

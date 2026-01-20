@@ -251,15 +251,17 @@ def main() -> None:
     for metric in metrics_to_plot:
 
         # ----------------------------
-        # GLOBAL DENSITY COMPARISON: Overlay Density per JOB
+        # GLOBAL DENSITY & CDF COMPARISON
         # ----------------------------
         if args.model == 'all':
-            print(f"Generating combined density plot for {metric} across all unique Jobs...")
+            print(f"Generating combined density and CDF plots for {metric} across all unique Jobs...")
             
             # 1. Identify all unique Jobs
             unique_jobs = df["Jobs"].unique()
             
-            plt.figure(figsize=(12, 7))
+            # Initialize separate figures for Density and CDF
+            fig_den, ax_den = plt.subplots(figsize=(12, 7))
+            fig_cdf, ax_cdf = plt.subplots(figsize=(12, 7))
             
             # Use tab20 colormap to handle potentially many unique jobs distinctively
             colors_list = plt.cm.tab20(np.linspace(0, 1, len(unique_jobs)))
@@ -277,65 +279,85 @@ def main() -> None:
                     val, _, _ = get_woman_stats(row)
                     job_values.append(val)
                 
-                # Filter out zeroes if desired
+                # Filter out zeroes and outliers
                 nonzero_job_vals = [v for v in job_values if v != 0]
-
-                # FILTER: Remove Zeroes AND Outliers (abs(val) > 5)
                 clean_values = [v for v in nonzero_job_vals if v != 0 and -5 <= v <= 5]
                 nonzero_job_vals = clean_values.copy()
 
-                # 3. Calculate and Plot Density (if enough data)
                 if len(nonzero_job_vals) > 1 and np.std(nonzero_job_vals) > 1e-9:
                     
-                    # ### ADDED: Print Mean ###
+                    # Print Mean
                     mean_val = np.mean(nonzero_job_vals)
                     print(f"Job: {job_val:<15} | Mean {metric}: {mean_val:.4f}")
-                    # #########################
 
+                    # Determine Label
+                    job_str = str(job_val)
+                    if job_str in bls_values:
+                        label_text = f"{job_str} (BLS: {bls_values[job_str]})"
+                    else:
+                        label_text = job_str
+
+                    # --- Plot Density ---
                     try:
                         kde = gaussian_kde(nonzero_job_vals)
-                        
-                        # Create grid for X axis based on this job's range
                         x_min, x_max = min(nonzero_job_vals), max(nonzero_job_vals)
                         x_range = x_max - x_min
-                        
                         x_grid = np.linspace(x_min - 0.2 * x_range, x_max + 0.2 * x_range, 200)
 
-                        # Custom Label with BLS Value
-                        job_str = str(job_val)
-                        if job_str in bls_values:
-                            label_text = f"{job_str} (BLS: {bls_values[job_str]})"
-                        else:
-                            label_text = job_str
-                        
-                        plt.plot(x_grid, kde(x_grid), 
-                                 color=colors_list[idx], 
-                                 lw=2, 
-                                 alpha=0.8, 
-                                 label=label_text)
-                        
-                        has_plotted_anything = True
+                        ax_den.plot(x_grid, kde(x_grid), 
+                                    color=colors_list[idx], 
+                                    lw=2, 
+                                    alpha=0.8, 
+                                    label=label_text)
                     except np.linalg.LinAlgError:
                         print(f"Skipping density for {job_val}: Singular matrix (no variance).")
+
+                    # --- Plot CDF ---
+                    sorted_data = np.sort(nonzero_job_vals)
+                    # Y-axis: probability from 1/N to 1
+                    yvals = np.arange(1, len(sorted_data) + 1) / len(sorted_data)
+                    
+                    ax_cdf.step(sorted_data, yvals, 
+                                where='post', 
+                                color=colors_list[idx], 
+                                lw=2, 
+                                alpha=0.8, 
+                                label=label_text)
+                    
+                    has_plotted_anything = True
                 else:
-                    print(f"Skipping density for {job_val}: Not enough data points or variance.")
+                    print(f"Skipping {job_val}: Not enough data points or variance.")
 
             if has_plotted_anything:
-                plt.title(f'Comparison of {metric} Density by Job')
-                plt.xlabel(metric)
-                plt.ylabel("Density")
-                plt.grid(True, linestyle="--", alpha=0.3)
-                # Place legend outside if there are many jobs
-                plt.legend(title="Job", bbox_to_anchor=(1.05, 1), loc='upper left')
-                plt.tight_layout()
+                # --- Save Density Plot ---
+                ax_den.set_title(f'Comparison of {metric} Density by Job')
+                ax_den.set_xlabel(metric)
+                ax_den.set_ylabel("Density")
+                ax_den.grid(True, linestyle="--", alpha=0.3)
+                ax_den.legend(title="Job", bbox_to_anchor=(1.05, 1), loc='upper left')
+                fig_den.tight_layout()
                 
-                plot_path = f"{out_root}/{metric}_combined_density_by_job.png"
-                print(f"Saving combined density plot to {plot_path}")
-                plt.savefig(plot_path)
-                plt.close()
+                den_path = f"{out_root}/{metric}_combined_density_by_job.png"
+                print(f"Saving combined density plot to {den_path}")
+                fig_den.savefig(den_path)
+                
+                # --- Save CDF Plot ---
+                ax_cdf.set_title(f'Comparison of {metric} CDF by Job')
+                ax_cdf.set_xlabel(metric)
+                ax_cdf.set_ylabel("Cumulative Probability")
+                ax_cdf.grid(True, linestyle="--", alpha=0.3)
+                ax_cdf.legend(title="Job", bbox_to_anchor=(1.05, 1), loc='upper left')
+                fig_cdf.tight_layout()
+                
+                cdf_path = f"{out_root}/{metric}_combined_cdf_by_job.png"
+                print(f"Saving combined CDF plot to {cdf_path}")
+                fig_cdf.savefig(cdf_path)
+
             else:
-                print("No jobs had enough data to plot density.")
-                plt.close()
+                print("No jobs had enough data to plot.")
+            
+            plt.close(fig_den)
+            plt.close(fig_cdf)
 
         # ----------------------------
         # Grid Generation (Heatmap/Bar Chart logic) - Unchanged

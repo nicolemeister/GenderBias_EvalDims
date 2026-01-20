@@ -15,6 +15,7 @@ from collections import Counter
 from IPython.display import display, HTML
 from tqdm import tqdm
 import json
+from utils.variables import MODELS
 
 
 columns = [
@@ -574,7 +575,6 @@ def analyze_yin(args, config, all_together=False):
     temp = config['Model']['Temperature']
     name_bundle = config['Name']['Bundle_Name']
     job_bundle = config['Job']['Bundle_Name']
-
     perturbation_results_filepath = 'results/{}_sampling_{}_analysis_{}.csv'.format(config['experimental_framework'], args.sampling, args.analysis)
     
     # Outputs
@@ -586,28 +586,27 @@ def analyze_yin(args, config, all_together=False):
     if not os.path.exists(fn_ranking_gender):
         results_gender = pd.DataFrame(columns=columns)
         results_gender.to_csv(fn_ranking_gender, index=False)
-    else:
-        results_gender = pd.read_csv(fn_ranking_gender)
 
 
     # read the perturbation_results_filepath 
     if not os.path.exists(fn_ranking_detailed):
-        results_gender = pd.DataFrame(columns=columns)
+        # Ensure 'columns' variable is defined in your previous scope
+        results_detailed = pd.DataFrame(columns=columns) 
         results_detailed.to_csv(fn_ranking_detailed, index=False)
-    else:
-        results_detailed = pd.read_csv(fn_ranking_detailed)
 
-
+    if all_together:
+        model_fullname = MODELS[model]
+        model_fullname = model_fullname.split('/')[-1]
     # Inputs
     if all_together:
-        fn_gpt4 = f"/nlp/scr/nmeist/EvalDims/output_data/yin/together/processed_batch_outputs/{model.replace('_', '-')}/temp_1.0_names_{name_bundle}_jobresumes_{job_bundle}/*/*.json"        
+        fn_gpt4 = f"/nlp/scr/nmeist/EvalDims/output_data/yin/together/processed_batch_outputs/{model_fullname}/temp_1.0_names_{name_bundle}_jobresumes_{job_bundle}/*/*.json"        
     else:
         fn_gpt4 = f"/nlp/scr/nmeist/EvalDims/output_data/{author}/{model.replace('_', '-')}/temp_{temp}_names_{name_bundle}_jobresumes_{job_bundle}/*/*.json"
     
     files = glob.glob(fn_gpt4)
 
     if all_together:
-        jobs = os.listdir(f"/nlp/scr/nmeist/EvalDims/output_data/{author}/together/processed_batch_outputs/{model.replace('_', '-')}/temp_1.0_names_{name_bundle}_jobresumes_{job_bundle}")
+        jobs = os.listdir(f"/nlp/scr/nmeist/EvalDims/output_data/{author}/together/processed_batch_outputs/{model_fullname}/temp_1.0_names_{name_bundle}_jobresumes_{job_bundle}")
     else:
         jobs = [f for f in os.listdir(f"/nlp/scr/nmeist/EvalDims/output_data/{author}/{model.replace('_', '-')}/temp_{temp}_names_{name_bundle}_jobresumes_{job_bundle}") if not f.startswith('run_')]
 
@@ -668,7 +667,6 @@ def analyze_yin(args, config, all_together=False):
     data_detailed = []
 
     model_data = parsed_data
-    breakpoint()
     for N_top in range(1, 1+1):
         # Calculate overall top-1 agreement (just for logging purposes)
         topistop = sum(1 for d in model_data if d['gpt_race_order'][0] == d['natural_first'])
@@ -700,14 +698,23 @@ def analyze_yin(args, config, all_together=False):
             df['job'] = job
             df['model'] = model
             df['rank'] = N_top
+            df['name_bundle'] = name_bundle
+            df['job_bundle'] = job_bundle
+            
             
             data_detailed.extend(df.to_dict(orient='records'))
 
 
     # Save Detailed CSV
-    results_detailed = pd.DataFrame(data_detailed)
-    results_detailed.to_csv(fn_ranking_detailed, index=False)
-    print(f"Saved detailed ranking to {fn_ranking_detailed}")
+    if data_detailed:  # Only write if there is data
+        results_detailed = pd.DataFrame(data_detailed)
+        
+        # mode='a' appends to the file
+        # header=False prevents writing the column names again in the middle of the file
+        results_detailed.to_csv(fn_ranking_detailed, mode='a', index=False, header=False)
+        print(f"Appended detailed ranking to {fn_ranking_detailed}")
+    else:
+        print("No new data to append.")
 
     # --- Step 3: Generate Gender Aggregate CSV (All Jobs, W vs M) ---
     data_gender = []
@@ -742,16 +749,25 @@ def analyze_yin(args, config, all_together=False):
         df['job'] = 'ALL' # Aggregated
         df['model'] = model
         df['rank'] = N_top
+
+        df['name_bundle'] = name_bundle
+        df['job_bundle'] = job_bundle
         
         print(f"Aggregated Results (Top {N_top}):")
         display(HTML(df.sort_values(by='disparate_impact_ratio', ascending=True).reset_index(drop=1).to_html()))
         
         data_gender.extend(df.to_dict(orient='records'))
-
-    # Save Gender CSV
-    results_gender = pd.DataFrame(data_gender)
-    results_gender.to_csv(fn_ranking_gender, index=False)
-    print(f"Saved gender aggregate ranking to {fn_ranking_gender}")
+        # Save Detailed CSV
+    if data_gender:  # Only write if there is data
+        results_gender = pd.DataFrame(data_gender)
+        
+        # mode='a' appends to the file
+        # header=False prevents writing the column names again in the middle of the file
+        results_gender.to_csv(fn_ranking_gender, mode='a', index=False, header=False)
+        print(f"Appended gender ranking to {fn_ranking_gender}")
+    else:
+        print("No new data to append.")
+        
 
     return 
 

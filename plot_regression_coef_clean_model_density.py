@@ -240,15 +240,17 @@ def main() -> None:
     for metric in metrics_to_plot:
 
         # ----------------------------
-        # GLOBAL DENSITY COMPARISON: Overlay Density per Model
+        # GLOBAL DENSITY & CDF COMPARISON
         # ----------------------------
         if args.model == 'all':
-            print(f"Generating combined density plot for {metric} across all unique models...")
+            print(f"Generating combined density and CDF plots for {metric} across all unique models...")
             
             # 1. Identify all unique models
             unique_models = df["Model"].unique()
             
-            plt.figure(figsize=(12, 7))
+            # Initialize separate figures using OO interface so we can plot to both simultaneously
+            fig_den, ax_den = plt.subplots(figsize=(12, 7))
+            fig_cdf, ax_cdf = plt.subplots(figsize=(12, 7))
             
             # Use a colormap to differentiate lines
             colors_list = plt.cm.tab10(np.linspace(0, 1, len(unique_models)))
@@ -268,51 +270,70 @@ def main() -> None:
 
                 # FILTER: Remove Zeroes AND Outliers (abs(val) > 5)
                 clean_values = [v for v in model_values if v != 0 and -5 <= v <= 5]
-                model_values = clean_values.copy()
-                
-                # Filter out zeroes if they are artifacts (optional, but usually good for density)
-                nonzero_model = [v for v in model_values if v != 0]
+                nonzero_model = clean_values.copy()
 
-                # 3. Calculate and Plot Density (if enough data)
                 if len(nonzero_model) > 1 and np.std(nonzero_model) > 1e-9:
+                    # --- Plot Density ---
                     try:
                         kde = gaussian_kde(nonzero_model)
-                        
-                        # Create grid for X axis based on this model's range
                         x_min, x_max = min(nonzero_model), max(nonzero_model)
                         x_range = x_max - x_min
-                        
-                        # You might want a unified grid for all models, but individual grids 
-                        # ensure the density is computed where the data actually exists.
                         x_grid = np.linspace(x_min - 0.2 * x_range, x_max + 0.2 * x_range, 200)
                         
-                        plt.plot(x_grid, kde(x_grid), 
-                                 color=colors_list[idx], 
-                                 lw=2, 
-                                 alpha=0.8, 
-                                 label=model_name)
-                        
-                        has_plotted_anything = True
+                        ax_den.plot(x_grid, kde(x_grid), 
+                                    color=colors_list[idx], 
+                                    lw=2, 
+                                    alpha=0.8, 
+                                    label=model_name)
                     except np.linalg.LinAlgError:
                         print(f"Skipping density for {model_name}: Singular matrix (no variance).")
+
+                    # --- Plot CDF ---
+                    sorted_data = np.sort(nonzero_model)
+                    # Y-axis: probability from 1/N to 1
+                    yvals = np.arange(1, len(sorted_data) + 1) / len(sorted_data)
+                    
+                    ax_cdf.step(sorted_data, yvals, 
+                                where='post', 
+                                color=colors_list[idx], 
+                                lw=2, 
+                                alpha=0.8, 
+                                label=model_name)
+                    
+                    has_plotted_anything = True
                 else:
-                    print(f"Skipping density for {model_name}: Not enough data points or variance.")
+                    print(f"Skipping {model_name}: Not enough data points or variance.")
 
             if has_plotted_anything:
-                plt.title(f'Comparison of {metric} Density by Model')
-                plt.xlabel(metric)
-                plt.ylabel("Density")
-                plt.grid(True, linestyle="--", alpha=0.3)
-                plt.legend(title="Model")
-                plt.tight_layout()
+                # --- Save Density Plot ---
+                ax_den.set_title(f'Comparison of {metric} Density by Model')
+                ax_den.set_xlabel(metric)
+                ax_den.set_ylabel("Density")
+                ax_den.grid(True, linestyle="--", alpha=0.3)
+                ax_den.legend(title="Model")
+                fig_den.tight_layout()
                 
-                plot_path = f"{out_root}/{metric}_combined_density_by_model.png"
-                print(f"Saving combined density plot to {plot_path}")
-                plt.savefig(plot_path)
-                plt.close()
+                den_path = f"{out_root}/{metric}_combined_density_by_model.png"
+                print(f"Saving combined density plot to {den_path}")
+                fig_den.savefig(den_path)
+                
+                # --- Save CDF Plot ---
+                ax_cdf.set_title(f'Comparison of {metric} CDF by Model')
+                ax_cdf.set_xlabel(metric)
+                ax_cdf.set_ylabel("Cumulative Probability")
+                ax_cdf.grid(True, linestyle="--", alpha=0.3)
+                ax_cdf.legend(title="Model")
+                fig_cdf.tight_layout()
+                
+                cdf_path = f"{out_root}/{metric}_combined_cdf_by_model.png"
+                print(f"Saving combined CDF plot to {cdf_path}")
+                fig_cdf.savefig(cdf_path)
+
             else:
-                print("No models had enough data to plot density.")
-                plt.close()
+                print("No models had enough data to plot density or CDF.")
+            
+            plt.close(fig_den)
+            plt.close(fig_cdf)
 
         # ----------------------------
         # Grid Generation (Heatmap/Bar Chart logic) - Unchanged
