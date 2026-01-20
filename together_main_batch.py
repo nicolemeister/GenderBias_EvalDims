@@ -292,6 +292,15 @@ def save_and_launch(batch_requests, metadata_list, output_dir, filename_prefix, 
 
                 continue
 
+
+            # TO DO: CHECK THIS!!!             
+            # then check if the file exists in the output dir (list all the files in the output dir and check if the file exists)
+            files = os.listdir(f"/nlp/scr/nmeist/EvalDims/output_data/yin/together/batch_outputs/{model_full_name.split('/')[-1]}")
+            output_fp = f'name_{name_bundle}_job_{job_bundle}_part{part_idx:02d}.jsonl'
+            if output_fp in files:
+                print(f"File {output_fp} already exists in output dir -- NOT LAUNCHING THIS BATCH")
+                continue
+
             file_resp = client.files.upload(
                 file=jsonl_path,
                 purpose="batch-api",
@@ -594,9 +603,9 @@ if __name__ == "__main__":
             for job_bundle in JOBS:
 
                 # check if the entry exists already in /nlp/scr/nmeist/EvalDims/output_data/yin/together/batch_outputs
-                if check_if_filepath_exists(f"/nlp/scr/nmeist/EvalDims/output_data/{framework}/together/batch_outputs/{MODELS[model].split('/')[-1]}/name_{name_bundle}_job_{job_bundle}.jsonl"):
-                    print(f"Entry name_{name_bundle}_job_{job_bundle} already exists in /nlp/scr/nmeist/EvalDims/output_data/{framework}/together/batch_outputs/{MODELS[model].split('/')[-1]}")
-                    continue
+                # if check_if_filepath_exists(f"/nlp/scr/nmeist/EvalDims/output_data/{framework}/together/batch_outputs/{MODELS[model].split('/')[-1]}/name_{name_bundle}_job_{job_bundle}.jsonl"):
+                #     print(f"Entry name_{name_bundle}_job_{job_bundle} already exists in /nlp/scr/nmeist/EvalDims/output_data/{framework}/together/batch_outputs/{MODELS[model].split('/')[-1]}")
+                #     continue
 
                 config['Name']['Bundle_Name'] = name_bundle
                 config['Job']['Bundle_Name'] = job_bundle

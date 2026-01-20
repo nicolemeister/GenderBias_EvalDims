@@ -17,8 +17,8 @@ def process_armstrong():
 
     for model_key in MODELS.keys():
         model = MODELS[model_key].split("/")[-1]
-        for name in names:
-            for job in jobs:
+        for name in NAMES:
+            for job in JOBS:
                 try: 
                     output_filepath=f"/nlp/scr/nmeist/EvalDims/output_data/armstrong/together/batch_outputs/{model}/name_{name}_job_{job}.jsonl"
                     with open(output_filepath, "r", encoding="utf-8") as f:
@@ -68,8 +68,6 @@ def process_yin():
             for job_bundle in JOBS:
 
                 ''' 
-
-                TODO: IMPLEMENT THIS LOGIC -- the code below is wrong 
                 1. check if the file starts with the name_{name_bundle}_job_{job_bundle} 
                 2. if it does, check how many parts there are 
                 3. go through the parts: 

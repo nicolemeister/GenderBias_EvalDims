@@ -10,11 +10,6 @@ import statsmodels.api as sm
 from statsmodels.formula.api import mixedlm
 from utils.merge_config import merge_config
 from scipy.stats import ttest_ind
-import glob
-from collections import Counter
-from IPython.display import display, HTML
-from tqdm import tqdm
-import json
 
 
 columns = [
@@ -577,39 +572,29 @@ def analyze_yin(args, config, all_together=False):
 
     perturbation_results_filepath = 'results/{}_sampling_{}_analysis_{}.csv'.format(config['experimental_framework'], args.sampling, args.analysis)
     
+    # read the perturbation_results_filepath 
+    if not os.path.exists(perturbation_results_filepath):
+        perturbation_results_df = pd.DataFrame(columns=columns)
+        perturbation_results_df.to_csv(perturbation_results_filepath, index=False)
+    else:
+        perturbation_results_df = pd.read_csv(perturbation_results_filepath)
+
     # Outputs
     fn_ranking_detailed = perturbation_results_filepath.replace('.csv', '_detailed.csv')
     fn_ranking_gender = perturbation_results_filepath
 
-
-    # read the perturbation_results_filepath 
-    if not os.path.exists(fn_ranking_gender):
-        results_gender = pd.DataFrame(columns=columns)
-        results_gender.to_csv(fn_ranking_gender, index=False)
-    else:
-        results_gender = pd.read_csv(fn_ranking_gender)
-
-
-    # read the perturbation_results_filepath 
-    if not os.path.exists(fn_ranking_detailed):
-        results_gender = pd.DataFrame(columns=columns)
-        results_detailed.to_csv(fn_ranking_detailed, index=False)
-    else:
-        results_detailed = pd.read_csv(fn_ranking_detailed)
-
-
     # Inputs
     if all_together:
-        fn_gpt4 = f"/nlp/scr/nmeist/EvalDims/output_data/yin/together/processed_batch_outputs/{model.replace('_', '-')}/temp_1.0_names_{name_bundle}_jobresumes_{job_bundle}/*/*.json"        
+        fn_gpt4 = f'/nlp/scr/nmeist/EvalDims/output_data/yin/together/processed_batch_outputs/{model.replace('_', '-')}/temp_1.0_names_{name_bundle}_jobresumes_{job_bundle}/*/*.json'
     else:
-        fn_gpt4 = f"/nlp/scr/nmeist/EvalDims/output_data/{author}/{model.replace('_', '-')}/temp_{temp}_names_{name_bundle}_jobresumes_{job_bundle}/*/*.json"
+        fn_gpt4 = f'/nlp/scr/nmeist/EvalDims/output_data/{author}/{model.replace('_', '-')}/temp_{temp}_names_{name_bundle}_jobresumes_{job_bundle}.csv'
     
     files = glob.glob(fn_gpt4)
-
+    # TO DO: FIX THIS 
     if all_together:
-        jobs = os.listdir(f"/nlp/scr/nmeist/EvalDims/output_data/{author}/together/processed_batch_outputs/{model.replace('_', '-')}/temp_1.0_names_{name_bundle}_jobresumes_{job_bundle}")
+        jobs = os.listdir(f'/nlp/scr/nmeist/EvalDims/output_data/{author}/together/processed_batch_outputs/{model.replace('_', '-')}/temp_1.0_names_{name_bundle}_jobresumes_{job_bundle}')
     else:
-        jobs = [f for f in os.listdir(f"/nlp/scr/nmeist/EvalDims/output_data/{author}/{model.replace('_', '-')}/temp_{temp}_names_{name_bundle}_jobresumes_{job_bundle}") if not f.startswith('run_')]
+        jobs = os.listdir(f'/nlp/scr/nmeist/EvalDims/output_data/{author}/{model.replace('_', '-')}/temp_{temp}_names_{name_bundle}_jobresumes_{job_bundle}')
 
     # --- Helper Function for Gender ---
     def get_gender(demo_str):
@@ -663,96 +648,112 @@ def analyze_yin(args, config, all_together=False):
             # print(f"Error parsing {fn}: {e}")
             continue
 
-
     # --- Step 2: Generate Original Detailed CSV (By Job, Specific Demos) ---
     data_detailed = []
 
-    model_data = parsed_data
-    breakpoint()
-    for N_top in range(1, 1+1):
-        # Calculate overall top-1 agreement (just for logging purposes)
-        topistop = sum(1 for d in model_data if d['gpt_race_order'][0] == d['natural_first'])
-        print(f"Model: {model} | Top {N_top} | Natural Order Agreement: {topistop / len(model_data):.4f}")
+    print("\n--- Generating Job-Specific Detailed Analysis ---")
+    for model in ['gpt-3.5-turbo']:
+        model_data = [d for d in parsed_data if d['model'] == model]
+        
+        for N_top in range(1, 1+1):
+            # Calculate overall top-1 agreement (just for logging purposes)
+            topistop = sum(1 for d in model_data if d['gpt_race_order'][0] == d['natural_first'])
+            print(f"Model: {model} | Top {N_top} | Natural Order Agreement: {topistop / len(model_data):.4f}")
 
-        for job in jobs:
-            # Filter data for this specific job
-            job_data = [d for d in model_data if d['job'] == job]
-            
-            top_og = Counter()
-            top_gpt = Counter()
-            c = len(job_data)
-            
-            if c == 0: continue
+            for job in jobs:
+                # Filter data for this specific job
+                job_data = [d for d in model_data if d['job'] == job]
+                
+                top_og = Counter()
+                top_gpt = Counter()
+                c = len(job_data)
+                
+                if c == 0: continue
 
-            for record in job_data:
-                top_og.update(record['demo_order'][:N_top])
-                top_gpt.update(record['gpt_race_order'][:N_top])
-            
-            # Create Stats DataFrame
-            print(f"Processing Job: {job}")
-            df = pd.DataFrame(top_gpt.most_common(), columns=['demo', 'top'])
-            df_og = pd.DataFrame(top_og.most_common(), columns=['demo', 'top_og'])            
-            df = df.merge(df_og, on='demo', how='outer').fillna(0)
+                for record in job_data:
+                    top_og.update(record['demo_order'][:N_top])
+                    top_gpt.update(record['gpt_race_order'][:N_top])
+                
+                # Create Stats DataFrame
+                print(f"Processing Job: {job}")
+                df = pd.DataFrame(top_gpt.most_common(), columns=['demo', 'top'])
+                df_og = pd.DataFrame(top_og.most_common(), columns=['demo', 'top_og'])            
+                df = df.merge(df_og, on='demo', how='outer').fillna(0)
 
-            df['selection_rate'] = df['top'] / c
-            df['disparate_impact_ratio'] = df['selection_rate'] / df['selection_rate'].max()
-            
-            df['job'] = job
-            df['model'] = model
-            df['rank'] = N_top
-            
-            data_detailed.extend(df.to_dict(orient='records'))
-
+                df['selection_rate'] = df['top'] / c
+                df['disparate_impact_ratio'] = df['selection_rate'] / df['selection_rate'].max()
+                
+                df['job'] = job
+                df['model'] = model
+                df['rank'] = N_top
+                
+                data_detailed.extend(df.to_dict(orient='records'))
 
     # Save Detailed CSV
     results_detailed = pd.DataFrame(data_detailed)
     results_detailed.to_csv(fn_ranking_detailed, index=False)
     print(f"Saved detailed ranking to {fn_ranking_detailed}")
 
+
     # --- Step 3: Generate Gender Aggregate CSV (All Jobs, W vs M) ---
     data_gender = []
 
     print("\n--- Generating Gender Aggregate Analysis ---")
-
-    model_data = parsed_data
-    
-    for N_top in range(1, 1+1):
-        # No job loop here - we use all model_data
-        gender_top_og = Counter()
-        gender_top_gpt = Counter()
-        c = len(model_data)
+    for model in ['gpt-4']:
+        model_data = [d for d in parsed_data if d['model'] == model]
         
-        for record in model_data:
-            # Convert specific demos to gender
-            genders_og = [get_gender(d) for d in record['demo_order'][:N_top]]
-            genders_gpt = [get_gender(d) for d in record['gpt_race_order'][:N_top]]
+        for N_top in range(1, 1+1):
+            # No job loop here - we use all model_data
+            gender_top_og = Counter()
+            gender_top_gpt = Counter()
+            c = len(model_data)
             
-            gender_top_og.update(genders_og)
-            gender_top_gpt.update(genders_gpt)
-        
-        # Create Stats DataFrame
-        df = pd.DataFrame(gender_top_gpt.most_common(), columns=['gender', 'top'])
-        df_og = pd.DataFrame(gender_top_og.most_common(), columns=['gender', 'top_og'])
-        
-        df = df.merge(df_og, on='gender', how='outer').fillna(0)
-        
-        df['selection_rate'] = df['top'] / c
-        df['disparate_impact_ratio'] = df['selection_rate'] / df['selection_rate'].max()
-        
-        df['job'] = 'ALL' # Aggregated
-        df['model'] = model
-        df['rank'] = N_top
-        
-        print(f"Aggregated Results (Top {N_top}):")
-        display(HTML(df.sort_values(by='disparate_impact_ratio', ascending=True).reset_index(drop=1).to_html()))
-        
-        data_gender.extend(df.to_dict(orient='records'))
+            for record in model_data:
+                # Convert specific demos to gender
+                genders_og = [get_gender(d) for d in record['demo_order'][:N_top]]
+                genders_gpt = [get_gender(d) for d in record['gpt_race_order'][:N_top]]
+                
+                gender_top_og.update(genders_og)
+                gender_top_gpt.update(genders_gpt)
+            
+            # Create Stats DataFrame
+            df = pd.DataFrame(gender_top_gpt.most_common(), columns=['gender', 'top'])
+            df_og = pd.DataFrame(gender_top_og.most_common(), columns=['gender', 'top_og'])
+            
+            df = df.merge(df_og, on='gender', how='outer').fillna(0)
+            
+            df['selection_rate'] = df['top'] / c
+            df['disparate_impact_ratio'] = df['selection_rate'] / df['selection_rate'].max()
+            
+            df['job'] = 'ALL' # Aggregated
+            df['model'] = model
+            df['rank'] = N_top
+            
+            print(f"Aggregated Results (Top {N_top}):")
+            display(HTML(df.sort_values(by='disparate_impact_ratio', ascending=True).reset_index(drop=1).to_html()))
+            
+            data_gender.extend(df.to_dict(orient='records'))
 
     # Save Gender CSV
     results_gender = pd.DataFrame(data_gender)
     results_gender.to_csv(fn_ranking_gender, index=False)
     print(f"Saved gender aggregate ranking to {fn_ranking_gender}")
+    
 
+
+
+
+    
+
+    # eventually 
+    new_rows = pd.DataFrame(new_rows_list)
+    # Drop all-NA columns from new_rows to avoid FutureWarning before concatenation
+    new_rows = new_rows.dropna(axis=1, how='all')
+    # if perturbation_results_filepath doesnt exist, create a csv with the right columns
+
+    perturbation_results_df = pd.concat([perturbation_results_df, new_rows], ignore_index=True)
+    # save the results to the filepath 
+    perturbation_results_df.to_csv(perturbation_results_filepath, index=False)
     return 
 
     

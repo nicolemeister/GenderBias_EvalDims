@@ -3,7 +3,6 @@ import os
 from pathlib import Path
 from together import Together
 
-
 METADATA_PATH = Path("/nlp/scr/nmeist/EvalDims/output_data/yin/together/batch_inputs/batch_info.json")
 client = Together(api_key=os.environ["TOGETHER_API_KEY"])
 data = json.loads(METADATA_PATH.read_text())
@@ -36,10 +35,10 @@ for item in data:
     # batch = client.batches.retrieve(batch_id) # :contentReference[oaicite:5]{index=5}
 
     item["status"] = batch.status
+    breakpoint()
 
     try:
         if batch.status == "FAILED":
-            breakpoint()
             # Check for error file
             error_file_id = getattr(batch, 'error_file_id', None)
         

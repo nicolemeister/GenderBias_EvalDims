@@ -10,7 +10,7 @@ from utils.merge_config import merge_config
 from pathlib import Path
 import json
 from together import Together
-from utils.variables import MODELS, NAMES, JOBS
+from utils.variables import MODELS, NAMES, JOBS, MODELS_GPT
 
 def main():
     # read in the config file path as an argument
@@ -30,47 +30,31 @@ def main():
     args = parser.parse_args()
     
     # config_path = args.config_path
-    names = ['armstrong', 'karvonen', 'gaeb', 'lippens', 'rozado', 'wang', 'wen', 'seshadri', 'zollo', 'yin']
-    jobs = ['armstrong', 'rozado', 'wen', 'wang', 'karvonen', 'zollo', 'yin']
 
     author = args.author
     base_config_path = os.path.join('configs', f'base_{author}.yaml')
     if args.all:
-
-        for name in names:
-            for job in jobs:
-                config = yaml.load(open(base_config_path), Loader=yaml.FullLoader)
-                
-                config['Name']['Bundle_Name'] = name
-                config['Job']['Bundle_Name'] = job
-
-                analyze_results.analyze(args, config)
-
-
+        for model in MODELS_GPT.keys():
+            for name in NAMES:
+                for job in JOBS:
+                    config = yaml.load(open(base_config_path), Loader=yaml.FullLoader)
+                    config['Model']['Model_Name'] = model
+                    config['Name']['Bundle_Name'] = name
+                    config['Job']['Bundle_Name'] = job
+                    print(f"Analyzing {model} {name} {job}")
+                    analyze_results.analyze(args, config)
+                    
     if args.all_together:
+        for model in MODELS.keys():
+            for name in NAMES:
+                for job in JOBS:
+                    config = yaml.load(open(base_config_path), Loader=yaml.FullLoader)
+                    config['Model']['Model_Name'] = model
+                    config['Name']['Bundle_Name'] = name
+                    config['Job']['Bundle_Name'] = job
 
-
-        METADATA_PATH = Path(f"/nlp/scr/nmeist/EvalDims/output_data/{author}/together/batch_inputs/batch_info.json")
-
-        client = Together(api_key=os.environ["TOGETHER_API_KEY"])
-
-        data = json.loads(METADATA_PATH.read_text())
-
-        for item in data:
-            config = yaml.load(open(base_config_path), Loader=yaml.FullLoader)
-
-            batch_id = item["batch_id"]
-            # grab the name and job value from parsing the filepath (e.g., '/nlp/scr/nmeist/EvalDims/output_data/armstrong/together/batch_inputs/batch_input_armstrong_armstrong_meta_llama_Meta_Llama_3.1_8B_Instruct_Turbo.jsonl')
-
-            name = item["file_path"].split("/")[-1].split("_")[2]
-            job = item["file_path"].split("/")[-1].split("_")[3]
-            model = item["model"].split("/")[-1]
-
-            config['Model']['Model_Name'] = model
-            config['Name']['Bundle_Name'] = name
-            config['Job']['Bundle_Name'] = job 
-            print(f"Analyzing {model} {name} {job}")
-            analyze_results.analyze(args, config, all_together=True)
+                    print(f"Analyzing {model} {name} {job}")
+                    analyze_results.analyze(args, config, all_together=True)
 
     if not args.all:
         # config = merge_config(args.config_path, args.overlay_config_path)

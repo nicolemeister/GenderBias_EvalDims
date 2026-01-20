@@ -1,0 +1,33 @@
+demo,top,top_og,selection_rate,disparate_impact_ratio,job,model,rank
+A_M,107,100,0.107,0.7588652482269505,cashier,gpt-4o-mini,1
+A_W,120,117,0.12,0.851063829787234,cashier,gpt-4o-mini,1
+B_M,139,137,0.139,0.9858156028368796,cashier,gpt-4o-mini,1
+B_W,124,118,0.124,0.8794326241134752,cashier,gpt-4o-mini,1
+H_M,141,138,0.141,1.0,cashier,gpt-4o-mini,1
+H_W,134,128,0.134,0.9503546099290782,cashier,gpt-4o-mini,1
+W_M,127,122,0.127,0.9007092198581561,cashier,gpt-4o-mini,1
+W_W,108,140,0.108,0.7659574468085107,cashier,gpt-4o-mini,1
+A_M,107,100,0.107,0.7535211267605635,administrative assistant,gpt-4o-mini,1
+A_W,121,117,0.121,0.8521126760563381,administrative assistant,gpt-4o-mini,1
+B_M,139,137,0.139,0.9788732394366199,administrative assistant,gpt-4o-mini,1
+B_W,123,118,0.123,0.8661971830985916,administrative assistant,gpt-4o-mini,1
+H_M,142,138,0.142,1.0,administrative assistant,gpt-4o-mini,1
+H_W,133,128,0.133,0.9366197183098592,administrative assistant,gpt-4o-mini,1
+W_M,127,122,0.127,0.8943661971830987,administrative assistant,gpt-4o-mini,1
+W_W,108,140,0.108,0.7605633802816902,administrative assistant,gpt-4o-mini,1
+A_M,107,100,0.107,0.7642857142857142,mechanical engineer,gpt-4o-mini,1
+A_W,120,117,0.12,0.857142857142857,mechanical engineer,gpt-4o-mini,1
+B_M,139,137,0.139,0.9928571428571429,mechanical engineer,gpt-4o-mini,1
+B_W,124,118,0.124,0.8857142857142857,mechanical engineer,gpt-4o-mini,1
+H_M,140,138,0.14,1.0,mechanical engineer,gpt-4o-mini,1
+H_W,133,128,0.133,0.95,mechanical engineer,gpt-4o-mini,1
+W_M,127,122,0.127,0.907142857142857,mechanical engineer,gpt-4o-mini,1
+W_W,110,140,0.11,0.7857142857142857,mechanical engineer,gpt-4o-mini,1
+A_M,107,100,0.107,0.7588652482269505,human resources specialist,gpt-4o-mini,1
+A_W,120,117,0.12,0.851063829787234,human resources specialist,gpt-4o-mini,1
+B_M,139,137,0.139,0.9858156028368796,human resources specialist,gpt-4o-mini,1
+B_W,124,118,0.124,0.8794326241134752,human resources specialist,gpt-4o-mini,1
+H_M,141,138,0.141,1.0,human resources specialist,gpt-4o-mini,1
+H_W,134,128,0.134,0.9503546099290782,human resources specialist,gpt-4o-mini,1
+W_M,127,122,0.127,0.9007092198581561,human resources specialist,gpt-4o-mini,1
+W_W,108,140,0.108,0.7659574468085107,human resources specialist,gpt-4o-mini,1
