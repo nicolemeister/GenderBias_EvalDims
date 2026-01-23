@@ -10,6 +10,8 @@ from together import Together
 from utils.names import Names   
 from utils.jobs import Jobs
 from utils.variables import MODELS, NAMES, JOBS
+import pandas as pd
+
 
 # -----------------------------------------------------------------------------
 # CONSTANTS & CONFIG
@@ -297,9 +299,12 @@ def save_and_launch(batch_requests, metadata_list, output_dir, filename_prefix, 
             # then check if the file exists in the output dir (list all the files in the output dir and check if the file exists)
             files = os.listdir(f"/nlp/scr/nmeist/EvalDims/output_data/yin/together/batch_outputs/{model_full_name.split('/')[-1]}")
             output_fp = f'name_{name_bundle}_job_{job_bundle}_part{part_idx:02d}.jsonl'
+            
+            '''
             if output_fp in files:
                 print(f"File {output_fp} already exists in output dir -- NOT LAUNCHING THIS BATCH")
                 continue
+            '''
 
             file_resp = client.files.upload(
                 file=jsonl_path,
@@ -426,7 +431,7 @@ def generate_armstrong_batch_inputs(config):
 # YIN FRAMEWORK GENERATION
 # -----------------------------------------------------------------------------
 
-def generate_yin_batch_inputs(config):
+def generate_yin_batch_inputs(config, launch_all_jobs=True, jobs_to_relaunch=None):
     """
     Generates requests for Yin framework.
     Returns requests list and metadata list.
@@ -439,6 +444,12 @@ def generate_yin_batch_inputs(config):
     demos2names = names_obj.get_names(config['Name']['Bundle_Name'], config['experimental_framework'])
     jobs_data, job_descriptions, resumes_data = jobs_obj.get_jobs_resumes(id=config['Job']['Bundle_Name'], exp_framework=config['experimental_framework'])
     
+    if not launch_all_jobs:
+        jobs_data = [job for job in jobs_data if job in jobs_to_relaunch]
+        job_descriptions = {job: job_descriptions[job] for job in jobs_data}
+        resumes_data = {job: resumes_data[job] for job in jobs_data}
+    
+
     # Resolve Model
     model_short = config['Model']['Model_Name']
     model_full = MODELS[model_short]
@@ -583,6 +594,12 @@ if __name__ == "__main__":
         action='store_true', 
         help='If set, upload and launch the batch to Together AI'
     )
+    parser.add_argument(
+        '--relaunch', 
+        action='store_true', 
+        default=False, 
+        help='If set, check the list of things to relaunch and only let the code happen if it fits one of the conditions.'
+    )
 
     args = parser.parse_args()
 
@@ -597,6 +614,12 @@ if __name__ == "__main__":
     
     print(f"Framework detected: {framework}")
 
+    relaunch_path = '/nlp/scr/nmeist/EvalDims/misc/output_structure_violations.csv'
+    relaunch_df = pd.read_csv(relaunch_path)
+
+    jobs_to_relaunch=None
+    launch_all_jobs=True
+
     for model in MODELS.keys():
         config['Model']['Model_Name'] = model.replace(' ', '_')
         for name_bundle in NAMES:
@@ -607,6 +630,18 @@ if __name__ == "__main__":
                 #     print(f"Entry name_{name_bundle}_job_{job_bundle} already exists in /nlp/scr/nmeist/EvalDims/output_data/{framework}/together/batch_outputs/{MODELS[model].split('/')[-1]}")
                 #     continue
 
+                if args.relaunch:
+                    if relaunch_df[(relaunch_df['name_bundle'] == name_bundle) & (relaunch_df['job_bundle'] == job_bundle) & (relaunch_df['model'] == MODELS[model].split('/')[-1])].shape[0] > 0:
+                        print(f"Entry name_{name_bundle}_job_{job_bundle}_{model} need to be relaunched.")
+                        jobs_to_relaunch = relaunch_df[(relaunch_df['name_bundle'] == name_bundle) & (relaunch_df['job_bundle'] == job_bundle) & (relaunch_df['model'] == MODELS[model].split('/')[-1])]['job_name'].tolist()
+                        if any(isinstance(job, str) and 'temp_1.0_names_' in job for job in jobs_to_relaunch):
+                            launch_all_jobs = True
+                        else:
+                            launch_all_jobs = False
+                    else:
+                        print(f"Entry name_{name_bundle}_job_{job_bundle}_{model} does not need to be relaunched.")
+                        continue
+
                 config['Name']['Bundle_Name'] = name_bundle
                 config['Job']['Bundle_Name'] = job_bundle
                 print(f"Generating {name_bundle} {job_bundle}")
@@ -615,7 +650,7 @@ if __name__ == "__main__":
                 
                 # 2. Select Generator
                 if framework == 'yin':
-                    requests, meta, out_dir, prefix, model_full = generate_yin_batch_inputs(config)
+                    requests, meta, out_dir, prefix, model_full = generate_yin_batch_inputs(config, launch_all_jobs=launch_all_jobs, jobs_to_relaunch=jobs_to_relaunch)
                 elif framework == 'armstrong':
                     requests, meta, out_dir, prefix, model_full = generate_armstrong_batch_inputs(config)
                 else:

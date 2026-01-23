@@ -16,7 +16,9 @@ def main():
     parser.add_argument('--name', type=str, help='Name of the bundle.')
     parser.add_argument('--job', type=str, help='job of the bundle.')
     parser.add_argument('--model', type=str, default='gpt-4o-mini', help='model to use.')
-    args = parser.parse_args()  
+    args = parser.parse_args() 
+    
+     
     config = yaml.load(open(args.base_config_path), Loader=yaml.FullLoader)
     config['Name']['Bundle_Name'] = args.name
     config['Job']['Bundle_Name'] = args.job

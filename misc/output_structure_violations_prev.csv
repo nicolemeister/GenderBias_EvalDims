@@ -1,0 +1,177 @@
+model,name_bundle,job_bundle,job_name,num_files
+Llama-3.3-70B-Instruct-Turbo,gaeb,karvonen,         SALES ASSOCIATE      ,201
+Llama-3.3-70B-Instruct-Turbo,gaeb,karvonen,         TEACHER      ,20
+Llama-3.3-70B-Instruct-Turbo,seshadri,armstrong,mechanical engineer,20
+Llama-3.3-70B-Instruct-Turbo,seshadri,armstrong,human resources specialist,40
+Llama-3.3-70B-Instruct-Turbo,seshadri,armstrong,administrative assistant,40
+Llama-3.3-70B-Instruct-Turbo,seshadri,armstrong,cashier,20
+Llama-3.3-70B-Instruct-Turbo,lippens,wen,Engineering Technician,60
+Llama-3.3-70B-Instruct-Turbo,lippens,wen,Healthcare Recruiter,971
+Llama-3.3-70B-Instruct-Turbo,lippens,wen,Chef,278
+Llama-3.3-70B-Instruct-Turbo,rozado,wen,Chef,242
+Llama-3.3-70B-Instruct-Turbo,rozado,wen,Engineering Technician,20
+Llama-3.3-70B-Instruct-Turbo,lippens,karvonen,         CONSULTANT      ,975
+Llama-3.3-70B-Instruct-Turbo,wen,karvonen,         ACCOUNTANT      ,978
+Llama-3.3-70B-Instruct-Turbo,rozado,yin,temp_1.0_names_rozado_jobresumes_yin,"Expected 4 folders, found 3"
+Llama-3.3-70B-Instruct-Turbo,rozado,yin,software engineer,20
+Llama-3.3-70B-Instruct-Turbo,rozado,yin,HR specialist,40
+Llama-3.3-70B-Instruct-Turbo,rozado,yin,retail,20
+Llama-3.3-70B-Instruct-Turbo,wang,armstrong,administrative assistant,40
+Llama-3.3-70B-Instruct-Turbo,wang,armstrong,human resources specialist,60
+Llama-3.3-70B-Instruct-Turbo,wang,armstrong,cashier,40
+Llama-3.3-70B-Instruct-Turbo,wang,armstrong,mechanical engineer,20
+Llama-3.3-70B-Instruct-Turbo,gaeb,rozado,real estate agent,300
+Llama-3.3-70B-Instruct-Turbo,karvonen,wang,temp_1.0_names_karvonen_jobresumes_wang,"Expected 4 folders, found 3"
+Llama-3.3-70B-Instruct-Turbo,karvonen,wang,CONSTRUCTION MANAGER,203
+Llama-3.3-70B-Instruct-Turbo,karvonen,wang,FINANCE MANAGER,80
+Llama-3.3-70B-Instruct-Turbo,karvonen,wang,DIRECTOR OF FINANCE,20
+Llama-3.3-70B-Instruct-Turbo,wen,wen,Healthcare Recruiter,979
+Llama-3.3-70B-Instruct-Turbo,karvonen,rozado,real estate agent,699
+Llama-3.3-70B-Instruct-Turbo,karvonen,rozado,accountant,40
+Llama-3.3-70B-Instruct-Turbo,karvonen,rozado,network administrator,60
+Llama-3.3-70B-Instruct-Turbo,karvonen,rozado,chemist,80
+Llama-3.3-70B-Instruct-Turbo,armstrong,karvonen,         ACCOUNTANT      ,600
+Llama-3.3-70B-Instruct-Turbo,armstrong,karvonen,         TEACHER      ,60
+Llama-3.3-70B-Instruct-Turbo,armstrong,karvonen,         CONSULTANT      ,40
+Llama-3.3-70B-Instruct-Turbo,armstrong,karvonen,         SALES ASSOCIATE      ,60
+Llama-3.3-70B-Instruct-Turbo,wang,karvonen,temp_1.0_names_wang_jobresumes_karvonen,"Expected 4 folders, found 3"
+Llama-3.3-70B-Instruct-Turbo,wang,karvonen,         SALES ASSOCIATE      ,40
+Llama-3.3-70B-Instruct-Turbo,wang,karvonen,         TEACHER      ,20
+Llama-3.3-70B-Instruct-Turbo,wang,karvonen,         ACCOUNTANT      ,20
+Llama-3.3-70B-Instruct-Turbo,seshadri,karvonen,         SALES ASSOCIATE      ,20
+Llama-3.3-70B-Instruct-Turbo,seshadri,karvonen,         CONSULTANT      ,40
+Llama-3.3-70B-Instruct-Turbo,seshadri,karvonen,         TEACHER      ,40
+Llama-3.3-70B-Instruct-Turbo,seshadri,karvonen,         ACCOUNTANT      ,60
+Llama-3.3-70B-Instruct-Turbo,karvonen,zollo,Social Worker,80
+Llama-3.3-70B-Instruct-Turbo,karvonen,zollo,Police Officer,40
+Llama-3.3-70B-Instruct-Turbo,wang,wen,Healthcare Recruiter,549
+Llama-3.3-70B-Instruct-Turbo,wang,wen,Chef,284
+Llama-3.3-70B-Instruct-Turbo,wang,wen,Engineering Technician,20
+Llama-3.3-70B-Instruct-Turbo,wang,wang,CONSTRUCTION MANAGER,927
+Llama-3.3-70B-Instruct-Turbo,wang,yin,financial analyst,926
+Llama-3.3-70B-Instruct-Turbo,wang,yin,software engineer,899
+Llama-3.3-70B-Instruct-Turbo,wang,rozado,real estate agent,300
+Llama-3.3-70B-Instruct-Turbo,rozado,wang,DIRECTOR OF FINANCE,60
+Llama-3.3-70B-Instruct-Turbo,rozado,wang,FINANCE MANAGER,40
+Llama-3.3-70B-Instruct-Turbo,rozado,wang,FINANCE DIRECTOR,20
+Llama-3.3-70B-Instruct-Turbo,rozado,wang,CONSTRUCTION MANAGER,104
+Llama-3.3-70B-Instruct-Turbo,seshadri,wang,CONSTRUCTION MANAGER,240
+Llama-3.3-70B-Instruct-Turbo,seshadri,wang,FINANCE MANAGER,40
+Llama-3.3-70B-Instruct-Turbo,seshadri,wang,FINANCE DIRECTOR,40
+Llama-3.3-70B-Instruct-Turbo,seshadri,wang,DIRECTOR OF FINANCE,100
+Llama-3.3-70B-Instruct-Turbo,wang,zollo,Social Worker,80
+Llama-3.3-70B-Instruct-Turbo,wang,zollo,Police Officer,40
+Llama-3.3-70B-Instruct-Turbo,lippens,wang,DIRECTOR OF FINANCE,928
+Llama-3.3-70B-Instruct-Turbo,lippens,wang,FINANCE MANAGER,972
+Llama-3.3-70B-Instruct-Turbo,lippens,wang,FINANCE DIRECTOR,926
+Llama-3.3-70B-Instruct-Turbo,lippens,wang,CONSTRUCTION MANAGER,704
+Llama-3.3-70B-Instruct-Turbo,karvonen,karvonen,         CONSULTANT      ,974
+Llama-3.3-70B-Instruct-Turbo,karvonen,karvonen,         TEACHER      ,40
+Llama-3.3-70B-Instruct-Turbo,karvonen,karvonen,         SALES ASSOCIATE      ,225
+Llama-3.3-70B-Instruct-Turbo,karvonen,karvonen,         ACCOUNTANT      ,974
+Llama-3.3-70B-Instruct-Turbo,yin,karvonen,         SALES ASSOCIATE      ,186
+Llama-3.3-70B-Instruct-Turbo,yin,karvonen,         TEACHER      ,50
+Llama-3.3-70B-Instruct-Turbo,yin,wen,Chef,972
+Mistral-7B-Instruct-v0.3,wang,karvonen,         SALES ASSOCIATE      ,580
+Mistral-7B-Instruct-v0.3,wang,karvonen,         TEACHER      ,400
+Mistral-7B-Instruct-v0.3,lippens,karvonen,         SALES ASSOCIATE      ,629
+Mistral-7B-Instruct-v0.3,lippens,karvonen,         TEACHER      ,550
+Mistral-7B-Instruct-v0.3,yin,wen,Chef,623
+Mistral-7B-Instruct-v0.3,yin,wen,Engineering Technician,480
+Mistral-7B-Instruct-v0.3,yin,wen,Healthcare Recruiter,800
+Mistral-7B-Instruct-v0.3,rozado,wang,CONSTRUCTION MANAGER,960
+Mistral-7B-Instruct-v0.3,seshadri,karvonen,         SALES ASSOCIATE      ,660
+Mistral-7B-Instruct-v0.3,seshadri,karvonen,         TEACHER      ,509
+Mistral-7B-Instruct-v0.3,wen,rozado,real estate agent,580
+Mistral-7B-Instruct-v0.3,karvonen,wang,DIRECTOR OF FINANCE,600
+Mistral-7B-Instruct-v0.3,karvonen,wang,FINANCE DIRECTOR,440
+Mistral-7B-Instruct-v0.3,karvonen,wang,CONSTRUCTION MANAGER,460
+Mistral-7B-Instruct-v0.3,karvonen,wang,FINANCE MANAGER,440
+Mistral-7B-Instruct-v0.3,seshadri,zollo,Social Worker,600
+Mistral-7B-Instruct-v0.3,seshadri,zollo,Police Officer,460
+Mistral-7B-Instruct-v0.3,zollo,rozado,real estate agent,500
+Mistral-7B-Instruct-v0.3,rozado,karvonen,         SALES ASSOCIATE      ,460
+Mistral-7B-Instruct-v0.3,rozado,karvonen,         TEACHER      ,530
+Mistral-7B-Instruct-v0.3,zollo,wen,Healthcare Recruiter,700
+Mistral-7B-Instruct-v0.3,gaeb,karvonen,         SALES ASSOCIATE      ,589
+Mistral-7B-Instruct-v0.3,gaeb,karvonen,         TEACHER      ,531
+Mistral-7B-Instruct-v0.3,zollo,armstrong,cashier,460
+Mistral-7B-Instruct-v0.3,zollo,armstrong,mechanical engineer,500
+Mistral-7B-Instruct-v0.3,zollo,armstrong,administrative assistant,520
+Mistral-7B-Instruct-v0.3,zollo,armstrong,human resources specialist,440
+Mistral-7B-Instruct-v0.3,seshadri,armstrong,cashier,480
+Mistral-7B-Instruct-v0.3,seshadri,armstrong,human resources specialist,460
+Mistral-7B-Instruct-v0.3,seshadri,armstrong,administrative assistant,440
+Mistral-7B-Instruct-v0.3,seshadri,armstrong,mechanical engineer,320
+Mistral-7B-Instruct-v0.3,lippens,rozado,real estate agent,540
+Mistral-7B-Instruct-v0.3,armstrong,wang,CONSTRUCTION MANAGER,860
+Mistral-7B-Instruct-v0.3,wang,wang,CONSTRUCTION MANAGER,880
+Mistral-7B-Instruct-v0.3,yin,zollo,Social Worker,480
+Mistral-7B-Instruct-v0.3,yin,zollo,Police Officer,480
+Mistral-7B-Instruct-v0.3,gaeb,zollo,Police Officer,520
+Mistral-7B-Instruct-v0.3,gaeb,zollo,Social Worker,500
+Mistral-7B-Instruct-v0.3,gaeb,rozado,real estate agent,600
+Mistral-7B-Instruct-v0.3,rozado,rozado,real estate agent,600
+Mistral-7B-Instruct-v0.3,zollo,karvonen,         TEACHER      ,530
+Mistral-7B-Instruct-v0.3,zollo,karvonen,         SALES ASSOCIATE      ,520
+Mistral-7B-Instruct-v0.3,lippens,wen,Engineering Technician,520
+Mistral-7B-Instruct-v0.3,lippens,wen,Chef,603
+Mistral-7B-Instruct-v0.3,armstrong,rozado,network administrator,320
+Mistral-7B-Instruct-v0.3,armstrong,rozado,chemist,480
+Mistral-7B-Instruct-v0.3,armstrong,rozado,accountant,540
+Mistral-7B-Instruct-v0.3,armstrong,rozado,real estate agent,820
+Mistral-Small-24B-Instruct-2501,gaeb,yin,temp_1.0_names_gaeb_jobresumes_yin,"Expected 4 folders, found 2"
+Mistral-Small-24B-Instruct-2501,gaeb,yin,financial analyst,20
+Mistral-Small-24B-Instruct-2501,gaeb,yin,HR specialist,20
+Mistral-Small-24B-Instruct-2501,yin,wen,Healthcare Recruiter,549
+Mistral-Small-24B-Instruct-2501,rozado,karvonen,temp_1.0_names_rozado_jobresumes_karvonen,"Expected 4 folders, found 3"
+Mistral-Small-24B-Instruct-2501,rozado,karvonen,         CONSULTANT      ,20
+Mistral-Small-24B-Instruct-2501,rozado,karvonen,         SALES ASSOCIATE      ,811
+Mistral-Small-24B-Instruct-2501,lippens,wang,temp_1.0_names_lippens_jobresumes_wang,"Expected 4 folders, found 2"
+Mistral-Small-24B-Instruct-2501,lippens,wang,FINANCE DIRECTOR,20
+Mistral-Small-24B-Instruct-2501,lippens,wang,CONSTRUCTION MANAGER,182
+Mistral-Small-24B-Instruct-2501,yin,yin,HR specialist,972
+Mistral-Small-24B-Instruct-2501,gaeb,wen,Chef,244
+Mistral-Small-24B-Instruct-2501,gaeb,wen,Finance Manager,896
+Mistral-Small-24B-Instruct-2501,gaeb,wen,Engineering Technician,20
+Mistral-Small-24B-Instruct-2501,gaeb,wen,Healthcare Recruiter,924
+Mistral-Small-24B-Instruct-2501,seshadri,karvonen,         SALES ASSOCIATE      ,189
+Mistral-Small-24B-Instruct-2501,seshadri,karvonen,         TEACHER      ,20
+Mistral-Small-24B-Instruct-2501,gaeb,armstrong,human resources specialist,972
+Mistral-Small-24B-Instruct-2501,wen,zollo,Police Officer,20
+Mistral-Small-24B-Instruct-2501,wen,zollo,Social Worker,20
+Mistral-Small-24B-Instruct-2501,karvonen,rozado,temp_1.0_names_karvonen_jobresumes_rozado,"Expected 4 folders, found 2"
+Mistral-Small-24B-Instruct-2501,karvonen,rozado,network administrator,20
+Mistral-Small-24B-Instruct-2501,karvonen,rozado,real estate agent,701
+Mistral-Small-24B-Instruct-2501,lippens,wen,Finance Manager,16
+Mistral-Small-24B-Instruct-2501,lippens,wen,Chef,760
+Mistral-Small-24B-Instruct-2501,lippens,wen,Healthcare Recruiter,490
+Mistral-Small-24B-Instruct-2501,rozado,rozado,real estate agent,339
+Mistral-Small-24B-Instruct-2501,zollo,karvonen,         CONSULTANT      ,40
+Mistral-Small-24B-Instruct-2501,zollo,karvonen,         ACCOUNTANT      ,20
+Mistral-Small-24B-Instruct-2501,zollo,karvonen,         SALES ASSOCIATE      ,830
+Mistral-Small-24B-Instruct-2501,wang,rozado,real estate agent,319
+Mistral-Small-24B-Instruct-2501,armstrong,rozado,temp_1.0_names_armstrong_jobresumes_rozado,"Expected 4 folders, found 2"
+Mistral-Small-24B-Instruct-2501,armstrong,rozado,network administrator,20
+Mistral-Small-24B-Instruct-2501,armstrong,rozado,real estate agent,701
+Mistral-Small-24B-Instruct-2501,lippens,zollo,temp_1.0_names_lippens_jobresumes_zollo,"Expected 2 folders, found 1"
+Mistral-Small-24B-Instruct-2501,lippens,zollo,Police Officer,60
+Mistral-Small-24B-Instruct-2501,gaeb,karvonen,         TEACHER      ,40
+Mistral-Small-24B-Instruct-2501,gaeb,karvonen,         SALES ASSOCIATE      ,188
+Mistral-Small-24B-Instruct-2501,wen,karvonen,         TEACHER      ,400
+Mistral-Small-24B-Instruct-2501,karvonen,karvonen,temp_1.0_names_karvonen_jobresumes_karvonen,"Expected 4 folders, found 3"
+Mistral-Small-24B-Instruct-2501,karvonen,karvonen,         SALES ASSOCIATE      ,810
+Mistral-Small-24B-Instruct-2501,karvonen,karvonen,         CONSULTANT      ,20
+Mistral-Small-24B-Instruct-2501,gaeb,wang,temp_1.0_names_gaeb_jobresumes_wang,"Expected 4 folders, found 2"
+Mistral-Small-24B-Instruct-2501,gaeb,wang,CONSTRUCTION MANAGER,168
+Mistral-Small-24B-Instruct-2501,gaeb,wang,FINANCE DIRECTOR,20
+Mistral-Small-24B-Instruct-2501,wang,wen,Healthcare Recruiter,471
+Mistral-Small-24B-Instruct-2501,wang,wen,Chef,756
+Mistral-Small-24B-Instruct-2501,wang,wen,Finance Manager,80
+Mistral-Small-24B-Instruct-2501,karvonen,wen,Engineering Technician,40
+Mistral-Small-24B-Instruct-2501,karvonen,wen,Chef,264
+Meta-Llama-3.1-8B-Instruct-Turbo,wen,karvonen,         CONSULTANT      ,960
+Meta-Llama-3.1-8B-Instruct-Turbo,wen,wen,Chef,960
+Meta-Llama-3.1-8B-Instruct-Turbo,rozado,wen,Healthcare Recruiter,940
+Meta-Llama-3.1-8B-Instruct-Turbo,rozado,wen,Finance Manager,960
+Meta-Llama-3.1-8B-Instruct-Turbo,zollo,rozado,real estate agent,979

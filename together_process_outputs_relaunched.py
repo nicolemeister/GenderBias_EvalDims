@@ -10,17 +10,15 @@ import re
 import argparse
 from utils.variables import MODELS, NAMES, JOBS
 
-
-
 def process_armstrong():
-    batch_outputs_dir = '/nlp/scr/nmeist/EvalDims/output_data/armstrong/together/batch_outputs'
+    batch_outputs_dir = '/nlp/scr/nmeist/EvalDims/output_data/armstrong/together/relaunched_batch_outputs'
 
     for model_key in MODELS.keys():
         model = MODELS[model_key].split("/")[-1]
         for name in NAMES:
             for job in JOBS:
                 try: 
-                    output_filepath=f"/nlp/scr/nmeist/EvalDims/output_data/armstrong/together/batch_outputs/{model}/name_{name}_job_{job}.jsonl"
+                    output_filepath=f"/nlp/scr/nmeist/EvalDims/output_data/armstrong/together/relaunched_batch_outputs/{model}/name_{name}_job_{job}.jsonl"
                     with open(output_filepath, "r", encoding="utf-8") as f:
                         pass 
                 except Exception as e:
@@ -55,9 +53,9 @@ def process_armstrong():
 
                 os.makedirs(f"/nlp/scr/nmeist/EvalDims/output_data/armstrong/together/processed_batch_outputs/{model}", exist_ok=True)
                 df.to_csv(f"/nlp/scr/nmeist/EvalDims/output_data/armstrong/together/processed_batch_outputs/{model}/name_{name}_job_{job}.csv", index=False)
-
+    
 def process_yin():
-    batch_outputs_dir = '/nlp/scr/nmeist/EvalDims/output_data/yin/together/batch_outputs'
+    batch_outputs_dir = '/nlp/scr/nmeist/EvalDims/output_data/yin/together/relaunched_batch_outputs'
     processed_batch_outputs_dir = '/nlp/scr/nmeist/EvalDims/output_data/yin/together/processed_batch_outputs'
 
     for model_key in MODELS.keys():
@@ -132,6 +130,7 @@ def process_yin():
                                 '_jobresumes_' + job_bundle + '/' + job + '/')
                             os.makedirs(dir_out, exist_ok=True)
                             fn_out = os.path.join(dir_out, f"run_{i}.json")
+                            print(f"Saving to {fn_out}")
                             with open(fn_out, "w", encoding="utf-8") as f:
                                 f.write(json.dumps(records))
 

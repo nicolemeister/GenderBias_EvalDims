@@ -1,0 +1,8 @@
+model,name_bundle,job_bundle,job_name,num_files
+Llama-3.3-70B-Instruct-Turbo,seshadri,armstrong,administrative assistant,855
+Llama-3.3-70B-Instruct-Turbo,armstrong,karvonen,         ACCOUNTANT      ,600
+Llama-3.3-70B-Instruct-Turbo,armstrong,karvonen,         CONSULTANT      ,40
+Llama-3.3-70B-Instruct-Turbo,armstrong,karvonen,         SALES ASSOCIATE      ,796
+Llama-3.3-70B-Instruct-Turbo,seshadri,wang,FINANCE DIRECTOR,870
+Mistral-7B-Instruct-v0.3,karvonen,wang,FINANCE MANAGER,893
+Mistral-7B-Instruct-v0.3,seshadri,armstrong,mechanical engineer,898
