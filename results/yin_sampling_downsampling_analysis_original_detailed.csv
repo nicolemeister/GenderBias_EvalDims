@@ -6219,3 +6219,1271 @@ W_M,482,516,0.48490945674044267,0.9414062499999999,FINANCE DIRECTOR,meta-llama-3
 W_W,512,478,0.5150905432595574,1.0,FINANCE DIRECTOR,meta-llama-3.3-70b-instruct-turbo,1,lippens,wang
 W_M,479,507,0.49027635619242577,0.9618473895582329,CONSTRUCTION MANAGER,meta-llama-3.3-70b-instruct-turbo,1,lippens,wang
 W_W,498,470,0.5097236438075742,1.0,CONSTRUCTION MANAGER,meta-llama-3.3-70b-instruct-turbo,1,lippens,wang
+W_M,494,515,0.49748237663645517,0.9899799599198398,         ACCOUNTANT      ,meta-llama-3.3-70b-instruct-turbo,1,lippens,karvonen
+W_W,499,478,0.5025176233635448,1.0,         ACCOUNTANT      ,meta-llama-3.3-70b-instruct-turbo,1,lippens,karvonen
+W_M,489,519,0.489,0.9569471624266145,         TEACHER      ,meta-llama-3.3-70b-instruct-turbo,1,lippens,karvonen
+W_W,511,481,0.511,1.0,         TEACHER      ,meta-llama-3.3-70b-instruct-turbo,1,lippens,karvonen
+W_M,520,518,0.5205205205205206,1.0,         CONSULTANT      ,meta-llama-3.3-70b-instruct-turbo,1,lippens,karvonen
+W_W,479,481,0.4794794794794795,0.9211538461538461,         CONSULTANT      ,meta-llama-3.3-70b-instruct-turbo,1,lippens,karvonen
+W_M,443,515,0.4465725806451613,0.8069216757741348,         SALES ASSOCIATE      ,meta-llama-3.3-70b-instruct-turbo,1,lippens,karvonen
+W_W,549,477,0.5534274193548387,1.0,         SALES ASSOCIATE      ,meta-llama-3.3-70b-instruct-turbo,1,lippens,karvonen
+W_M,426,519,0.426,0.7421602787456446,Police Officer,meta-llama-3.3-70b-instruct-turbo,1,lippens,zollo
+W_W,574,481,0.574,1.0,Police Officer,meta-llama-3.3-70b-instruct-turbo,1,lippens,zollo
+W_M,388,519,0.388,0.6339869281045752,Social Worker,meta-llama-3.3-70b-instruct-turbo,1,lippens,zollo
+W_W,612,481,0.612,1.0,Social Worker,meta-llama-3.3-70b-instruct-turbo,1,lippens,zollo
+W_M,410,519,0.41041041041041043,0.6960950764006791,retail,meta-llama-3.3-70b-instruct-turbo,1,lippens,yin
+W_W,589,480,0.5895895895895896,1.0,retail,meta-llama-3.3-70b-instruct-turbo,1,lippens,yin
+W_M,479,519,0.479,0.9193857965451055,software engineer,meta-llama-3.3-70b-instruct-turbo,1,lippens,yin
+W_W,521,481,0.521,1.0,software engineer,meta-llama-3.3-70b-instruct-turbo,1,lippens,yin
+W_M,478,518,0.47847847847847846,0.9174664107485604,financial analyst,meta-llama-3.3-70b-instruct-turbo,1,lippens,yin
+W_W,521,481,0.5215215215215215,1.0,financial analyst,meta-llama-3.3-70b-instruct-turbo,1,lippens,yin
+W_M,440,519,0.4408817635270541,0.7885304659498208,HR specialist,meta-llama-3.3-70b-instruct-turbo,1,lippens,yin
+W_W,558,479,0.5591182364729459,1.0,HR specialist,meta-llama-3.3-70b-instruct-turbo,1,lippens,yin
+A_M,93,100,0.093,0.5812499999999999,mechanical engineer,mistral-7b-v0.3,1,armstrong,armstrong
+A_W,122,117,0.122,0.7625,mechanical engineer,mistral-7b-v0.3,1,armstrong,armstrong
+B_M,160,137,0.16,1.0,mechanical engineer,mistral-7b-v0.3,1,armstrong,armstrong
+B_W,120,118,0.12,0.75,mechanical engineer,mistral-7b-v0.3,1,armstrong,armstrong
+H_M,135,138,0.135,0.84375,mechanical engineer,mistral-7b-v0.3,1,armstrong,armstrong
+H_W,122,128,0.122,0.7625,mechanical engineer,mistral-7b-v0.3,1,armstrong,armstrong
+W_M,121,122,0.121,0.75625,mechanical engineer,mistral-7b-v0.3,1,armstrong,armstrong
+W_W,127,140,0.127,0.79375,mechanical engineer,mistral-7b-v0.3,1,armstrong,armstrong
+A_M,102,100,0.102,0.7132867132867133,administrative assistant,mistral-7b-v0.3,1,armstrong,armstrong
+A_W,127,117,0.127,0.8881118881118882,administrative assistant,mistral-7b-v0.3,1,armstrong,armstrong
+B_M,143,137,0.143,1.0,administrative assistant,mistral-7b-v0.3,1,armstrong,armstrong
+B_W,128,118,0.128,0.8951048951048952,administrative assistant,mistral-7b-v0.3,1,armstrong,armstrong
+H_M,138,138,0.138,0.9650349650349652,administrative assistant,mistral-7b-v0.3,1,armstrong,armstrong
+H_W,122,128,0.122,0.8531468531468532,administrative assistant,mistral-7b-v0.3,1,armstrong,armstrong
+W_M,121,122,0.121,0.8461538461538461,administrative assistant,mistral-7b-v0.3,1,armstrong,armstrong
+W_W,119,140,0.119,0.8321678321678322,administrative assistant,mistral-7b-v0.3,1,armstrong,armstrong
+A_M,105,100,0.105,0.7342657342657343,human resources specialist,mistral-7b-v0.3,1,armstrong,armstrong
+A_W,121,117,0.121,0.8461538461538461,human resources specialist,mistral-7b-v0.3,1,armstrong,armstrong
+B_M,143,137,0.143,1.0,human resources specialist,mistral-7b-v0.3,1,armstrong,armstrong
+B_W,123,118,0.123,0.8601398601398602,human resources specialist,mistral-7b-v0.3,1,armstrong,armstrong
+H_M,142,138,0.142,0.993006993006993,human resources specialist,mistral-7b-v0.3,1,armstrong,armstrong
+H_W,125,128,0.125,0.8741258741258742,human resources specialist,mistral-7b-v0.3,1,armstrong,armstrong
+W_M,119,122,0.119,0.8321678321678322,human resources specialist,mistral-7b-v0.3,1,armstrong,armstrong
+W_W,122,140,0.122,0.8531468531468532,human resources specialist,mistral-7b-v0.3,1,armstrong,armstrong
+A_M,102,100,0.102,0.6754966887417219,cashier,mistral-7b-v0.3,1,armstrong,armstrong
+A_W,118,117,0.118,0.7814569536423841,cashier,mistral-7b-v0.3,1,armstrong,armstrong
+B_M,151,137,0.151,1.0,cashier,mistral-7b-v0.3,1,armstrong,armstrong
+B_W,123,118,0.123,0.8145695364238411,cashier,mistral-7b-v0.3,1,armstrong,armstrong
+H_M,133,138,0.133,0.880794701986755,cashier,mistral-7b-v0.3,1,armstrong,armstrong
+H_W,124,128,0.124,0.8211920529801324,cashier,mistral-7b-v0.3,1,armstrong,armstrong
+W_M,110,122,0.11,0.728476821192053,cashier,mistral-7b-v0.3,1,armstrong,armstrong
+W_W,139,140,0.139,0.9205298013245035,cashier,mistral-7b-v0.3,1,armstrong,armstrong
+A_M,101,96,0.10802139037433155,0.7593984962406015,network administrator,mistral-7b-v0.3,1,armstrong,rozado
+A_W,119,111,0.12727272727272726,0.894736842105263,network administrator,mistral-7b-v0.3,1,armstrong,rozado
+B_M,132,128,0.1411764705882353,0.9924812030075189,network administrator,mistral-7b-v0.3,1,armstrong,rozado
+B_W,116,113,0.12406417112299466,0.8721804511278196,network administrator,mistral-7b-v0.3,1,armstrong,rozado
+H_M,133,128,0.14224598930481283,1.0,network administrator,mistral-7b-v0.3,1,armstrong,rozado
+H_W,115,120,0.12299465240641712,0.8646616541353384,network administrator,mistral-7b-v0.3,1,armstrong,rozado
+W_M,116,113,0.12406417112299466,0.8721804511278196,network administrator,mistral-7b-v0.3,1,armstrong,rozado
+W_W,103,126,0.11016042780748662,0.7744360902255639,network administrator,mistral-7b-v0.3,1,armstrong,rozado
+A_M,104,97,0.10993657505285412,0.7703703703703703,chemist,mistral-7b-v0.3,1,armstrong,rozado
+A_W,112,105,0.11839323467230443,0.8296296296296296,chemist,mistral-7b-v0.3,1,armstrong,rozado
+B_M,135,133,0.1427061310782241,1.0,chemist,mistral-7b-v0.3,1,armstrong,rozado
+B_W,115,111,0.12156448202959831,0.8518518518518519,chemist,mistral-7b-v0.3,1,armstrong,rozado
+H_M,134,128,0.1416490486257928,0.9925925925925925,chemist,mistral-7b-v0.3,1,armstrong,rozado
+H_W,111,119,0.11733615221987315,0.8222222222222222,chemist,mistral-7b-v0.3,1,armstrong,rozado
+W_M,118,117,0.12473572938689217,0.874074074074074,chemist,mistral-7b-v0.3,1,armstrong,rozado
+W_W,117,136,0.12367864693446089,0.8666666666666666,chemist,mistral-7b-v0.3,1,armstrong,rozado
+A_M,110,99,0.11258955987717502,0.7857142857142856,accountant,mistral-7b-v0.3,1,armstrong,rozado
+A_W,117,114,0.11975435005117707,0.8357142857142856,accountant,mistral-7b-v0.3,1,armstrong,rozado
+B_M,132,133,0.13510747185261002,0.9428571428571427,accountant,mistral-7b-v0.3,1,armstrong,rozado
+B_W,117,115,0.11975435005117707,0.8357142857142856,accountant,mistral-7b-v0.3,1,armstrong,rozado
+H_M,140,136,0.14329580348004095,1.0,accountant,mistral-7b-v0.3,1,armstrong,rozado
+H_W,126,123,0.12896622313203684,0.8999999999999999,accountant,mistral-7b-v0.3,1,armstrong,rozado
+W_M,118,117,0.12077789150460594,0.8428571428571429,accountant,mistral-7b-v0.3,1,armstrong,rozado
+W_W,117,140,0.11975435005117707,0.8357142857142856,accountant,mistral-7b-v0.3,1,armstrong,rozado
+A_M,103,98,0.10467479674796748,0.7463768115942029,real estate agent,mistral-7b-v0.3,1,armstrong,rozado
+A_W,127,117,0.1290650406504065,0.9202898550724636,real estate agent,mistral-7b-v0.3,1,armstrong,rozado
+B_M,137,133,0.13922764227642276,0.9927536231884057,real estate agent,mistral-7b-v0.3,1,armstrong,rozado
+B_W,123,116,0.125,0.8913043478260869,real estate agent,mistral-7b-v0.3,1,armstrong,rozado
+H_M,138,134,0.1402439024390244,1.0,real estate agent,mistral-7b-v0.3,1,armstrong,rozado
+H_W,121,126,0.12296747967479675,0.8768115942028984,real estate agent,mistral-7b-v0.3,1,armstrong,rozado
+W_M,125,122,0.12703252032520326,0.9057971014492754,real estate agent,mistral-7b-v0.3,1,armstrong,rozado
+W_W,110,138,0.11178861788617886,0.7971014492753622,real estate agent,mistral-7b-v0.3,1,armstrong,rozado
+A_M,129,100,0.129,0.8164556962025317,Engineering Technician,mistral-7b-v0.3,1,armstrong,wen
+A_W,132,117,0.132,0.8354430379746836,Engineering Technician,mistral-7b-v0.3,1,armstrong,wen
+B_M,158,137,0.158,1.0,Engineering Technician,mistral-7b-v0.3,1,armstrong,wen
+B_W,124,118,0.124,0.7848101265822784,Engineering Technician,mistral-7b-v0.3,1,armstrong,wen
+H_M,133,138,0.133,0.8417721518987342,Engineering Technician,mistral-7b-v0.3,1,armstrong,wen
+H_W,107,128,0.107,0.6772151898734177,Engineering Technician,mistral-7b-v0.3,1,armstrong,wen
+W_M,121,122,0.121,0.7658227848101266,Engineering Technician,mistral-7b-v0.3,1,armstrong,wen
+W_W,96,140,0.096,0.6075949367088608,Engineering Technician,mistral-7b-v0.3,1,armstrong,wen
+A_M,105,100,0.105,0.7394366197183099,Healthcare Recruiter,mistral-7b-v0.3,1,armstrong,wen
+A_W,136,117,0.136,0.9577464788732396,Healthcare Recruiter,mistral-7b-v0.3,1,armstrong,wen
+B_M,138,137,0.138,0.9718309859154931,Healthcare Recruiter,mistral-7b-v0.3,1,armstrong,wen
+B_W,124,118,0.124,0.8732394366197184,Healthcare Recruiter,mistral-7b-v0.3,1,armstrong,wen
+H_M,142,138,0.142,1.0,Healthcare Recruiter,mistral-7b-v0.3,1,armstrong,wen
+H_W,123,128,0.123,0.8661971830985916,Healthcare Recruiter,mistral-7b-v0.3,1,armstrong,wen
+W_M,122,122,0.122,0.8591549295774649,Healthcare Recruiter,mistral-7b-v0.3,1,armstrong,wen
+W_W,110,140,0.11,0.7746478873239437,Healthcare Recruiter,mistral-7b-v0.3,1,armstrong,wen
+A_M,112,100,0.112,0.7943262411347519,Finance Manager,mistral-7b-v0.3,1,armstrong,wen
+A_W,127,117,0.127,0.9007092198581561,Finance Manager,mistral-7b-v0.3,1,armstrong,wen
+B_M,140,137,0.14,0.9929078014184399,Finance Manager,mistral-7b-v0.3,1,armstrong,wen
+B_W,119,118,0.119,0.8439716312056738,Finance Manager,mistral-7b-v0.3,1,armstrong,wen
+H_M,141,138,0.141,1.0,Finance Manager,mistral-7b-v0.3,1,armstrong,wen
+H_W,130,128,0.13,0.921985815602837,Finance Manager,mistral-7b-v0.3,1,armstrong,wen
+W_M,135,122,0.135,0.9574468085106385,Finance Manager,mistral-7b-v0.3,1,armstrong,wen
+W_W,96,140,0.096,0.6808510638297873,Finance Manager,mistral-7b-v0.3,1,armstrong,wen
+A_M,118,100,0.118,0.7919463087248322,Chef,mistral-7b-v0.3,1,armstrong,wen
+A_W,110,117,0.11,0.738255033557047,Chef,mistral-7b-v0.3,1,armstrong,wen
+B_M,141,137,0.141,0.9463087248322147,Chef,mistral-7b-v0.3,1,armstrong,wen
+B_W,128,118,0.128,0.8590604026845639,Chef,mistral-7b-v0.3,1,armstrong,wen
+H_M,149,138,0.149,1.0,Chef,mistral-7b-v0.3,1,armstrong,wen
+H_W,127,128,0.127,0.8523489932885907,Chef,mistral-7b-v0.3,1,armstrong,wen
+W_M,129,122,0.129,0.865771812080537,Chef,mistral-7b-v0.3,1,armstrong,wen
+W_W,98,140,0.098,0.6577181208053692,Chef,mistral-7b-v0.3,1,armstrong,wen
+A_M,129,96,0.13109756097560976,0.8775510204081634,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,armstrong,wang
+A_W,119,114,0.1209349593495935,0.8095238095238096,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,armstrong,wang
+B_M,147,137,0.14939024390243902,1.0,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,armstrong,wang
+B_W,129,114,0.13109756097560976,0.8775510204081634,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,armstrong,wang
+H_M,133,135,0.13516260162601626,0.9047619047619048,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,armstrong,wang
+H_W,121,128,0.12296747967479675,0.8231292517006803,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,armstrong,wang
+W_M,110,121,0.11178861788617886,0.7482993197278912,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,armstrong,wang
+W_W,96,139,0.0975609756097561,0.653061224489796,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,armstrong,wang
+A_M,139,100,0.139,0.9025974025974027,FINANCE DIRECTOR,mistral-7b-v0.3,1,armstrong,wang
+A_W,113,117,0.113,0.7337662337662338,FINANCE DIRECTOR,mistral-7b-v0.3,1,armstrong,wang
+B_M,154,137,0.154,1.0,FINANCE DIRECTOR,mistral-7b-v0.3,1,armstrong,wang
+B_W,133,118,0.133,0.8636363636363636,FINANCE DIRECTOR,mistral-7b-v0.3,1,armstrong,wang
+H_M,146,138,0.146,0.948051948051948,FINANCE DIRECTOR,mistral-7b-v0.3,1,armstrong,wang
+H_W,110,128,0.11,0.7142857142857143,FINANCE DIRECTOR,mistral-7b-v0.3,1,armstrong,wang
+W_M,122,122,0.122,0.7922077922077922,FINANCE DIRECTOR,mistral-7b-v0.3,1,armstrong,wang
+W_W,83,140,0.083,0.538961038961039,FINANCE DIRECTOR,mistral-7b-v0.3,1,armstrong,wang
+A_M,108,100,0.108,0.7397260273972603,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,armstrong,wang
+A_W,138,117,0.138,0.9452054794520549,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,armstrong,wang
+B_M,146,137,0.146,1.0,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,armstrong,wang
+B_W,132,118,0.132,0.904109589041096,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,armstrong,wang
+H_M,134,138,0.134,0.9178082191780823,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,armstrong,wang
+H_W,116,128,0.116,0.7945205479452055,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,armstrong,wang
+W_M,112,122,0.112,0.767123287671233,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,armstrong,wang
+W_W,114,140,0.114,0.7808219178082193,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,armstrong,wang
+A_M,127,100,0.127,0.8943661971830987,FINANCE MANAGER,mistral-7b-v0.3,1,armstrong,wang
+A_W,131,117,0.131,0.9225352112676057,FINANCE MANAGER,mistral-7b-v0.3,1,armstrong,wang
+B_M,142,137,0.142,1.0,FINANCE MANAGER,mistral-7b-v0.3,1,armstrong,wang
+B_W,134,118,0.134,0.9436619718309861,FINANCE MANAGER,mistral-7b-v0.3,1,armstrong,wang
+H_M,133,138,0.133,0.9366197183098592,FINANCE MANAGER,mistral-7b-v0.3,1,armstrong,wang
+H_W,106,128,0.106,0.7464788732394366,FINANCE MANAGER,mistral-7b-v0.3,1,armstrong,wang
+W_M,107,122,0.107,0.7535211267605635,FINANCE MANAGER,mistral-7b-v0.3,1,armstrong,wang
+W_W,120,140,0.12,0.8450704225352114,FINANCE MANAGER,mistral-7b-v0.3,1,armstrong,wang
+A_M,105,100,0.105,0.6818181818181818,         TEACHER      ,mistral-7b-v0.3,1,armstrong,karvonen
+A_W,154,117,0.154,1.0,         TEACHER      ,mistral-7b-v0.3,1,armstrong,karvonen
+B_M,142,137,0.142,0.922077922077922,         TEACHER      ,mistral-7b-v0.3,1,armstrong,karvonen
+B_W,134,118,0.134,0.8701298701298702,         TEACHER      ,mistral-7b-v0.3,1,armstrong,karvonen
+H_M,121,138,0.121,0.7857142857142857,         TEACHER      ,mistral-7b-v0.3,1,armstrong,karvonen
+H_W,133,128,0.133,0.8636363636363636,         TEACHER      ,mistral-7b-v0.3,1,armstrong,karvonen
+W_M,96,122,0.096,0.6233766233766234,         TEACHER      ,mistral-7b-v0.3,1,armstrong,karvonen
+W_W,115,140,0.115,0.7467532467532468,         TEACHER      ,mistral-7b-v0.3,1,armstrong,karvonen
+A_M,118,100,0.11811811811811812,0.8137931034482758,         CONSULTANT      ,mistral-7b-v0.3,1,armstrong,karvonen
+A_W,121,117,0.12112112112112113,0.8344827586206897,         CONSULTANT      ,mistral-7b-v0.3,1,armstrong,karvonen
+B_M,145,137,0.14514514514514515,1.0,         CONSULTANT      ,mistral-7b-v0.3,1,armstrong,karvonen
+B_W,127,118,0.12712712712712712,0.8758620689655172,         CONSULTANT      ,mistral-7b-v0.3,1,armstrong,karvonen
+H_M,136,137,0.13613613613613615,0.9379310344827587,         CONSULTANT      ,mistral-7b-v0.3,1,armstrong,karvonen
+H_W,102,128,0.1021021021021021,0.7034482758620689,         CONSULTANT      ,mistral-7b-v0.3,1,armstrong,karvonen
+W_M,133,122,0.13313313313313313,0.9172413793103448,         CONSULTANT      ,mistral-7b-v0.3,1,armstrong,karvonen
+W_W,117,140,0.11711711711711711,0.8068965517241379,         CONSULTANT      ,mistral-7b-v0.3,1,armstrong,karvonen
+A_M,123,100,0.123,0.8723404255319149,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,armstrong,karvonen
+A_W,123,117,0.123,0.8723404255319149,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,armstrong,karvonen
+B_M,130,137,0.13,0.921985815602837,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,armstrong,karvonen
+B_W,141,118,0.141,1.0,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,armstrong,karvonen
+H_M,114,138,0.114,0.8085106382978724,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,armstrong,karvonen
+H_W,129,128,0.129,0.9148936170212767,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,armstrong,karvonen
+W_M,115,122,0.115,0.8156028368794327,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,armstrong,karvonen
+W_W,125,140,0.125,0.8865248226950355,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,armstrong,karvonen
+A_M,123,100,0.123,0.8145695364238411,         ACCOUNTANT      ,mistral-7b-v0.3,1,armstrong,karvonen
+A_W,115,117,0.115,0.7615894039735099,         ACCOUNTANT      ,mistral-7b-v0.3,1,armstrong,karvonen
+B_M,151,137,0.151,1.0,         ACCOUNTANT      ,mistral-7b-v0.3,1,armstrong,karvonen
+B_W,119,118,0.119,0.7880794701986755,         ACCOUNTANT      ,mistral-7b-v0.3,1,armstrong,karvonen
+H_M,134,138,0.134,0.8874172185430464,         ACCOUNTANT      ,mistral-7b-v0.3,1,armstrong,karvonen
+H_W,128,128,0.128,0.847682119205298,         ACCOUNTANT      ,mistral-7b-v0.3,1,armstrong,karvonen
+W_M,124,122,0.124,0.8211920529801324,         ACCOUNTANT      ,mistral-7b-v0.3,1,armstrong,karvonen
+W_W,106,140,0.106,0.7019867549668874,         ACCOUNTANT      ,mistral-7b-v0.3,1,armstrong,karvonen
+A_M,97,100,0.097,0.6689655172413794,Social Worker,mistral-7b-v0.3,1,armstrong,zollo
+A_W,122,117,0.122,0.8413793103448276,Social Worker,mistral-7b-v0.3,1,armstrong,zollo
+B_M,145,137,0.145,1.0,Social Worker,mistral-7b-v0.3,1,armstrong,zollo
+B_W,133,118,0.133,0.917241379310345,Social Worker,mistral-7b-v0.3,1,armstrong,zollo
+H_M,144,138,0.144,0.993103448275862,Social Worker,mistral-7b-v0.3,1,armstrong,zollo
+H_W,122,128,0.122,0.8413793103448276,Social Worker,mistral-7b-v0.3,1,armstrong,zollo
+W_M,122,122,0.122,0.8413793103448276,Social Worker,mistral-7b-v0.3,1,armstrong,zollo
+W_W,115,140,0.115,0.7931034482758622,Social Worker,mistral-7b-v0.3,1,armstrong,zollo
+A_M,113,100,0.113,0.7243589743589743,Police Officer,mistral-7b-v0.3,1,armstrong,zollo
+A_W,118,117,0.118,0.7564102564102564,Police Officer,mistral-7b-v0.3,1,armstrong,zollo
+B_M,156,137,0.156,1.0,Police Officer,mistral-7b-v0.3,1,armstrong,zollo
+B_W,132,118,0.132,0.8461538461538461,Police Officer,mistral-7b-v0.3,1,armstrong,zollo
+H_M,137,138,0.137,0.8782051282051283,Police Officer,mistral-7b-v0.3,1,armstrong,zollo
+H_W,114,128,0.114,0.7307692307692308,Police Officer,mistral-7b-v0.3,1,armstrong,zollo
+W_M,123,122,0.123,0.7884615384615384,Police Officer,mistral-7b-v0.3,1,armstrong,zollo
+W_W,107,140,0.107,0.6858974358974359,Police Officer,mistral-7b-v0.3,1,armstrong,zollo
+A_M,111,100,0.111,0.6768292682926829,software engineer,mistral-7b-v0.3,1,armstrong,yin
+A_W,155,117,0.155,0.9451219512195121,software engineer,mistral-7b-v0.3,1,armstrong,yin
+B_M,164,137,0.164,1.0,software engineer,mistral-7b-v0.3,1,armstrong,yin
+B_W,146,118,0.146,0.8902439024390243,software engineer,mistral-7b-v0.3,1,armstrong,yin
+H_M,121,138,0.121,0.7378048780487805,software engineer,mistral-7b-v0.3,1,armstrong,yin
+H_W,106,128,0.106,0.646341463414634,software engineer,mistral-7b-v0.3,1,armstrong,yin
+W_M,99,122,0.099,0.6036585365853658,software engineer,mistral-7b-v0.3,1,armstrong,yin
+W_W,98,140,0.098,0.5975609756097561,software engineer,mistral-7b-v0.3,1,armstrong,yin
+A_M,108,100,0.108,0.7448275862068966,financial analyst,mistral-7b-v0.3,1,armstrong,yin
+A_W,138,117,0.138,0.9517241379310346,financial analyst,mistral-7b-v0.3,1,armstrong,yin
+B_M,145,137,0.145,1.0,financial analyst,mistral-7b-v0.3,1,armstrong,yin
+B_W,127,118,0.127,0.8758620689655173,financial analyst,mistral-7b-v0.3,1,armstrong,yin
+H_M,140,138,0.14,0.9655172413793105,financial analyst,mistral-7b-v0.3,1,armstrong,yin
+H_W,111,128,0.111,0.7655172413793104,financial analyst,mistral-7b-v0.3,1,armstrong,yin
+W_M,102,122,0.102,0.7034482758620689,financial analyst,mistral-7b-v0.3,1,armstrong,yin
+W_W,129,140,0.129,0.8896551724137932,financial analyst,mistral-7b-v0.3,1,armstrong,yin
+A_M,87,100,0.087,0.49714285714285716,retail,mistral-7b-v0.3,1,armstrong,yin
+A_W,136,117,0.136,0.7771428571428572,retail,mistral-7b-v0.3,1,armstrong,yin
+B_M,175,137,0.175,1.0,retail,mistral-7b-v0.3,1,armstrong,yin
+B_W,143,118,0.143,0.8171428571428572,retail,mistral-7b-v0.3,1,armstrong,yin
+H_M,112,138,0.112,0.64,retail,mistral-7b-v0.3,1,armstrong,yin
+H_W,127,128,0.127,0.7257142857142858,retail,mistral-7b-v0.3,1,armstrong,yin
+W_M,94,122,0.094,0.5371428571428571,retail,mistral-7b-v0.3,1,armstrong,yin
+W_W,126,140,0.126,0.7200000000000001,retail,mistral-7b-v0.3,1,armstrong,yin
+A_M,117,100,0.117,0.7177914110429447,HR specialist,mistral-7b-v0.3,1,armstrong,yin
+A_W,126,117,0.126,0.7730061349693251,HR specialist,mistral-7b-v0.3,1,armstrong,yin
+B_M,150,137,0.15,0.920245398773006,HR specialist,mistral-7b-v0.3,1,armstrong,yin
+B_W,163,118,0.163,1.0,HR specialist,mistral-7b-v0.3,1,armstrong,yin
+H_M,117,138,0.117,0.7177914110429447,HR specialist,mistral-7b-v0.3,1,armstrong,yin
+H_W,134,128,0.134,0.8220858895705522,HR specialist,mistral-7b-v0.3,1,armstrong,yin
+W_M,92,122,0.092,0.5644171779141104,HR specialist,mistral-7b-v0.3,1,armstrong,yin
+W_W,101,140,0.101,0.6196319018404908,HR specialist,mistral-7b-v0.3,1,armstrong,yin
+W_M,515,519,0.515,1.0,human resources specialist,mistral-7b-v0.3,1,rozado,armstrong
+W_W,485,481,0.485,0.9417475728155339,human resources specialist,mistral-7b-v0.3,1,rozado,armstrong
+W_M,504,519,0.504,1.0,cashier,mistral-7b-v0.3,1,rozado,armstrong
+W_W,496,481,0.496,0.9841269841269841,cashier,mistral-7b-v0.3,1,rozado,armstrong
+W_M,512,519,0.512,1.0,administrative assistant,mistral-7b-v0.3,1,rozado,armstrong
+W_W,488,481,0.488,0.953125,administrative assistant,mistral-7b-v0.3,1,rozado,armstrong
+W_M,514,519,0.514,1.0,mechanical engineer,mistral-7b-v0.3,1,rozado,armstrong
+W_W,486,481,0.486,0.9455252918287937,mechanical engineer,mistral-7b-v0.3,1,rozado,armstrong
+W_M,512,519,0.512,1.0,accountant,mistral-7b-v0.3,1,rozado,rozado
+W_W,488,481,0.488,0.953125,accountant,mistral-7b-v0.3,1,rozado,rozado
+W_M,520,519,0.52,1.0,chemist,mistral-7b-v0.3,1,rozado,rozado
+W_W,480,481,0.48,0.923076923076923,chemist,mistral-7b-v0.3,1,rozado,rozado
+W_M,519,519,0.519,1.0,network administrator,mistral-7b-v0.3,1,rozado,rozado
+W_W,481,481,0.481,0.9267822736030827,network administrator,mistral-7b-v0.3,1,rozado,rozado
+W_M,482,501,0.5005192107995846,1.0,real estate agent,mistral-7b-v0.3,1,rozado,rozado
+W_W,481,462,0.4994807892004154,0.9979253112033196,real estate agent,mistral-7b-v0.3,1,rozado,rozado
+W_M,512,519,0.512,1.0,Healthcare Recruiter,mistral-7b-v0.3,1,rozado,wen
+W_W,488,481,0.488,0.953125,Healthcare Recruiter,mistral-7b-v0.3,1,rozado,wen
+W_M,527,519,0.527,1.0,Finance Manager,mistral-7b-v0.3,1,rozado,wen
+W_W,473,481,0.473,0.8975332068311195,Finance Manager,mistral-7b-v0.3,1,rozado,wen
+W_M,491,519,0.491,0.9646365422396856,Chef,mistral-7b-v0.3,1,rozado,wen
+W_W,509,481,0.509,1.0,Chef,mistral-7b-v0.3,1,rozado,wen
+W_M,514,519,0.514,1.0,Engineering Technician,mistral-7b-v0.3,1,rozado,wen
+W_W,486,481,0.486,0.9455252918287937,Engineering Technician,mistral-7b-v0.3,1,rozado,wen
+W_M,505,519,0.505,1.0,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,rozado,wang
+W_W,495,481,0.495,0.9801980198019802,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,rozado,wang
+W_M,478,519,0.478,0.9157088122605364,FINANCE MANAGER,mistral-7b-v0.3,1,rozado,wang
+W_W,522,481,0.522,1.0,FINANCE MANAGER,mistral-7b-v0.3,1,rozado,wang
+W_M,493,518,0.4934934934934935,0.9743083003952568,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,rozado,wang
+W_W,506,481,0.5065065065065065,1.0,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,rozado,wang
+W_M,551,519,0.5515515515515516,1.0,FINANCE DIRECTOR,mistral-7b-v0.3,1,rozado,wang
+W_W,448,480,0.44844844844844844,0.8130671506352087,FINANCE DIRECTOR,mistral-7b-v0.3,1,rozado,wang
+W_M,512,519,0.512,1.0,         CONSULTANT      ,mistral-7b-v0.3,1,rozado,karvonen
+W_W,488,481,0.488,0.953125,         CONSULTANT      ,mistral-7b-v0.3,1,rozado,karvonen
+W_M,516,519,0.516,1.0,         ACCOUNTANT      ,mistral-7b-v0.3,1,rozado,karvonen
+W_W,484,481,0.484,0.937984496124031,         ACCOUNTANT      ,mistral-7b-v0.3,1,rozado,karvonen
+W_M,469,498,0.48651452282157676,0.9474747474747476,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,rozado,karvonen
+W_W,495,466,0.5134854771784232,1.0,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,rozado,karvonen
+W_M,405,501,0.4205607476635514,0.7258064516129032,         TEACHER      ,mistral-7b-v0.3,1,rozado,karvonen
+W_W,558,462,0.5794392523364486,1.0,         TEACHER      ,mistral-7b-v0.3,1,rozado,karvonen
+W_M,493,519,0.493,0.9723865877712031,Social Worker,mistral-7b-v0.3,1,rozado,zollo
+W_W,507,481,0.507,1.0,Social Worker,mistral-7b-v0.3,1,rozado,zollo
+W_M,519,519,0.519,1.0,Police Officer,mistral-7b-v0.3,1,rozado,zollo
+W_W,481,481,0.481,0.9267822736030827,Police Officer,mistral-7b-v0.3,1,rozado,zollo
+W_M,432,519,0.432,0.7605633802816902,HR specialist,mistral-7b-v0.3,1,rozado,yin
+W_W,568,481,0.568,1.0,HR specialist,mistral-7b-v0.3,1,rozado,yin
+W_M,516,519,0.516,1.0,software engineer,mistral-7b-v0.3,1,rozado,yin
+W_W,484,481,0.484,0.937984496124031,software engineer,mistral-7b-v0.3,1,rozado,yin
+W_M,473,519,0.473,0.8975332068311195,financial analyst,mistral-7b-v0.3,1,rozado,yin
+W_W,527,481,0.527,1.0,financial analyst,mistral-7b-v0.3,1,rozado,yin
+W_M,434,518,0.4344344344344344,0.7681415929203539,retail,mistral-7b-v0.3,1,rozado,yin
+W_W,565,481,0.5655655655655656,1.0,retail,mistral-7b-v0.3,1,rozado,yin
+W_M,500,511,0.5,1.0,cashier,mistral-7b-v0.3,1,wen,armstrong
+W_W,500,489,0.5,1.0,cashier,mistral-7b-v0.3,1,wen,armstrong
+W_M,509,511,0.509,1.0,mechanical engineer,mistral-7b-v0.3,1,wen,armstrong
+W_W,491,489,0.491,0.9646365422396856,mechanical engineer,mistral-7b-v0.3,1,wen,armstrong
+W_M,505,511,0.505,1.0,administrative assistant,mistral-7b-v0.3,1,wen,armstrong
+W_W,495,489,0.495,0.9801980198019802,administrative assistant,mistral-7b-v0.3,1,wen,armstrong
+W_M,498,511,0.498,0.9920318725099602,human resources specialist,mistral-7b-v0.3,1,wen,armstrong
+W_W,502,489,0.502,1.0,human resources specialist,mistral-7b-v0.3,1,wen,armstrong
+W_M,510,511,0.51,1.0,accountant,mistral-7b-v0.3,1,wen,rozado
+W_W,490,489,0.49,0.9607843137254901,accountant,mistral-7b-v0.3,1,wen,rozado
+W_M,511,511,0.511,1.0,chemist,mistral-7b-v0.3,1,wen,rozado
+W_W,489,489,0.489,0.9569471624266145,chemist,mistral-7b-v0.3,1,wen,rozado
+W_M,468,469,0.508695652173913,1.0,real estate agent,mistral-7b-v0.3,1,wen,rozado
+W_W,452,451,0.49130434782608695,0.9658119658119659,real estate agent,mistral-7b-v0.3,1,wen,rozado
+W_M,512,511,0.512,1.0,network administrator,mistral-7b-v0.3,1,wen,rozado
+W_W,488,489,0.488,0.953125,network administrator,mistral-7b-v0.3,1,wen,rozado
+W_M,511,511,0.511,1.0,Chef,mistral-7b-v0.3,1,wen,wen
+W_W,489,489,0.489,0.9569471624266145,Chef,mistral-7b-v0.3,1,wen,wen
+W_M,504,511,0.504,1.0,Engineering Technician,mistral-7b-v0.3,1,wen,wen
+W_W,496,489,0.496,0.9841269841269841,Engineering Technician,mistral-7b-v0.3,1,wen,wen
+W_M,509,511,0.509,1.0,Healthcare Recruiter,mistral-7b-v0.3,1,wen,wen
+W_W,491,489,0.491,0.9646365422396856,Healthcare Recruiter,mistral-7b-v0.3,1,wen,wen
+W_M,514,511,0.514,1.0,Finance Manager,mistral-7b-v0.3,1,wen,wen
+W_W,486,489,0.486,0.9455252918287937,Finance Manager,mistral-7b-v0.3,1,wen,wen
+W_M,499,511,0.499,0.9960079840319361,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,wen,wang
+W_W,501,489,0.501,1.0,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,wen,wang
+W_M,537,511,0.537,1.0,FINANCE DIRECTOR,mistral-7b-v0.3,1,wen,wang
+W_W,463,489,0.463,0.8621973929236499,FINANCE DIRECTOR,mistral-7b-v0.3,1,wen,wang
+W_M,488,511,0.488,0.953125,FINANCE MANAGER,mistral-7b-v0.3,1,wen,wang
+W_W,512,489,0.512,1.0,FINANCE MANAGER,mistral-7b-v0.3,1,wen,wang
+W_M,492,511,0.4924924924924925,0.9704142011834319,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,wen,wang
+W_W,507,488,0.5075075075075075,1.0,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,wen,wang
+W_M,419,511,0.419,0.7211703958691911,         TEACHER      ,mistral-7b-v0.3,1,wen,karvonen
+W_W,581,489,0.581,1.0,         TEACHER      ,mistral-7b-v0.3,1,wen,karvonen
+W_M,518,511,0.518,1.0,         ACCOUNTANT      ,mistral-7b-v0.3,1,wen,karvonen
+W_W,482,489,0.482,0.9305019305019304,         ACCOUNTANT      ,mistral-7b-v0.3,1,wen,karvonen
+W_M,504,511,0.504,1.0,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,wen,karvonen
+W_W,496,489,0.496,0.9841269841269841,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,wen,karvonen
+W_M,509,511,0.509,1.0,         CONSULTANT      ,mistral-7b-v0.3,1,wen,karvonen
+W_W,491,489,0.491,0.9646365422396856,         CONSULTANT      ,mistral-7b-v0.3,1,wen,karvonen
+W_M,519,511,0.519,1.0,Police Officer,mistral-7b-v0.3,1,wen,zollo
+W_W,481,489,0.481,0.9267822736030827,Police Officer,mistral-7b-v0.3,1,wen,zollo
+W_M,491,511,0.491,0.9646365422396856,Social Worker,mistral-7b-v0.3,1,wen,zollo
+W_W,509,489,0.509,1.0,Social Worker,mistral-7b-v0.3,1,wen,zollo
+W_M,427,511,0.427,0.7452006980802792,retail,mistral-7b-v0.3,1,wen,yin
+W_W,573,489,0.573,1.0,retail,mistral-7b-v0.3,1,wen,yin
+W_M,479,511,0.4794794794794795,0.9211538461538461,financial analyst,mistral-7b-v0.3,1,wen,yin
+W_W,520,488,0.5205205205205206,1.0,financial analyst,mistral-7b-v0.3,1,wen,yin
+W_M,425,511,0.425,0.7391304347826088,HR specialist,mistral-7b-v0.3,1,wen,yin
+W_W,575,489,0.575,1.0,HR specialist,mistral-7b-v0.3,1,wen,yin
+W_M,506,511,0.506,1.0,software engineer,mistral-7b-v0.3,1,wen,yin
+W_W,494,489,0.494,0.9762845849802372,software engineer,mistral-7b-v0.3,1,wen,yin
+W_M,509,521,0.509,1.0,mechanical engineer,mistral-7b-v0.3,1,wang,armstrong
+W_W,491,479,0.491,0.9646365422396856,mechanical engineer,mistral-7b-v0.3,1,wang,armstrong
+W_M,508,521,0.508,1.0,administrative assistant,mistral-7b-v0.3,1,wang,armstrong
+W_W,492,479,0.492,0.968503937007874,administrative assistant,mistral-7b-v0.3,1,wang,armstrong
+W_M,509,521,0.509,1.0,human resources specialist,mistral-7b-v0.3,1,wang,armstrong
+W_W,491,479,0.491,0.9646365422396856,human resources specialist,mistral-7b-v0.3,1,wang,armstrong
+W_M,510,521,0.51,1.0,cashier,mistral-7b-v0.3,1,wang,armstrong
+W_W,490,479,0.49,0.9607843137254901,cashier,mistral-7b-v0.3,1,wang,armstrong
+W_M,504,521,0.504,1.0,network administrator,mistral-7b-v0.3,1,wang,rozado
+W_W,496,479,0.496,0.9841269841269841,network administrator,mistral-7b-v0.3,1,wang,rozado
+W_M,492,521,0.4924924924924925,0.9704142011834319,accountant,mistral-7b-v0.3,1,wang,rozado
+W_W,507,478,0.5075075075075075,1.0,accountant,mistral-7b-v0.3,1,wang,rozado
+W_M,518,521,0.518,1.0,chemist,mistral-7b-v0.3,1,wang,rozado
+W_W,482,479,0.482,0.9305019305019304,chemist,mistral-7b-v0.3,1,wang,rozado
+W_M,502,521,0.502,1.0,real estate agent,mistral-7b-v0.3,1,wang,rozado
+W_W,498,479,0.498,0.9920318725099602,real estate agent,mistral-7b-v0.3,1,wang,rozado
+W_M,509,520,0.5105315947843531,1.0,Engineering Technician,mistral-7b-v0.3,1,wang,wen
+W_W,488,477,0.48946840521564694,0.9587426326129665,Engineering Technician,mistral-7b-v0.3,1,wang,wen
+W_M,514,519,0.5150300601202404,1.0,Chef,mistral-7b-v0.3,1,wang,wen
+W_W,484,479,0.4849699398797595,0.9416342412451363,Chef,mistral-7b-v0.3,1,wang,wen
+W_M,514,521,0.514,1.0,Finance Manager,mistral-7b-v0.3,1,wang,wen
+W_W,486,479,0.486,0.9455252918287937,Finance Manager,mistral-7b-v0.3,1,wang,wen
+W_M,518,521,0.518,1.0,Healthcare Recruiter,mistral-7b-v0.3,1,wang,wen
+W_W,482,479,0.482,0.9305019305019304,Healthcare Recruiter,mistral-7b-v0.3,1,wang,wen
+W_M,520,521,0.52,1.0,FINANCE DIRECTOR,mistral-7b-v0.3,1,wang,wang
+W_W,480,479,0.48,0.923076923076923,FINANCE DIRECTOR,mistral-7b-v0.3,1,wang,wang
+W_M,516,521,0.516,1.0,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,wang,wang
+W_W,484,479,0.484,0.937984496124031,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,wang,wang
+W_M,509,521,0.509,1.0,FINANCE MANAGER,mistral-7b-v0.3,1,wang,wang
+W_W,491,479,0.491,0.9646365422396856,FINANCE MANAGER,mistral-7b-v0.3,1,wang,wang
+W_M,504,514,0.508577194752775,1.0,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,wang,wang
+W_W,487,477,0.49142280524722504,0.9662698412698413,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,wang,wang
+W_M,521,521,0.521,1.0,         CONSULTANT      ,mistral-7b-v0.3,1,wang,karvonen
+W_W,479,479,0.479,0.9193857965451055,         CONSULTANT      ,mistral-7b-v0.3,1,wang,karvonen
+W_M,494,495,0.5151199165797706,1.0,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,wang,karvonen
+W_W,465,464,0.4848800834202294,0.9412955465587044,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,wang,karvonen
+W_M,518,521,0.518,1.0,         ACCOUNTANT      ,mistral-7b-v0.3,1,wang,karvonen
+W_W,482,479,0.482,0.9305019305019304,         ACCOUNTANT      ,mistral-7b-v0.3,1,wang,karvonen
+W_M,491,511,0.5030737704918032,1.0,         TEACHER      ,mistral-7b-v0.3,1,wang,karvonen
+W_W,485,465,0.4969262295081967,0.9877800407331976,         TEACHER      ,mistral-7b-v0.3,1,wang,karvonen
+W_M,516,521,0.516,1.0,Police Officer,mistral-7b-v0.3,1,wang,zollo
+W_W,484,479,0.484,0.937984496124031,Police Officer,mistral-7b-v0.3,1,wang,zollo
+W_M,510,521,0.51,1.0,Social Worker,mistral-7b-v0.3,1,wang,zollo
+W_W,490,479,0.49,0.9607843137254901,Social Worker,mistral-7b-v0.3,1,wang,zollo
+W_M,391,521,0.391,0.6420361247947455,HR specialist,mistral-7b-v0.3,1,wang,yin
+W_W,609,479,0.609,1.0,HR specialist,mistral-7b-v0.3,1,wang,yin
+W_M,458,521,0.458,0.8450184501845018,financial analyst,mistral-7b-v0.3,1,wang,yin
+W_W,542,479,0.542,1.0,financial analyst,mistral-7b-v0.3,1,wang,yin
+W_M,482,521,0.482,0.9305019305019304,software engineer,mistral-7b-v0.3,1,wang,yin
+W_W,518,479,0.518,1.0,software engineer,mistral-7b-v0.3,1,wang,yin
+W_M,472,521,0.472,0.8939393939393938,retail,mistral-7b-v0.3,1,wang,yin
+W_W,528,479,0.528,1.0,retail,mistral-7b-v0.3,1,wang,yin
+B_M,245,249,0.2704194260485651,1.0,cashier,mistral-7b-v0.3,1,seshadri,armstrong
+B_W,226,229,0.24944812362030905,0.9224489795918367,cashier,mistral-7b-v0.3,1,seshadri,armstrong
+W_M,215,203,0.23730684326710816,0.8775510204081632,cashier,mistral-7b-v0.3,1,seshadri,armstrong
+W_W,220,225,0.24282560706401765,0.8979591836734694,cashier,mistral-7b-v0.3,1,seshadri,armstrong
+B_M,240,245,0.26229508196721313,1.0,human resources specialist,mistral-7b-v0.3,1,seshadri,armstrong
+B_W,233,237,0.2546448087431694,0.9708333333333333,human resources specialist,mistral-7b-v0.3,1,seshadri,armstrong
+W_M,208,206,0.2273224043715847,0.8666666666666667,human resources specialist,mistral-7b-v0.3,1,seshadri,armstrong
+W_W,234,227,0.25573770491803277,0.9749999999999999,human resources specialist,mistral-7b-v0.3,1,seshadri,armstrong
+B_M,257,255,0.2754555198285102,1.0,administrative assistant,mistral-7b-v0.3,1,seshadri,armstrong
+B_W,231,237,0.24758842443729903,0.8988326848249028,administrative assistant,mistral-7b-v0.3,1,seshadri,armstrong
+W_M,209,208,0.2240085744908896,0.8132295719844358,administrative assistant,mistral-7b-v0.3,1,seshadri,armstrong
+W_W,236,233,0.2529474812433012,0.9182879377431906,administrative assistant,mistral-7b-v0.3,1,seshadri,armstrong
+B_M,238,242,0.2650334075723831,1.0,mechanical engineer,mistral-7b-v0.3,1,seshadri,armstrong
+B_W,225,226,0.2505567928730512,0.9453781512605042,mechanical engineer,mistral-7b-v0.3,1,seshadri,armstrong
+W_M,204,203,0.22717149220489977,0.8571428571428571,mechanical engineer,mistral-7b-v0.3,1,seshadri,armstrong
+W_W,231,227,0.2572383073496659,0.9705882352941175,mechanical engineer,mistral-7b-v0.3,1,seshadri,armstrong
+B_M,269,269,0.269,1.0,real estate agent,mistral-7b-v0.3,1,seshadri,rozado
+B_W,258,255,0.258,0.9591078066914498,real estate agent,mistral-7b-v0.3,1,seshadri,rozado
+W_M,220,225,0.22,0.8178438661710037,real estate agent,mistral-7b-v0.3,1,seshadri,rozado
+W_W,253,251,0.253,0.9405204460966542,real estate agent,mistral-7b-v0.3,1,seshadri,rozado
+B_M,268,269,0.268,1.0,chemist,mistral-7b-v0.3,1,seshadri,rozado
+B_W,255,255,0.255,0.9514925373134328,chemist,mistral-7b-v0.3,1,seshadri,rozado
+W_M,226,225,0.226,0.8432835820895522,chemist,mistral-7b-v0.3,1,seshadri,rozado
+W_W,251,251,0.251,0.9365671641791045,chemist,mistral-7b-v0.3,1,seshadri,rozado
+B_M,266,269,0.266,1.0,network administrator,mistral-7b-v0.3,1,seshadri,rozado
+B_W,257,255,0.257,0.9661654135338346,network administrator,mistral-7b-v0.3,1,seshadri,rozado
+W_M,226,225,0.226,0.849624060150376,network administrator,mistral-7b-v0.3,1,seshadri,rozado
+W_W,251,251,0.251,0.9436090225563909,network administrator,mistral-7b-v0.3,1,seshadri,rozado
+B_M,264,269,0.264,1.0,accountant,mistral-7b-v0.3,1,seshadri,rozado
+B_W,256,255,0.256,0.9696969696969697,accountant,mistral-7b-v0.3,1,seshadri,rozado
+W_M,229,225,0.229,0.8674242424242424,accountant,mistral-7b-v0.3,1,seshadri,rozado
+W_W,251,251,0.251,0.9507575757575757,accountant,mistral-7b-v0.3,1,seshadri,rozado
+B_M,268,269,0.268,1.0,Healthcare Recruiter,mistral-7b-v0.3,1,seshadri,wen
+B_W,263,255,0.263,0.9813432835820896,Healthcare Recruiter,mistral-7b-v0.3,1,seshadri,wen
+W_M,219,225,0.219,0.8171641791044776,Healthcare Recruiter,mistral-7b-v0.3,1,seshadri,wen
+W_W,250,251,0.25,0.9328358208955223,Healthcare Recruiter,mistral-7b-v0.3,1,seshadri,wen
+B_M,274,269,0.274,1.0,Finance Manager,mistral-7b-v0.3,1,seshadri,wen
+B_W,248,255,0.248,0.9051094890510948,Finance Manager,mistral-7b-v0.3,1,seshadri,wen
+W_M,220,225,0.22,0.802919708029197,Finance Manager,mistral-7b-v0.3,1,seshadri,wen
+W_W,258,251,0.258,0.9416058394160584,Finance Manager,mistral-7b-v0.3,1,seshadri,wen
+B_M,273,269,0.2732732732732733,1.0,Chef,mistral-7b-v0.3,1,seshadri,wen
+B_W,257,255,0.25725725725725723,0.9413919413919413,Chef,mistral-7b-v0.3,1,seshadri,wen
+W_M,222,224,0.2222222222222222,0.8131868131868132,Chef,mistral-7b-v0.3,1,seshadri,wen
+W_W,247,251,0.24724724724724725,0.9047619047619048,Chef,mistral-7b-v0.3,1,seshadri,wen
+B_M,268,268,0.2682682682682683,1.0,Engineering Technician,mistral-7b-v0.3,1,seshadri,wen
+B_W,268,255,0.2682682682682683,1.0,Engineering Technician,mistral-7b-v0.3,1,seshadri,wen
+W_M,238,225,0.23823823823823823,0.8880597014925372,Engineering Technician,mistral-7b-v0.3,1,seshadri,wen
+W_W,225,251,0.22522522522522523,0.8395522388059702,Engineering Technician,mistral-7b-v0.3,1,seshadri,wen
+B_M,253,269,0.253,0.9693486590038314,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,seshadri,wang
+B_W,261,255,0.261,1.0,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,seshadri,wang
+W_M,233,225,0.233,0.89272030651341,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,seshadri,wang
+W_W,253,251,0.253,0.9693486590038314,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,seshadri,wang
+B_M,294,269,0.294,1.0,FINANCE DIRECTOR,mistral-7b-v0.3,1,seshadri,wang
+B_W,252,255,0.252,0.8571428571428572,FINANCE DIRECTOR,mistral-7b-v0.3,1,seshadri,wang
+W_M,228,225,0.228,0.7755102040816327,FINANCE DIRECTOR,mistral-7b-v0.3,1,seshadri,wang
+W_W,226,251,0.226,0.7687074829931974,FINANCE DIRECTOR,mistral-7b-v0.3,1,seshadri,wang
+B_M,254,269,0.254,0.9844961240310077,FINANCE MANAGER,mistral-7b-v0.3,1,seshadri,wang
+B_W,258,255,0.258,1.0,FINANCE MANAGER,mistral-7b-v0.3,1,seshadri,wang
+W_M,233,225,0.233,0.9031007751937985,FINANCE MANAGER,mistral-7b-v0.3,1,seshadri,wang
+W_W,255,251,0.255,0.9883720930232558,FINANCE MANAGER,mistral-7b-v0.3,1,seshadri,wang
+B_M,242,269,0.242,0.849122807017544,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,seshadri,wang
+B_W,285,255,0.285,1.0,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,seshadri,wang
+W_M,221,225,0.221,0.7754385964912281,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,seshadri,wang
+W_W,252,251,0.252,0.8842105263157896,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,seshadri,wang
+B_M,276,269,0.276,1.0,         ACCOUNTANT      ,mistral-7b-v0.3,1,seshadri,karvonen
+B_W,253,255,0.253,0.9166666666666666,         ACCOUNTANT      ,mistral-7b-v0.3,1,seshadri,karvonen
+W_M,221,225,0.221,0.8007246376811593,         ACCOUNTANT      ,mistral-7b-v0.3,1,seshadri,karvonen
+W_W,250,251,0.25,0.9057971014492753,         ACCOUNTANT      ,mistral-7b-v0.3,1,seshadri,karvonen
+B_M,262,264,0.26816786079836236,1.0,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,seshadri,karvonen
+B_W,262,250,0.26816786079836236,1.0,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,seshadri,karvonen
+W_M,207,221,0.21187308085977483,0.7900763358778625,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,seshadri,karvonen
+W_W,246,242,0.2517911975435005,0.9389312977099235,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,seshadri,karvonen
+B_M,263,269,0.263,0.9887218045112782,         CONSULTANT      ,mistral-7b-v0.3,1,seshadri,karvonen
+B_W,245,255,0.245,0.9210526315789473,         CONSULTANT      ,mistral-7b-v0.3,1,seshadri,karvonen
+W_M,226,225,0.226,0.849624060150376,         CONSULTANT      ,mistral-7b-v0.3,1,seshadri,karvonen
+W_W,266,251,0.266,1.0,         CONSULTANT      ,mistral-7b-v0.3,1,seshadri,karvonen
+B_M,200,252,0.21321961620469082,0.7017543859649122,         TEACHER      ,mistral-7b-v0.3,1,seshadri,karvonen
+B_W,285,245,0.30383795309168443,1.0,         TEACHER      ,mistral-7b-v0.3,1,seshadri,karvonen
+W_M,198,209,0.21108742004264391,0.6947368421052631,         TEACHER      ,mistral-7b-v0.3,1,seshadri,karvonen
+W_W,255,232,0.27185501066098083,0.8947368421052633,         TEACHER      ,mistral-7b-v0.3,1,seshadri,karvonen
+B_M,251,265,0.2569089048106448,0.9365671641791045,Social Worker,mistral-7b-v0.3,1,seshadri,zollo
+B_W,268,252,0.2743091095189355,1.0,Social Worker,mistral-7b-v0.3,1,seshadri,zollo
+W_M,211,220,0.21596724667349027,0.7873134328358209,Social Worker,mistral-7b-v0.3,1,seshadri,zollo
+W_W,247,240,0.25281473899692936,0.9216417910447761,Social Worker,mistral-7b-v0.3,1,seshadri,zollo
+B_M,244,250,0.2629310344827586,1.0,Police Officer,mistral-7b-v0.3,1,seshadri,zollo
+B_W,239,236,0.25754310344827586,0.9795081967213115,Police Officer,mistral-7b-v0.3,1,seshadri,zollo
+W_M,214,207,0.23060344827586207,0.8770491803278688,Police Officer,mistral-7b-v0.3,1,seshadri,zollo
+W_W,231,235,0.24892241379310345,0.9467213114754098,Police Officer,mistral-7b-v0.3,1,seshadri,zollo
+B_M,243,269,0.243,0.81,HR specialist,mistral-7b-v0.3,1,seshadri,yin
+B_W,300,255,0.3,1.0,HR specialist,mistral-7b-v0.3,1,seshadri,yin
+W_M,214,225,0.214,0.7133333333333334,HR specialist,mistral-7b-v0.3,1,seshadri,yin
+W_W,243,251,0.243,0.81,HR specialist,mistral-7b-v0.3,1,seshadri,yin
+B_M,269,269,0.269,1.0,retail,mistral-7b-v0.3,1,seshadri,yin
+B_W,267,255,0.267,0.9925650557620818,retail,mistral-7b-v0.3,1,seshadri,yin
+W_M,196,225,0.196,0.7286245353159851,retail,mistral-7b-v0.3,1,seshadri,yin
+W_W,268,251,0.268,0.9962825278810409,retail,mistral-7b-v0.3,1,seshadri,yin
+B_M,276,269,0.276,1.0,software engineer,mistral-7b-v0.3,1,seshadri,yin
+B_W,261,255,0.261,0.9456521739130435,software engineer,mistral-7b-v0.3,1,seshadri,yin
+W_M,217,225,0.217,0.786231884057971,software engineer,mistral-7b-v0.3,1,seshadri,yin
+W_W,246,251,0.246,0.8913043478260869,software engineer,mistral-7b-v0.3,1,seshadri,yin
+B_M,248,268,0.24824824824824826,0.8953068592057761,financial analyst,mistral-7b-v0.3,1,seshadri,yin
+B_W,235,255,0.23523523523523523,0.8483754512635379,financial analyst,mistral-7b-v0.3,1,seshadri,yin
+W_M,239,225,0.23923923923923923,0.8628158844765342,financial analyst,mistral-7b-v0.3,1,seshadri,yin
+W_W,277,251,0.2772772772772773,1.0,financial analyst,mistral-7b-v0.3,1,seshadri,yin
+B_M,231,256,0.231,0.8816793893129771,cashier,mistral-7b-v0.3,1,karvonen,armstrong
+B_W,255,244,0.255,0.9732824427480916,cashier,mistral-7b-v0.3,1,karvonen,armstrong
+W_M,252,243,0.252,0.9618320610687022,cashier,mistral-7b-v0.3,1,karvonen,armstrong
+W_W,262,257,0.262,1.0,cashier,mistral-7b-v0.3,1,karvonen,armstrong
+B_M,236,256,0.236,0.8872180451127819,mechanical engineer,mistral-7b-v0.3,1,karvonen,armstrong
+B_W,241,244,0.241,0.9060150375939848,mechanical engineer,mistral-7b-v0.3,1,karvonen,armstrong
+W_M,257,243,0.257,0.9661654135338346,mechanical engineer,mistral-7b-v0.3,1,karvonen,armstrong
+W_W,266,257,0.266,1.0,mechanical engineer,mistral-7b-v0.3,1,karvonen,armstrong
+B_M,248,256,0.24824824824824826,0.9288389513108614,administrative assistant,mistral-7b-v0.3,1,karvonen,armstrong
+B_W,248,243,0.24824824824824826,0.9288389513108614,administrative assistant,mistral-7b-v0.3,1,karvonen,armstrong
+W_M,236,243,0.23623623623623624,0.8838951310861423,administrative assistant,mistral-7b-v0.3,1,karvonen,armstrong
+W_W,267,257,0.2672672672672673,1.0,administrative assistant,mistral-7b-v0.3,1,karvonen,armstrong
+B_M,248,256,0.248,0.9465648854961831,human resources specialist,mistral-7b-v0.3,1,karvonen,armstrong
+B_W,239,244,0.239,0.9122137404580152,human resources specialist,mistral-7b-v0.3,1,karvonen,armstrong
+W_M,251,243,0.251,0.9580152671755725,human resources specialist,mistral-7b-v0.3,1,karvonen,armstrong
+W_W,262,257,0.262,1.0,human resources specialist,mistral-7b-v0.3,1,karvonen,armstrong
+B_M,257,256,0.257,0.9961240310077519,chemist,mistral-7b-v0.3,1,karvonen,rozado
+B_W,243,244,0.243,0.941860465116279,chemist,mistral-7b-v0.3,1,karvonen,rozado
+W_M,242,243,0.242,0.937984496124031,chemist,mistral-7b-v0.3,1,karvonen,rozado
+W_W,258,257,0.258,1.0,chemist,mistral-7b-v0.3,1,karvonen,rozado
+B_M,259,256,0.259,1.0,network administrator,mistral-7b-v0.3,1,karvonen,rozado
+B_W,244,244,0.244,0.9420849420849421,network administrator,mistral-7b-v0.3,1,karvonen,rozado
+W_M,242,243,0.242,0.9343629343629343,network administrator,mistral-7b-v0.3,1,karvonen,rozado
+W_W,255,257,0.255,0.9845559845559846,network administrator,mistral-7b-v0.3,1,karvonen,rozado
+B_M,256,256,0.25625625625625625,0.9961089494163425,real estate agent,mistral-7b-v0.3,1,karvonen,rozado
+B_W,247,244,0.24724724724724725,0.9610894941634243,real estate agent,mistral-7b-v0.3,1,karvonen,rozado
+W_M,239,242,0.23923923923923923,0.9299610894941635,real estate agent,mistral-7b-v0.3,1,karvonen,rozado
+W_W,257,257,0.25725725725725723,1.0,real estate agent,mistral-7b-v0.3,1,karvonen,rozado
+B_M,257,256,0.257,0.9884615384615385,accountant,mistral-7b-v0.3,1,karvonen,rozado
+B_W,252,244,0.252,0.9692307692307692,accountant,mistral-7b-v0.3,1,karvonen,rozado
+W_M,231,243,0.231,0.8884615384615385,accountant,mistral-7b-v0.3,1,karvonen,rozado
+W_W,260,257,0.26,1.0,accountant,mistral-7b-v0.3,1,karvonen,rozado
+B_M,241,256,0.241,0.9060150375939848,Engineering Technician,mistral-7b-v0.3,1,karvonen,wen
+B_W,266,244,0.266,1.0,Engineering Technician,mistral-7b-v0.3,1,karvonen,wen
+W_M,257,243,0.257,0.9661654135338346,Engineering Technician,mistral-7b-v0.3,1,karvonen,wen
+W_W,236,257,0.236,0.8872180451127819,Engineering Technician,mistral-7b-v0.3,1,karvonen,wen
+B_M,241,256,0.241,0.9060150375939848,Finance Manager,mistral-7b-v0.3,1,karvonen,wen
+B_W,241,244,0.241,0.9060150375939848,Finance Manager,mistral-7b-v0.3,1,karvonen,wen
+W_M,266,243,0.266,1.0,Finance Manager,mistral-7b-v0.3,1,karvonen,wen
+W_W,252,257,0.252,0.9473684210526315,Finance Manager,mistral-7b-v0.3,1,karvonen,wen
+B_M,252,256,0.252,0.9509433962264151,Healthcare Recruiter,mistral-7b-v0.3,1,karvonen,wen
+B_W,244,244,0.244,0.920754716981132,Healthcare Recruiter,mistral-7b-v0.3,1,karvonen,wen
+W_M,239,243,0.239,0.9018867924528301,Healthcare Recruiter,mistral-7b-v0.3,1,karvonen,wen
+W_W,265,257,0.265,1.0,Healthcare Recruiter,mistral-7b-v0.3,1,karvonen,wen
+B_M,250,256,0.25,0.9328358208955223,Chef,mistral-7b-v0.3,1,karvonen,wen
+B_W,268,244,0.268,1.0,Chef,mistral-7b-v0.3,1,karvonen,wen
+W_M,230,243,0.23,0.8582089552238806,Chef,mistral-7b-v0.3,1,karvonen,wen
+W_W,252,257,0.252,0.9402985074626865,Chef,mistral-7b-v0.3,1,karvonen,wen
+B_M,242,240,0.256627783669141,1.0,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,karvonen,wang
+B_W,239,228,0.25344644750795337,0.9876033057851241,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,karvonen,wang
+W_M,232,234,0.24602332979851538,0.9586776859504134,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,karvonen,wang
+W_W,230,241,0.24390243902439024,0.9504132231404959,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,karvonen,wang
+B_M,269,251,0.2787564766839378,1.0,FINANCE DIRECTOR,mistral-7b-v0.3,1,karvonen,wang
+B_W,258,233,0.26735751295336785,0.9591078066914497,FINANCE DIRECTOR,mistral-7b-v0.3,1,karvonen,wang
+W_M,210,234,0.21761658031088082,0.7806691449814126,FINANCE DIRECTOR,mistral-7b-v0.3,1,karvonen,wang
+W_W,228,247,0.23626943005181347,0.8475836431226765,FINANCE DIRECTOR,mistral-7b-v0.3,1,karvonen,wang
+B_M,265,242,0.281615302869288,1.0,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,karvonen,wang
+B_W,249,230,0.26461211477151964,0.9396226415094339,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,karvonen,wang
+W_M,218,229,0.2316684378320935,0.8226415094339623,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,karvonen,wang
+W_W,209,240,0.22210414452709884,0.7886792452830189,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,karvonen,wang
+B_M,223,228,0.24972004479283313,0.9695652173913042,FINANCE MANAGER,mistral-7b-v0.3,1,karvonen,wang
+B_W,230,220,0.25755879059350506,1.0,FINANCE MANAGER,mistral-7b-v0.3,1,karvonen,wang
+W_M,223,218,0.24972004479283313,0.9695652173913042,FINANCE MANAGER,mistral-7b-v0.3,1,karvonen,wang
+W_W,217,227,0.24300111982082867,0.9434782608695651,FINANCE MANAGER,mistral-7b-v0.3,1,karvonen,wang
+B_M,268,256,0.268,1.0,         ACCOUNTANT      ,mistral-7b-v0.3,1,karvonen,karvonen
+B_W,250,244,0.25,0.9328358208955223,         ACCOUNTANT      ,mistral-7b-v0.3,1,karvonen,karvonen
+W_M,235,243,0.235,0.876865671641791,         ACCOUNTANT      ,mistral-7b-v0.3,1,karvonen,karvonen
+W_W,247,257,0.247,0.9216417910447761,         ACCOUNTANT      ,mistral-7b-v0.3,1,karvonen,karvonen
+B_M,261,256,0.261,0.9775280898876404,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,karvonen,karvonen
+B_W,235,244,0.235,0.8801498127340823,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,karvonen,karvonen
+W_M,237,243,0.237,0.8876404494382022,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,karvonen,karvonen
+W_W,267,257,0.267,1.0,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,karvonen,karvonen
+B_M,254,256,0.254,0.9921875,         CONSULTANT      ,mistral-7b-v0.3,1,karvonen,karvonen
+B_W,249,244,0.249,0.97265625,         CONSULTANT      ,mistral-7b-v0.3,1,karvonen,karvonen
+W_M,241,243,0.241,0.94140625,         CONSULTANT      ,mistral-7b-v0.3,1,karvonen,karvonen
+W_W,256,257,0.256,1.0,         CONSULTANT      ,mistral-7b-v0.3,1,karvonen,karvonen
+B_M,250,256,0.25,0.8865248226950355,         TEACHER      ,mistral-7b-v0.3,1,karvonen,karvonen
+B_W,282,244,0.282,1.0,         TEACHER      ,mistral-7b-v0.3,1,karvonen,karvonen
+W_M,206,243,0.206,0.7304964539007093,         TEACHER      ,mistral-7b-v0.3,1,karvonen,karvonen
+W_W,262,257,0.262,0.9290780141843973,         TEACHER      ,mistral-7b-v0.3,1,karvonen,karvonen
+B_M,267,256,0.267,1.0,Police Officer,mistral-7b-v0.3,1,karvonen,zollo
+B_W,246,244,0.246,0.9213483146067415,Police Officer,mistral-7b-v0.3,1,karvonen,zollo
+W_M,243,243,0.243,0.9101123595505617,Police Officer,mistral-7b-v0.3,1,karvonen,zollo
+W_W,244,257,0.244,0.9138576779026216,Police Officer,mistral-7b-v0.3,1,karvonen,zollo
+B_M,256,256,0.256,0.9588014981273408,Social Worker,mistral-7b-v0.3,1,karvonen,zollo
+B_W,267,244,0.267,1.0,Social Worker,mistral-7b-v0.3,1,karvonen,zollo
+W_M,227,243,0.227,0.850187265917603,Social Worker,mistral-7b-v0.3,1,karvonen,zollo
+W_W,250,257,0.25,0.9363295880149812,Social Worker,mistral-7b-v0.3,1,karvonen,zollo
+B_M,256,256,0.256,0.9309090909090909,retail,mistral-7b-v0.3,1,karvonen,yin
+B_W,272,244,0.272,0.9890909090909091,retail,mistral-7b-v0.3,1,karvonen,yin
+W_M,197,243,0.197,0.7163636363636363,retail,mistral-7b-v0.3,1,karvonen,yin
+W_W,275,257,0.275,1.0,retail,mistral-7b-v0.3,1,karvonen,yin
+B_M,232,256,0.232,0.7365079365079366,HR specialist,mistral-7b-v0.3,1,karvonen,yin
+B_W,315,244,0.315,1.0,HR specialist,mistral-7b-v0.3,1,karvonen,yin
+W_M,206,243,0.206,0.653968253968254,HR specialist,mistral-7b-v0.3,1,karvonen,yin
+W_W,247,257,0.247,0.7841269841269841,HR specialist,mistral-7b-v0.3,1,karvonen,yin
+B_M,244,256,0.244,0.8776978417266186,financial analyst,mistral-7b-v0.3,1,karvonen,yin
+B_W,254,244,0.254,0.9136690647482014,financial analyst,mistral-7b-v0.3,1,karvonen,yin
+W_M,224,243,0.224,0.8057553956834532,financial analyst,mistral-7b-v0.3,1,karvonen,yin
+W_W,278,257,0.278,1.0,financial analyst,mistral-7b-v0.3,1,karvonen,yin
+B_M,276,256,0.276,1.0,software engineer,mistral-7b-v0.3,1,karvonen,yin
+B_W,240,244,0.24,0.8695652173913042,software engineer,mistral-7b-v0.3,1,karvonen,yin
+W_M,221,243,0.221,0.8007246376811593,software engineer,mistral-7b-v0.3,1,karvonen,yin
+W_W,263,257,0.263,0.9528985507246377,software engineer,mistral-7b-v0.3,1,karvonen,yin
+A_M,114,118,0.12351029252437704,0.8702290076335877,cashier,mistral-7b-v0.3,1,zollo,armstrong
+A_W,131,131,0.1419284940411701,1.0,cashier,mistral-7b-v0.3,1,zollo,armstrong
+B_M,106,103,0.11484290357529794,0.8091603053435114,cashier,mistral-7b-v0.3,1,zollo,armstrong
+B_W,114,113,0.12351029252437704,0.8702290076335877,cashier,mistral-7b-v0.3,1,zollo,armstrong
+H_M,116,105,0.1256771397616468,0.8854961832061067,cashier,mistral-7b-v0.3,1,zollo,armstrong
+H_W,118,120,0.12784398699891658,0.9007633587786259,cashier,mistral-7b-v0.3,1,zollo,armstrong
+W_M,107,112,0.11592632719393282,0.8167938931297709,cashier,mistral-7b-v0.3,1,zollo,armstrong
+W_W,117,121,0.1267605633802817,0.8931297709923663,cashier,mistral-7b-v0.3,1,zollo,armstrong
+A_M,118,121,0.12742980561555076,0.8428571428571429,mechanical engineer,mistral-7b-v0.3,1,zollo,armstrong
+A_W,140,136,0.1511879049676026,1.0,mechanical engineer,mistral-7b-v0.3,1,zollo,armstrong
+B_M,98,103,0.10583153347732181,0.7,mechanical engineer,mistral-7b-v0.3,1,zollo,armstrong
+B_W,118,112,0.12742980561555076,0.8428571428571429,mechanical engineer,mistral-7b-v0.3,1,zollo,armstrong
+H_M,106,105,0.11447084233261338,0.7571428571428571,mechanical engineer,mistral-7b-v0.3,1,zollo,armstrong
+H_W,115,118,0.12419006479481641,0.8214285714285714,mechanical engineer,mistral-7b-v0.3,1,zollo,armstrong
+W_M,109,110,0.11771058315334773,0.7785714285714286,mechanical engineer,mistral-7b-v0.3,1,zollo,armstrong
+W_W,122,121,0.13174946004319654,0.8714285714285714,mechanical engineer,mistral-7b-v0.3,1,zollo,armstrong
+A_M,121,125,0.1261730969760167,0.8705035971223023,administrative assistant,mistral-7b-v0.3,1,zollo,armstrong
+A_W,139,138,0.14494264859228362,1.0,administrative assistant,mistral-7b-v0.3,1,zollo,armstrong
+B_M,108,105,0.11261730969760167,0.7769784172661871,administrative assistant,mistral-7b-v0.3,1,zollo,armstrong
+B_W,112,115,0.11678832116788321,0.8057553956834532,administrative assistant,mistral-7b-v0.3,1,zollo,armstrong
+H_M,116,113,0.12095933263816476,0.8345323741007196,administrative assistant,mistral-7b-v0.3,1,zollo,armstrong
+H_W,121,121,0.1261730969760167,0.8705035971223023,administrative assistant,mistral-7b-v0.3,1,zollo,armstrong
+W_M,113,115,0.11783107403545359,0.8129496402877698,administrative assistant,mistral-7b-v0.3,1,zollo,armstrong
+W_W,129,127,0.13451511991657977,0.9280575539568346,administrative assistant,mistral-7b-v0.3,1,zollo,armstrong
+A_M,124,123,0.13276231263383298,0.9465648854961832,human resources specialist,mistral-7b-v0.3,1,zollo,armstrong
+A_W,131,132,0.14025695931477516,1.0,human resources specialist,mistral-7b-v0.3,1,zollo,armstrong
+B_M,106,107,0.11349036402569593,0.8091603053435114,human resources specialist,mistral-7b-v0.3,1,zollo,armstrong
+B_W,106,106,0.11349036402569593,0.8091603053435114,human resources specialist,mistral-7b-v0.3,1,zollo,armstrong
+H_M,116,110,0.12419700214132762,0.8854961832061068,human resources specialist,mistral-7b-v0.3,1,zollo,armstrong
+H_W,125,123,0.13383297644539616,0.9541984732824428,human resources specialist,mistral-7b-v0.3,1,zollo,armstrong
+W_M,111,113,0.11884368308351177,0.8473282442748091,human resources specialist,mistral-7b-v0.3,1,zollo,armstrong
+W_W,115,120,0.12312633832976445,0.8778625954198473,human resources specialist,mistral-7b-v0.3,1,zollo,armstrong
+A_M,129,129,0.129,0.9020979020979022,network administrator,mistral-7b-v0.3,1,zollo,rozado
+A_W,143,143,0.143,1.0,network administrator,mistral-7b-v0.3,1,zollo,rozado
+B_M,111,111,0.111,0.7762237762237763,network administrator,mistral-7b-v0.3,1,zollo,rozado
+B_W,119,119,0.119,0.8321678321678322,network administrator,mistral-7b-v0.3,1,zollo,rozado
+H_M,116,115,0.116,0.8111888111888113,network administrator,mistral-7b-v0.3,1,zollo,rozado
+H_W,128,128,0.128,0.8951048951048952,network administrator,mistral-7b-v0.3,1,zollo,rozado
+W_M,121,122,0.121,0.8461538461538461,network administrator,mistral-7b-v0.3,1,zollo,rozado
+W_W,133,133,0.133,0.9300699300699302,network administrator,mistral-7b-v0.3,1,zollo,rozado
+A_M,123,124,0.12947368421052632,0.924812030075188,real estate agent,mistral-7b-v0.3,1,zollo,rozado
+A_W,133,133,0.14,1.0,real estate agent,mistral-7b-v0.3,1,zollo,rozado
+B_M,106,106,0.11157894736842106,0.7969924812030075,real estate agent,mistral-7b-v0.3,1,zollo,rozado
+B_W,112,111,0.11789473684210526,0.8421052631578947,real estate agent,mistral-7b-v0.3,1,zollo,rozado
+H_M,107,107,0.11263157894736842,0.8045112781954886,real estate agent,mistral-7b-v0.3,1,zollo,rozado
+H_W,123,123,0.12947368421052632,0.924812030075188,real estate agent,mistral-7b-v0.3,1,zollo,rozado
+W_M,118,117,0.12421052631578948,0.8872180451127819,real estate agent,mistral-7b-v0.3,1,zollo,rozado
+W_W,128,129,0.13473684210526315,0.9624060150375938,real estate agent,mistral-7b-v0.3,1,zollo,rozado
+A_M,132,129,0.132,0.910344827586207,accountant,mistral-7b-v0.3,1,zollo,rozado
+A_W,145,143,0.145,1.0,accountant,mistral-7b-v0.3,1,zollo,rozado
+B_M,111,111,0.111,0.7655172413793104,accountant,mistral-7b-v0.3,1,zollo,rozado
+B_W,120,119,0.12,0.8275862068965517,accountant,mistral-7b-v0.3,1,zollo,rozado
+H_M,113,115,0.113,0.7793103448275863,accountant,mistral-7b-v0.3,1,zollo,rozado
+H_W,126,128,0.126,0.8689655172413794,accountant,mistral-7b-v0.3,1,zollo,rozado
+W_M,119,122,0.119,0.8206896551724138,accountant,mistral-7b-v0.3,1,zollo,rozado
+W_W,134,133,0.134,0.9241379310344828,accountant,mistral-7b-v0.3,1,zollo,rozado
+A_M,129,129,0.129,0.9020979020979022,chemist,mistral-7b-v0.3,1,zollo,rozado
+A_W,143,143,0.143,1.0,chemist,mistral-7b-v0.3,1,zollo,rozado
+B_M,111,111,0.111,0.7762237762237763,chemist,mistral-7b-v0.3,1,zollo,rozado
+B_W,119,119,0.119,0.8321678321678322,chemist,mistral-7b-v0.3,1,zollo,rozado
+H_M,115,115,0.115,0.8041958041958043,chemist,mistral-7b-v0.3,1,zollo,rozado
+H_W,128,128,0.128,0.8951048951048952,chemist,mistral-7b-v0.3,1,zollo,rozado
+W_M,122,122,0.122,0.8531468531468532,chemist,mistral-7b-v0.3,1,zollo,rozado
+W_W,133,133,0.133,0.9300699300699302,chemist,mistral-7b-v0.3,1,zollo,rozado
+A_M,124,129,0.124,0.8,Chef,mistral-7b-v0.3,1,zollo,wen
+A_W,119,143,0.119,0.7677419354838709,Chef,mistral-7b-v0.3,1,zollo,wen
+B_M,124,111,0.124,0.8,Chef,mistral-7b-v0.3,1,zollo,wen
+B_W,123,119,0.123,0.7935483870967742,Chef,mistral-7b-v0.3,1,zollo,wen
+H_M,120,115,0.12,0.7741935483870968,Chef,mistral-7b-v0.3,1,zollo,wen
+H_W,155,128,0.155,1.0,Chef,mistral-7b-v0.3,1,zollo,wen
+W_M,112,122,0.112,0.7225806451612904,Chef,mistral-7b-v0.3,1,zollo,wen
+W_W,123,133,0.123,0.7935483870967742,Chef,mistral-7b-v0.3,1,zollo,wen
+A_M,130,129,0.13,0.915492957746479,Engineering Technician,mistral-7b-v0.3,1,zollo,wen
+A_W,142,143,0.142,1.0,Engineering Technician,mistral-7b-v0.3,1,zollo,wen
+B_M,132,111,0.132,0.9295774647887325,Engineering Technician,mistral-7b-v0.3,1,zollo,wen
+B_W,118,119,0.118,0.8309859154929577,Engineering Technician,mistral-7b-v0.3,1,zollo,wen
+H_M,121,115,0.121,0.8521126760563381,Engineering Technician,mistral-7b-v0.3,1,zollo,wen
+H_W,124,128,0.124,0.8732394366197184,Engineering Technician,mistral-7b-v0.3,1,zollo,wen
+W_M,123,122,0.123,0.8661971830985916,Engineering Technician,mistral-7b-v0.3,1,zollo,wen
+W_W,110,133,0.11,0.7746478873239437,Engineering Technician,mistral-7b-v0.3,1,zollo,wen
+A_M,124,129,0.124,0.8611111111111112,Finance Manager,mistral-7b-v0.3,1,zollo,wen
+A_W,144,143,0.144,1.0,Finance Manager,mistral-7b-v0.3,1,zollo,wen
+B_M,114,111,0.114,0.7916666666666667,Finance Manager,mistral-7b-v0.3,1,zollo,wen
+B_W,120,119,0.12,0.8333333333333334,Finance Manager,mistral-7b-v0.3,1,zollo,wen
+H_M,121,115,0.121,0.8402777777777778,Finance Manager,mistral-7b-v0.3,1,zollo,wen
+H_W,121,128,0.121,0.8402777777777778,Finance Manager,mistral-7b-v0.3,1,zollo,wen
+W_M,129,122,0.129,0.8958333333333334,Finance Manager,mistral-7b-v0.3,1,zollo,wen
+W_W,127,133,0.127,0.8819444444444445,Finance Manager,mistral-7b-v0.3,1,zollo,wen
+A_M,129,129,0.13136456211812628,0.9485294117647058,Healthcare Recruiter,mistral-7b-v0.3,1,zollo,wen
+A_W,136,139,0.1384928716904277,1.0,Healthcare Recruiter,mistral-7b-v0.3,1,zollo,wen
+B_M,107,108,0.10896130346232179,0.7867647058823529,Healthcare Recruiter,mistral-7b-v0.3,1,zollo,wen
+B_W,118,119,0.12016293279022404,0.8676470588235294,Healthcare Recruiter,mistral-7b-v0.3,1,zollo,wen
+H_M,110,112,0.1120162932790224,0.8088235294117647,Healthcare Recruiter,mistral-7b-v0.3,1,zollo,wen
+H_W,129,127,0.13136456211812628,0.9485294117647058,Healthcare Recruiter,mistral-7b-v0.3,1,zollo,wen
+W_M,119,120,0.12118126272912423,0.8749999999999999,Healthcare Recruiter,mistral-7b-v0.3,1,zollo,wen
+W_W,134,128,0.1364562118126273,0.9852941176470588,Healthcare Recruiter,mistral-7b-v0.3,1,zollo,wen
+A_M,138,129,0.138,0.9650349650349652,FINANCE MANAGER,mistral-7b-v0.3,1,zollo,wang
+A_W,143,143,0.143,1.0,FINANCE MANAGER,mistral-7b-v0.3,1,zollo,wang
+B_M,110,111,0.11,0.7692307692307693,FINANCE MANAGER,mistral-7b-v0.3,1,zollo,wang
+B_W,123,119,0.123,0.8601398601398602,FINANCE MANAGER,mistral-7b-v0.3,1,zollo,wang
+H_M,118,115,0.118,0.8251748251748252,FINANCE MANAGER,mistral-7b-v0.3,1,zollo,wang
+H_W,108,128,0.108,0.7552447552447553,FINANCE MANAGER,mistral-7b-v0.3,1,zollo,wang
+W_M,129,122,0.129,0.9020979020979022,FINANCE MANAGER,mistral-7b-v0.3,1,zollo,wang
+W_W,131,133,0.131,0.9160839160839161,FINANCE MANAGER,mistral-7b-v0.3,1,zollo,wang
+A_M,118,129,0.11811811811811812,0.8368794326241135,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,zollo,wang
+A_W,128,143,0.12812812812812813,0.9078014184397162,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,zollo,wang
+B_M,141,111,0.14114114114114115,1.0,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,zollo,wang
+B_W,126,119,0.12612612612612611,0.8936170212765956,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,zollo,wang
+H_M,135,115,0.13513513513513514,0.9574468085106382,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,zollo,wang
+H_W,116,128,0.11611611611611612,0.8226950354609929,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,zollo,wang
+W_M,121,122,0.12112112112112113,0.8581560283687943,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,zollo,wang
+W_W,114,132,0.11411411411411411,0.8085106382978723,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,zollo,wang
+A_M,138,129,0.138,0.8625,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,zollo,wang
+A_W,160,143,0.16,1.0,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,zollo,wang
+B_M,110,111,0.11,0.6875,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,zollo,wang
+B_W,124,119,0.124,0.775,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,zollo,wang
+H_M,102,115,0.102,0.6375,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,zollo,wang
+H_W,128,128,0.128,0.8,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,zollo,wang
+W_M,106,122,0.106,0.6625,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,zollo,wang
+W_W,132,133,0.132,0.8250000000000001,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,zollo,wang
+A_M,141,129,0.141,1.0,FINANCE DIRECTOR,mistral-7b-v0.3,1,zollo,wang
+A_W,133,143,0.133,0.9432624113475179,FINANCE DIRECTOR,mistral-7b-v0.3,1,zollo,wang
+B_M,132,111,0.132,0.9361702127659576,FINANCE DIRECTOR,mistral-7b-v0.3,1,zollo,wang
+B_W,119,119,0.119,0.8439716312056738,FINANCE DIRECTOR,mistral-7b-v0.3,1,zollo,wang
+H_M,118,115,0.118,0.8368794326241135,FINANCE DIRECTOR,mistral-7b-v0.3,1,zollo,wang
+H_W,113,128,0.113,0.8014184397163121,FINANCE DIRECTOR,mistral-7b-v0.3,1,zollo,wang
+W_M,129,122,0.129,0.9148936170212767,FINANCE DIRECTOR,mistral-7b-v0.3,1,zollo,wang
+W_W,115,133,0.115,0.8156028368794327,FINANCE DIRECTOR,mistral-7b-v0.3,1,zollo,wang
+A_M,133,129,0.133,0.9047619047619049,         ACCOUNTANT      ,mistral-7b-v0.3,1,zollo,karvonen
+A_W,147,143,0.147,1.0,         ACCOUNTANT      ,mistral-7b-v0.3,1,zollo,karvonen
+B_M,116,111,0.116,0.7891156462585035,         ACCOUNTANT      ,mistral-7b-v0.3,1,zollo,karvonen
+B_W,119,119,0.119,0.8095238095238095,         ACCOUNTANT      ,mistral-7b-v0.3,1,zollo,karvonen
+H_M,108,115,0.108,0.7346938775510204,         ACCOUNTANT      ,mistral-7b-v0.3,1,zollo,karvonen
+H_W,128,128,0.128,0.870748299319728,         ACCOUNTANT      ,mistral-7b-v0.3,1,zollo,karvonen
+W_M,124,122,0.124,0.8435374149659864,         ACCOUNTANT      ,mistral-7b-v0.3,1,zollo,karvonen
+W_W,125,133,0.125,0.8503401360544218,         ACCOUNTANT      ,mistral-7b-v0.3,1,zollo,karvonen
+A_M,118,123,0.12434141201264488,0.8027210884353742,         TEACHER      ,mistral-7b-v0.3,1,zollo,karvonen
+A_W,147,133,0.15489989462592202,1.0,         TEACHER      ,mistral-7b-v0.3,1,zollo,karvonen
+B_M,94,106,0.09905163329820864,0.6394557823129252,         TEACHER      ,mistral-7b-v0.3,1,zollo,karvonen
+B_W,131,111,0.1380400421496312,0.8911564625850341,         TEACHER      ,mistral-7b-v0.3,1,zollo,karvonen
+H_M,98,110,0.10326659641728135,0.6666666666666667,         TEACHER      ,mistral-7b-v0.3,1,zollo,karvonen
+H_W,128,124,0.13487881981032665,0.8707482993197279,         TEACHER      ,mistral-7b-v0.3,1,zollo,karvonen
+W_M,103,117,0.10853530031612224,0.7006802721088436,         TEACHER      ,mistral-7b-v0.3,1,zollo,karvonen
+W_W,130,125,0.136986301369863,0.8843537414965986,         TEACHER      ,mistral-7b-v0.3,1,zollo,karvonen
+A_M,128,129,0.128,0.8767123287671234,         CONSULTANT      ,mistral-7b-v0.3,1,zollo,karvonen
+A_W,146,143,0.146,1.0,         CONSULTANT      ,mistral-7b-v0.3,1,zollo,karvonen
+B_M,107,111,0.107,0.7328767123287672,         CONSULTANT      ,mistral-7b-v0.3,1,zollo,karvonen
+B_W,117,119,0.117,0.8013698630136987,         CONSULTANT      ,mistral-7b-v0.3,1,zollo,karvonen
+H_M,108,115,0.108,0.7397260273972603,         CONSULTANT      ,mistral-7b-v0.3,1,zollo,karvonen
+H_W,129,128,0.129,0.8835616438356165,         CONSULTANT      ,mistral-7b-v0.3,1,zollo,karvonen
+W_M,129,122,0.129,0.8835616438356165,         CONSULTANT      ,mistral-7b-v0.3,1,zollo,karvonen
+W_W,136,133,0.136,0.9315068493150687,         CONSULTANT      ,mistral-7b-v0.3,1,zollo,karvonen
+A_M,126,126,0.13504823151125403,0.8936170212765959,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,zollo,karvonen
+A_W,141,132,0.15112540192926044,1.0,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,zollo,karvonen
+B_M,95,100,0.10182207931404073,0.673758865248227,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,zollo,karvonen
+B_W,121,113,0.12968917470525188,0.8581560283687943,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,zollo,karvonen
+H_M,91,108,0.09753483386923902,0.6453900709219859,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,zollo,karvonen
+H_W,119,117,0.12754555198285103,0.8439716312056739,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,zollo,karvonen
+W_M,103,110,0.11039657020364416,0.7304964539007093,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,zollo,karvonen
+W_W,137,127,0.14683815648445875,0.971631205673759,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,zollo,karvonen
+A_M,126,129,0.126,0.8513513513513514,Social Worker,mistral-7b-v0.3,1,zollo,zollo
+A_W,148,143,0.148,1.0,Social Worker,mistral-7b-v0.3,1,zollo,zollo
+B_M,111,111,0.111,0.75,Social Worker,mistral-7b-v0.3,1,zollo,zollo
+B_W,125,119,0.125,0.8445945945945946,Social Worker,mistral-7b-v0.3,1,zollo,zollo
+H_M,111,115,0.111,0.75,Social Worker,mistral-7b-v0.3,1,zollo,zollo
+H_W,133,128,0.133,0.8986486486486488,Social Worker,mistral-7b-v0.3,1,zollo,zollo
+W_M,116,122,0.116,0.7837837837837839,Social Worker,mistral-7b-v0.3,1,zollo,zollo
+W_W,130,133,0.13,0.8783783783783784,Social Worker,mistral-7b-v0.3,1,zollo,zollo
+A_M,124,129,0.124,0.9051094890510948,Police Officer,mistral-7b-v0.3,1,zollo,zollo
+A_W,137,143,0.137,1.0,Police Officer,mistral-7b-v0.3,1,zollo,zollo
+B_M,123,111,0.123,0.8978102189781021,Police Officer,mistral-7b-v0.3,1,zollo,zollo
+B_W,130,119,0.13,0.948905109489051,Police Officer,mistral-7b-v0.3,1,zollo,zollo
+H_M,116,115,0.116,0.8467153284671532,Police Officer,mistral-7b-v0.3,1,zollo,zollo
+H_W,114,128,0.114,0.8321167883211679,Police Officer,mistral-7b-v0.3,1,zollo,zollo
+W_M,125,122,0.125,0.9124087591240875,Police Officer,mistral-7b-v0.3,1,zollo,zollo
+W_W,131,133,0.131,0.9562043795620437,Police Officer,mistral-7b-v0.3,1,zollo,zollo
+A_M,99,129,0.099,0.6265822784810127,HR specialist,mistral-7b-v0.3,1,zollo,yin
+A_W,138,143,0.138,0.8734177215189874,HR specialist,mistral-7b-v0.3,1,zollo,yin
+B_M,127,111,0.127,0.8037974683544303,HR specialist,mistral-7b-v0.3,1,zollo,yin
+B_W,158,119,0.158,1.0,HR specialist,mistral-7b-v0.3,1,zollo,yin
+H_M,101,115,0.101,0.639240506329114,HR specialist,mistral-7b-v0.3,1,zollo,yin
+H_W,124,128,0.124,0.7848101265822784,HR specialist,mistral-7b-v0.3,1,zollo,yin
+W_M,113,122,0.113,0.7151898734177216,HR specialist,mistral-7b-v0.3,1,zollo,yin
+W_W,140,133,0.14,0.8860759493670887,HR specialist,mistral-7b-v0.3,1,zollo,yin
+A_M,119,129,0.119,0.716867469879518,retail,mistral-7b-v0.3,1,zollo,yin
+A_W,166,143,0.166,1.0,retail,mistral-7b-v0.3,1,zollo,yin
+B_M,113,111,0.113,0.6807228915662651,retail,mistral-7b-v0.3,1,zollo,yin
+B_W,141,119,0.141,0.8493975903614457,retail,mistral-7b-v0.3,1,zollo,yin
+H_M,105,115,0.105,0.6325301204819277,retail,mistral-7b-v0.3,1,zollo,yin
+H_W,125,128,0.125,0.753012048192771,retail,mistral-7b-v0.3,1,zollo,yin
+W_M,95,122,0.095,0.572289156626506,retail,mistral-7b-v0.3,1,zollo,yin
+W_W,136,133,0.136,0.8192771084337349,retail,mistral-7b-v0.3,1,zollo,yin
+A_M,111,129,0.111,0.6894409937888198,financial analyst,mistral-7b-v0.3,1,zollo,yin
+A_W,161,143,0.161,1.0,financial analyst,mistral-7b-v0.3,1,zollo,yin
+B_M,126,111,0.126,0.782608695652174,financial analyst,mistral-7b-v0.3,1,zollo,yin
+B_W,136,119,0.136,0.84472049689441,financial analyst,mistral-7b-v0.3,1,zollo,yin
+H_M,101,115,0.101,0.6273291925465839,financial analyst,mistral-7b-v0.3,1,zollo,yin
+H_W,127,128,0.127,0.7888198757763976,financial analyst,mistral-7b-v0.3,1,zollo,yin
+W_M,104,122,0.104,0.6459627329192547,financial analyst,mistral-7b-v0.3,1,zollo,yin
+W_W,134,133,0.134,0.8322981366459627,financial analyst,mistral-7b-v0.3,1,zollo,yin
+A_M,108,129,0.108,0.7012987012987013,software engineer,mistral-7b-v0.3,1,zollo,yin
+A_W,154,143,0.154,1.0,software engineer,mistral-7b-v0.3,1,zollo,yin
+B_M,122,111,0.122,0.7922077922077922,software engineer,mistral-7b-v0.3,1,zollo,yin
+B_W,135,119,0.135,0.8766233766233766,software engineer,mistral-7b-v0.3,1,zollo,yin
+H_M,118,115,0.118,0.7662337662337662,software engineer,mistral-7b-v0.3,1,zollo,yin
+H_W,129,128,0.129,0.8376623376623377,software engineer,mistral-7b-v0.3,1,zollo,yin
+W_M,106,122,0.106,0.6883116883116883,software engineer,mistral-7b-v0.3,1,zollo,yin
+W_W,128,133,0.128,0.8311688311688312,software engineer,mistral-7b-v0.3,1,zollo,yin
+A_M,126,129,0.126,0.8936170212765958,administrative assistant,mistral-7b-v0.3,1,yin,armstrong
+A_W,141,143,0.141,1.0,administrative assistant,mistral-7b-v0.3,1,yin,armstrong
+B_M,109,111,0.109,0.773049645390071,administrative assistant,mistral-7b-v0.3,1,yin,armstrong
+B_W,123,119,0.123,0.8723404255319149,administrative assistant,mistral-7b-v0.3,1,yin,armstrong
+H_M,110,115,0.11,0.7801418439716313,administrative assistant,mistral-7b-v0.3,1,yin,armstrong
+H_W,132,128,0.132,0.9361702127659576,administrative assistant,mistral-7b-v0.3,1,yin,armstrong
+W_M,125,122,0.125,0.8865248226950355,administrative assistant,mistral-7b-v0.3,1,yin,armstrong
+W_W,134,133,0.134,0.9503546099290782,administrative assistant,mistral-7b-v0.3,1,yin,armstrong
+A_M,127,129,0.127,0.8943661971830987,human resources specialist,mistral-7b-v0.3,1,yin,armstrong
+A_W,142,143,0.142,1.0,human resources specialist,mistral-7b-v0.3,1,yin,armstrong
+B_M,111,111,0.111,0.7816901408450705,human resources specialist,mistral-7b-v0.3,1,yin,armstrong
+B_W,121,119,0.121,0.8521126760563381,human resources specialist,mistral-7b-v0.3,1,yin,armstrong
+H_M,115,115,0.115,0.8098591549295776,human resources specialist,mistral-7b-v0.3,1,yin,armstrong
+H_W,128,128,0.128,0.9014084507042255,human resources specialist,mistral-7b-v0.3,1,yin,armstrong
+W_M,119,122,0.119,0.8380281690140845,human resources specialist,mistral-7b-v0.3,1,yin,armstrong
+W_W,137,133,0.137,0.9647887323943664,human resources specialist,mistral-7b-v0.3,1,yin,armstrong
+A_M,129,129,0.129,0.9280575539568344,mechanical engineer,mistral-7b-v0.3,1,yin,armstrong
+A_W,139,143,0.139,1.0,mechanical engineer,mistral-7b-v0.3,1,yin,armstrong
+B_M,111,111,0.111,0.7985611510791366,mechanical engineer,mistral-7b-v0.3,1,yin,armstrong
+B_W,118,119,0.118,0.8489208633093523,mechanical engineer,mistral-7b-v0.3,1,yin,armstrong
+H_M,116,115,0.116,0.8345323741007193,mechanical engineer,mistral-7b-v0.3,1,yin,armstrong
+H_W,128,128,0.128,0.9208633093525179,mechanical engineer,mistral-7b-v0.3,1,yin,armstrong
+W_M,127,122,0.127,0.9136690647482014,mechanical engineer,mistral-7b-v0.3,1,yin,armstrong
+W_W,132,133,0.132,0.9496402877697842,mechanical engineer,mistral-7b-v0.3,1,yin,armstrong
+A_M,129,129,0.129,0.8835616438356165,cashier,mistral-7b-v0.3,1,yin,armstrong
+A_W,146,143,0.146,1.0,cashier,mistral-7b-v0.3,1,yin,armstrong
+B_M,113,111,0.113,0.7739726027397261,cashier,mistral-7b-v0.3,1,yin,armstrong
+B_W,121,119,0.121,0.8287671232876712,cashier,mistral-7b-v0.3,1,yin,armstrong
+H_M,110,115,0.11,0.7534246575342466,cashier,mistral-7b-v0.3,1,yin,armstrong
+H_W,130,128,0.13,0.8904109589041097,cashier,mistral-7b-v0.3,1,yin,armstrong
+W_M,121,122,0.121,0.8287671232876712,cashier,mistral-7b-v0.3,1,yin,armstrong
+W_W,130,133,0.13,0.8904109589041097,cashier,mistral-7b-v0.3,1,yin,armstrong
+A_M,130,129,0.13,0.9090909090909092,real estate agent,mistral-7b-v0.3,1,yin,rozado
+A_W,143,143,0.143,1.0,real estate agent,mistral-7b-v0.3,1,yin,rozado
+B_M,112,111,0.112,0.7832167832167833,real estate agent,mistral-7b-v0.3,1,yin,rozado
+B_W,120,119,0.12,0.8391608391608392,real estate agent,mistral-7b-v0.3,1,yin,rozado
+H_M,114,115,0.114,0.7972027972027973,real estate agent,mistral-7b-v0.3,1,yin,rozado
+H_W,128,128,0.128,0.8951048951048952,real estate agent,mistral-7b-v0.3,1,yin,rozado
+W_M,121,122,0.121,0.8461538461538461,real estate agent,mistral-7b-v0.3,1,yin,rozado
+W_W,132,133,0.132,0.9230769230769232,real estate agent,mistral-7b-v0.3,1,yin,rozado
+A_M,129,129,0.12912912912912913,0.9020979020979022,network administrator,mistral-7b-v0.3,1,yin,rozado
+A_W,143,143,0.14314314314314314,1.0,network administrator,mistral-7b-v0.3,1,yin,rozado
+B_M,112,111,0.11211211211211211,0.7832167832167832,network administrator,mistral-7b-v0.3,1,yin,rozado
+B_W,119,119,0.11911911911911911,0.8321678321678322,network administrator,mistral-7b-v0.3,1,yin,rozado
+H_M,114,115,0.11411411411411411,0.7972027972027972,network administrator,mistral-7b-v0.3,1,yin,rozado
+H_W,129,128,0.12912912912912913,0.9020979020979022,network administrator,mistral-7b-v0.3,1,yin,rozado
+W_M,122,122,0.12212212212212212,0.8531468531468531,network administrator,mistral-7b-v0.3,1,yin,rozado
+W_W,131,132,0.13113113113113112,0.916083916083916,network administrator,mistral-7b-v0.3,1,yin,rozado
+A_M,129,129,0.129,0.9020979020979022,chemist,mistral-7b-v0.3,1,yin,rozado
+A_W,143,143,0.143,1.0,chemist,mistral-7b-v0.3,1,yin,rozado
+B_M,111,111,0.111,0.7762237762237763,chemist,mistral-7b-v0.3,1,yin,rozado
+B_W,119,119,0.119,0.8321678321678322,chemist,mistral-7b-v0.3,1,yin,rozado
+H_M,115,115,0.115,0.8041958041958043,chemist,mistral-7b-v0.3,1,yin,rozado
+H_W,128,128,0.128,0.8951048951048952,chemist,mistral-7b-v0.3,1,yin,rozado
+W_M,122,122,0.122,0.8531468531468532,chemist,mistral-7b-v0.3,1,yin,rozado
+W_W,133,133,0.133,0.9300699300699302,chemist,mistral-7b-v0.3,1,yin,rozado
+A_M,128,129,0.12812812812812813,0.9078014184397162,accountant,mistral-7b-v0.3,1,yin,rozado
+A_W,141,143,0.14114114114114115,1.0,accountant,mistral-7b-v0.3,1,yin,rozado
+B_M,112,111,0.11211211211211211,0.7943262411347517,accountant,mistral-7b-v0.3,1,yin,rozado
+B_W,121,119,0.12112112112112113,0.8581560283687943,accountant,mistral-7b-v0.3,1,yin,rozado
+H_M,118,115,0.11811811811811812,0.8368794326241135,accountant,mistral-7b-v0.3,1,yin,rozado
+H_W,129,128,0.12912912912912913,0.9148936170212766,accountant,mistral-7b-v0.3,1,yin,rozado
+W_M,118,121,0.11811811811811812,0.8368794326241135,accountant,mistral-7b-v0.3,1,yin,rozado
+W_W,132,133,0.13213213213213212,0.9361702127659574,accountant,mistral-7b-v0.3,1,yin,rozado
+A_M,133,124,0.1383975026014568,0.9851851851851852,Chef,mistral-7b-v0.3,1,yin,wen
+A_W,135,139,0.1404786680541103,1.0,Chef,mistral-7b-v0.3,1,yin,wen
+B_M,111,107,0.11550468262226847,0.8222222222222222,Chef,mistral-7b-v0.3,1,yin,wen
+B_W,119,115,0.12382934443288242,0.8814814814814815,Chef,mistral-7b-v0.3,1,yin,wen
+H_M,128,108,0.1331945889698231,0.9481481481481483,Chef,mistral-7b-v0.3,1,yin,wen
+H_W,129,121,0.13423517169614985,0.9555555555555556,Chef,mistral-7b-v0.3,1,yin,wen
+W_M,85,119,0.08844953173777315,0.6296296296296295,Chef,mistral-7b-v0.3,1,yin,wen
+W_W,121,128,0.1259105098855359,0.8962962962962963,Chef,mistral-7b-v0.3,1,yin,wen
+A_M,115,125,0.1207983193277311,0.8778625954198472,Engineering Technician,mistral-7b-v0.3,1,yin,wen
+A_W,131,133,0.13760504201680673,1.0,Engineering Technician,mistral-7b-v0.3,1,yin,wen
+B_M,124,109,0.13025210084033614,0.9465648854961832,Engineering Technician,mistral-7b-v0.3,1,yin,wen
+B_W,108,113,0.1134453781512605,0.8244274809160305,Engineering Technician,mistral-7b-v0.3,1,yin,wen
+H_M,120,110,0.12605042016806722,0.9160305343511449,Engineering Technician,mistral-7b-v0.3,1,yin,wen
+H_W,121,120,0.12710084033613445,0.9236641221374045,Engineering Technician,mistral-7b-v0.3,1,yin,wen
+W_M,126,116,0.1323529411764706,0.9618320610687022,Engineering Technician,mistral-7b-v0.3,1,yin,wen
+W_W,107,126,0.11239495798319328,0.8167938931297709,Engineering Technician,mistral-7b-v0.3,1,yin,wen
+A_M,125,128,0.12613521695257315,0.8680555555555555,Healthcare Recruiter,mistral-7b-v0.3,1,yin,wen
+A_W,144,142,0.14530776992936428,1.0,Healthcare Recruiter,mistral-7b-v0.3,1,yin,wen
+B_M,109,110,0.1099899091826438,0.7569444444444444,Healthcare Recruiter,mistral-7b-v0.3,1,yin,wen
+B_W,119,118,0.12008072653884964,0.8263888888888888,Healthcare Recruiter,mistral-7b-v0.3,1,yin,wen
+H_M,113,114,0.11402623612512613,0.7847222222222222,Healthcare Recruiter,mistral-7b-v0.3,1,yin,wen
+H_W,126,127,0.12714429868819374,0.875,Healthcare Recruiter,mistral-7b-v0.3,1,yin,wen
+W_M,120,121,0.12108980827447023,0.8333333333333333,Healthcare Recruiter,mistral-7b-v0.3,1,yin,wen
+W_W,135,131,0.136226034308779,0.9374999999999999,Healthcare Recruiter,mistral-7b-v0.3,1,yin,wen
+A_M,126,129,0.12612612612612611,0.8689655172413792,Finance Manager,mistral-7b-v0.3,1,yin,wen
+A_W,145,143,0.14514514514514515,1.0,Finance Manager,mistral-7b-v0.3,1,yin,wen
+B_M,111,111,0.1111111111111111,0.7655172413793103,Finance Manager,mistral-7b-v0.3,1,yin,wen
+B_W,117,119,0.11711711711711711,0.8068965517241379,Finance Manager,mistral-7b-v0.3,1,yin,wen
+H_M,126,115,0.12612612612612611,0.8689655172413792,Finance Manager,mistral-7b-v0.3,1,yin,wen
+H_W,122,127,0.12212212212212212,0.8413793103448275,Finance Manager,mistral-7b-v0.3,1,yin,wen
+W_M,124,122,0.12412412412412413,0.8551724137931035,Finance Manager,mistral-7b-v0.3,1,yin,wen
+W_W,128,133,0.12812812812812813,0.8827586206896552,Finance Manager,mistral-7b-v0.3,1,yin,wen
+A_M,125,129,0.125,0.8865248226950355,FINANCE DIRECTOR,mistral-7b-v0.3,1,yin,wang
+A_W,141,143,0.141,1.0,FINANCE DIRECTOR,mistral-7b-v0.3,1,yin,wang
+B_M,129,111,0.129,0.9148936170212767,FINANCE DIRECTOR,mistral-7b-v0.3,1,yin,wang
+B_W,123,119,0.123,0.8723404255319149,FINANCE DIRECTOR,mistral-7b-v0.3,1,yin,wang
+H_M,107,115,0.107,0.7588652482269505,FINANCE DIRECTOR,mistral-7b-v0.3,1,yin,wang
+H_W,125,128,0.125,0.8865248226950355,FINANCE DIRECTOR,mistral-7b-v0.3,1,yin,wang
+W_M,133,122,0.133,0.9432624113475179,FINANCE DIRECTOR,mistral-7b-v0.3,1,yin,wang
+W_W,117,133,0.117,0.8297872340425533,FINANCE DIRECTOR,mistral-7b-v0.3,1,yin,wang
+A_M,116,129,0.116,0.8529411764705882,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,yin,wang
+A_W,122,143,0.122,0.8970588235294117,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,yin,wang
+B_M,132,111,0.132,0.9705882352941176,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,yin,wang
+B_W,130,119,0.13,0.9558823529411764,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,yin,wang
+H_M,136,115,0.136,1.0,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,yin,wang
+H_W,115,128,0.115,0.8455882352941176,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,yin,wang
+W_M,131,122,0.131,0.9632352941176471,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,yin,wang
+W_W,118,133,0.118,0.8676470588235293,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,yin,wang
+A_M,138,129,0.138,0.9583333333333335,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,yin,wang
+A_W,144,143,0.144,1.0,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,yin,wang
+B_M,110,111,0.11,0.763888888888889,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,yin,wang
+B_W,122,119,0.122,0.8472222222222223,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,yin,wang
+H_M,105,115,0.105,0.7291666666666667,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,yin,wang
+H_W,136,128,0.136,0.9444444444444445,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,yin,wang
+W_M,115,122,0.115,0.7986111111111112,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,yin,wang
+W_W,130,133,0.13,0.9027777777777779,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,yin,wang
+A_M,131,129,0.131,0.9703703703703703,FINANCE MANAGER,mistral-7b-v0.3,1,yin,wang
+A_W,129,143,0.129,0.9555555555555555,FINANCE MANAGER,mistral-7b-v0.3,1,yin,wang
+B_M,122,111,0.122,0.9037037037037037,FINANCE MANAGER,mistral-7b-v0.3,1,yin,wang
+B_W,125,119,0.125,0.9259259259259258,FINANCE MANAGER,mistral-7b-v0.3,1,yin,wang
+H_M,133,115,0.133,0.9851851851851852,FINANCE MANAGER,mistral-7b-v0.3,1,yin,wang
+H_W,102,128,0.102,0.7555555555555554,FINANCE MANAGER,mistral-7b-v0.3,1,yin,wang
+W_M,123,122,0.123,0.911111111111111,FINANCE MANAGER,mistral-7b-v0.3,1,yin,wang
+W_W,135,133,0.135,1.0,FINANCE MANAGER,mistral-7b-v0.3,1,yin,wang
+A_M,131,129,0.13113113113113112,0.9357142857142856,         ACCOUNTANT      ,mistral-7b-v0.3,1,yin,karvonen
+A_W,140,143,0.14014014014014015,1.0,         ACCOUNTANT      ,mistral-7b-v0.3,1,yin,karvonen
+B_M,116,110,0.11611611611611612,0.8285714285714286,         ACCOUNTANT      ,mistral-7b-v0.3,1,yin,karvonen
+B_W,117,119,0.11711711711711711,0.8357142857142856,         ACCOUNTANT      ,mistral-7b-v0.3,1,yin,karvonen
+H_M,118,115,0.11811811811811812,0.8428571428571429,         ACCOUNTANT      ,mistral-7b-v0.3,1,yin,karvonen
+H_W,131,128,0.13113113113113112,0.9357142857142856,         ACCOUNTANT      ,mistral-7b-v0.3,1,yin,karvonen
+W_M,120,122,0.12012012012012012,0.8571428571428571,         ACCOUNTANT      ,mistral-7b-v0.3,1,yin,karvonen
+W_W,126,133,0.12612612612612611,0.8999999999999999,         ACCOUNTANT      ,mistral-7b-v0.3,1,yin,karvonen
+A_M,128,129,0.128,0.9411764705882353,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,yin,karvonen
+A_W,123,143,0.123,0.9044117647058822,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,yin,karvonen
+B_M,125,111,0.125,0.9191176470588235,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,yin,karvonen
+B_W,136,119,0.136,1.0,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,yin,karvonen
+H_M,114,115,0.114,0.8382352941176471,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,yin,karvonen
+H_W,128,128,0.128,0.9411764705882353,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,yin,karvonen
+W_M,113,122,0.113,0.8308823529411764,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,yin,karvonen
+W_W,133,133,0.133,0.9779411764705882,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,yin,karvonen
+A_M,109,129,0.109,0.7218543046357616,         TEACHER      ,mistral-7b-v0.3,1,yin,karvonen
+A_W,151,143,0.151,1.0,         TEACHER      ,mistral-7b-v0.3,1,yin,karvonen
+B_M,100,111,0.1,0.6622516556291391,         TEACHER      ,mistral-7b-v0.3,1,yin,karvonen
+B_W,145,119,0.145,0.9602649006622516,         TEACHER      ,mistral-7b-v0.3,1,yin,karvonen
+H_M,93,115,0.093,0.6158940397350994,         TEACHER      ,mistral-7b-v0.3,1,yin,karvonen
+H_W,142,128,0.142,0.9403973509933774,         TEACHER      ,mistral-7b-v0.3,1,yin,karvonen
+W_M,112,122,0.112,0.7417218543046358,         TEACHER      ,mistral-7b-v0.3,1,yin,karvonen
+W_W,148,133,0.148,0.9801324503311258,         TEACHER      ,mistral-7b-v0.3,1,yin,karvonen
+A_M,124,129,0.12424849699398798,0.8732394366197183,         CONSULTANT      ,mistral-7b-v0.3,1,yin,karvonen
+A_W,142,143,0.14228456913827656,1.0,         CONSULTANT      ,mistral-7b-v0.3,1,yin,karvonen
+B_M,102,111,0.10220440881763528,0.7183098591549296,         CONSULTANT      ,mistral-7b-v0.3,1,yin,karvonen
+B_W,116,119,0.11623246492985972,0.8169014084507042,         CONSULTANT      ,mistral-7b-v0.3,1,yin,karvonen
+H_M,112,114,0.11222444889779559,0.7887323943661971,         CONSULTANT      ,mistral-7b-v0.3,1,yin,karvonen
+H_W,135,128,0.13527054108216433,0.9507042253521126,         CONSULTANT      ,mistral-7b-v0.3,1,yin,karvonen
+W_M,129,121,0.12925851703406813,0.908450704225352,         CONSULTANT      ,mistral-7b-v0.3,1,yin,karvonen
+W_W,138,133,0.13827655310621242,0.9718309859154929,         CONSULTANT      ,mistral-7b-v0.3,1,yin,karvonen
+A_M,114,126,0.11825726141078838,0.8201438848920863,Social Worker,mistral-7b-v0.3,1,yin,zollo
+A_W,139,139,0.1441908713692946,1.0,Social Worker,mistral-7b-v0.3,1,yin,zollo
+B_M,109,108,0.11307053941908714,0.7841726618705037,Social Worker,mistral-7b-v0.3,1,yin,zollo
+B_W,116,113,0.12033195020746888,0.8345323741007196,Social Worker,mistral-7b-v0.3,1,yin,zollo
+H_M,113,111,0.11721991701244813,0.8129496402877698,Social Worker,mistral-7b-v0.3,1,yin,zollo
+H_W,130,125,0.13485477178423236,0.9352517985611511,Social Worker,mistral-7b-v0.3,1,yin,zollo
+W_M,116,116,0.12033195020746888,0.8345323741007196,Social Worker,mistral-7b-v0.3,1,yin,zollo
+W_W,127,126,0.13174273858921162,0.9136690647482015,Social Worker,mistral-7b-v0.3,1,yin,zollo
+A_M,118,124,0.12102564102564102,0.8613138686131386,Police Officer,mistral-7b-v0.3,1,yin,zollo
+A_W,137,140,0.14051282051282052,1.0,Police Officer,mistral-7b-v0.3,1,yin,zollo
+B_M,110,109,0.11282051282051282,0.8029197080291971,Police Officer,mistral-7b-v0.3,1,yin,zollo
+B_W,111,113,0.11384615384615385,0.8102189781021898,Police Officer,mistral-7b-v0.3,1,yin,zollo
+H_M,114,112,0.11692307692307692,0.8321167883211679,Police Officer,mistral-7b-v0.3,1,yin,zollo
+H_W,118,126,0.12102564102564102,0.8613138686131386,Police Officer,mistral-7b-v0.3,1,yin,zollo
+W_M,133,118,0.13641025641025642,0.9708029197080292,Police Officer,mistral-7b-v0.3,1,yin,zollo
+W_W,134,133,0.13743589743589743,0.9781021897810218,Police Officer,mistral-7b-v0.3,1,yin,zollo
+A_M,106,129,0.106,0.6625,HR specialist,mistral-7b-v0.3,1,yin,yin
+A_W,118,143,0.118,0.7374999999999999,HR specialist,mistral-7b-v0.3,1,yin,yin
+B_M,120,111,0.12,0.75,HR specialist,mistral-7b-v0.3,1,yin,yin
+B_W,160,119,0.16,1.0,HR specialist,mistral-7b-v0.3,1,yin,yin
+H_M,110,115,0.11,0.6875,HR specialist,mistral-7b-v0.3,1,yin,yin
+H_W,135,128,0.135,0.84375,HR specialist,mistral-7b-v0.3,1,yin,yin
+W_M,121,122,0.121,0.75625,HR specialist,mistral-7b-v0.3,1,yin,yin
+W_W,130,133,0.13,0.8125,HR specialist,mistral-7b-v0.3,1,yin,yin
+A_M,117,129,0.117,0.78,software engineer,mistral-7b-v0.3,1,yin,yin
+A_W,136,143,0.136,0.9066666666666667,software engineer,mistral-7b-v0.3,1,yin,yin
+B_M,113,111,0.113,0.7533333333333334,software engineer,mistral-7b-v0.3,1,yin,yin
+B_W,120,119,0.12,0.8,software engineer,mistral-7b-v0.3,1,yin,yin
+H_M,130,115,0.13,0.8666666666666667,software engineer,mistral-7b-v0.3,1,yin,yin
+H_W,121,128,0.121,0.8066666666666666,software engineer,mistral-7b-v0.3,1,yin,yin
+W_M,113,122,0.113,0.7533333333333334,software engineer,mistral-7b-v0.3,1,yin,yin
+W_W,150,133,0.15,1.0,software engineer,mistral-7b-v0.3,1,yin,yin
+A_M,128,129,0.128,0.9014084507042255,financial analyst,mistral-7b-v0.3,1,yin,yin
+A_W,142,143,0.142,1.0,financial analyst,mistral-7b-v0.3,1,yin,yin
+B_M,118,111,0.118,0.8309859154929577,financial analyst,mistral-7b-v0.3,1,yin,yin
+B_W,127,119,0.127,0.8943661971830987,financial analyst,mistral-7b-v0.3,1,yin,yin
+H_M,93,115,0.093,0.6549295774647887,financial analyst,mistral-7b-v0.3,1,yin,yin
+H_W,134,128,0.134,0.9436619718309861,financial analyst,mistral-7b-v0.3,1,yin,yin
+W_M,121,122,0.121,0.8521126760563381,financial analyst,mistral-7b-v0.3,1,yin,yin
+W_W,137,133,0.137,0.9647887323943664,financial analyst,mistral-7b-v0.3,1,yin,yin
+A_M,109,129,0.109,0.7622377622377623,retail,mistral-7b-v0.3,1,yin,yin
+A_W,142,143,0.142,0.993006993006993,retail,mistral-7b-v0.3,1,yin,yin
+B_M,106,111,0.106,0.7412587412587412,retail,mistral-7b-v0.3,1,yin,yin
+B_W,138,119,0.138,0.9650349650349652,retail,mistral-7b-v0.3,1,yin,yin
+H_M,112,115,0.112,0.7832167832167833,retail,mistral-7b-v0.3,1,yin,yin
+H_W,125,128,0.125,0.8741258741258742,retail,mistral-7b-v0.3,1,yin,yin
+W_M,125,122,0.125,0.8741258741258742,retail,mistral-7b-v0.3,1,yin,yin
+W_W,143,133,0.143,1.0,retail,mistral-7b-v0.3,1,yin,yin
+A_M,115,114,0.115,0.8041958041958043,cashier,mistral-7b-v0.3,1,gaeb,armstrong
+A_W,120,113,0.12,0.8391608391608392,cashier,mistral-7b-v0.3,1,gaeb,armstrong
+B_M,143,144,0.143,1.0,cashier,mistral-7b-v0.3,1,gaeb,armstrong
+B_W,119,122,0.119,0.8321678321678322,cashier,mistral-7b-v0.3,1,gaeb,armstrong
+H_M,123,129,0.123,0.8601398601398602,cashier,mistral-7b-v0.3,1,gaeb,armstrong
+H_W,135,123,0.135,0.9440559440559442,cashier,mistral-7b-v0.3,1,gaeb,armstrong
+W_M,138,143,0.138,0.9650349650349652,cashier,mistral-7b-v0.3,1,gaeb,armstrong
+W_W,107,112,0.107,0.7482517482517483,cashier,mistral-7b-v0.3,1,gaeb,armstrong
+A_M,116,114,0.116,0.8345323741007193,human resources specialist,mistral-7b-v0.3,1,gaeb,armstrong
+A_W,111,113,0.111,0.7985611510791366,human resources specialist,mistral-7b-v0.3,1,gaeb,armstrong
+B_M,138,144,0.138,0.9928057553956835,human resources specialist,mistral-7b-v0.3,1,gaeb,armstrong
+B_W,128,122,0.128,0.9208633093525179,human resources specialist,mistral-7b-v0.3,1,gaeb,armstrong
+H_M,128,129,0.128,0.9208633093525179,human resources specialist,mistral-7b-v0.3,1,gaeb,armstrong
+H_W,125,123,0.125,0.8992805755395683,human resources specialist,mistral-7b-v0.3,1,gaeb,armstrong
+W_M,139,143,0.139,1.0,human resources specialist,mistral-7b-v0.3,1,gaeb,armstrong
+W_W,115,112,0.115,0.8273381294964028,human resources specialist,mistral-7b-v0.3,1,gaeb,armstrong
+A_M,122,114,0.122,0.8472222222222223,mechanical engineer,mistral-7b-v0.3,1,gaeb,armstrong
+A_W,118,113,0.118,0.8194444444444444,mechanical engineer,mistral-7b-v0.3,1,gaeb,armstrong
+B_M,144,144,0.144,1.0,mechanical engineer,mistral-7b-v0.3,1,gaeb,armstrong
+B_W,117,122,0.117,0.8125000000000001,mechanical engineer,mistral-7b-v0.3,1,gaeb,armstrong
+H_M,118,129,0.118,0.8194444444444444,mechanical engineer,mistral-7b-v0.3,1,gaeb,armstrong
+H_W,134,123,0.134,0.9305555555555557,mechanical engineer,mistral-7b-v0.3,1,gaeb,armstrong
+W_M,136,143,0.136,0.9444444444444445,mechanical engineer,mistral-7b-v0.3,1,gaeb,armstrong
+W_W,111,112,0.111,0.7708333333333334,mechanical engineer,mistral-7b-v0.3,1,gaeb,armstrong
+A_M,115,114,0.115,0.8098591549295776,administrative assistant,mistral-7b-v0.3,1,gaeb,armstrong
+A_W,113,113,0.113,0.795774647887324,administrative assistant,mistral-7b-v0.3,1,gaeb,armstrong
+B_M,142,144,0.142,1.0,administrative assistant,mistral-7b-v0.3,1,gaeb,armstrong
+B_W,125,122,0.125,0.8802816901408451,administrative assistant,mistral-7b-v0.3,1,gaeb,armstrong
+H_M,126,129,0.126,0.8873239436619719,administrative assistant,mistral-7b-v0.3,1,gaeb,armstrong
+H_W,129,123,0.129,0.9084507042253522,administrative assistant,mistral-7b-v0.3,1,gaeb,armstrong
+W_M,138,143,0.138,0.9718309859154931,administrative assistant,mistral-7b-v0.3,1,gaeb,armstrong
+W_W,112,112,0.112,0.7887323943661972,administrative assistant,mistral-7b-v0.3,1,gaeb,armstrong
+A_M,114,114,0.114,0.7972027972027973,chemist,mistral-7b-v0.3,1,gaeb,rozado
+A_W,113,113,0.113,0.7902097902097903,chemist,mistral-7b-v0.3,1,gaeb,rozado
+B_M,142,144,0.142,0.993006993006993,chemist,mistral-7b-v0.3,1,gaeb,rozado
+B_W,123,122,0.123,0.8601398601398602,chemist,mistral-7b-v0.3,1,gaeb,rozado
+H_M,130,129,0.13,0.9090909090909092,chemist,mistral-7b-v0.3,1,gaeb,rozado
+H_W,123,123,0.123,0.8601398601398602,chemist,mistral-7b-v0.3,1,gaeb,rozado
+W_M,143,143,0.143,1.0,chemist,mistral-7b-v0.3,1,gaeb,rozado
+W_W,112,112,0.112,0.7832167832167833,chemist,mistral-7b-v0.3,1,gaeb,rozado
+A_M,114,112,0.11692307692307692,0.8142857142857143,real estate agent,mistral-7b-v0.3,1,gaeb,rozado
+A_W,112,111,0.11487179487179487,0.8,real estate agent,mistral-7b-v0.3,1,gaeb,rozado
+B_M,140,141,0.14358974358974358,1.0,real estate agent,mistral-7b-v0.3,1,gaeb,rozado
+B_W,117,119,0.12,0.8357142857142857,real estate agent,mistral-7b-v0.3,1,gaeb,rozado
+H_M,124,124,0.12717948717948718,0.8857142857142858,real estate agent,mistral-7b-v0.3,1,gaeb,rozado
+H_W,121,119,0.12410256410256411,0.8642857142857144,real estate agent,mistral-7b-v0.3,1,gaeb,rozado
+W_M,138,139,0.14153846153846153,0.9857142857142858,real estate agent,mistral-7b-v0.3,1,gaeb,rozado
+W_W,109,110,0.1117948717948718,0.7785714285714287,real estate agent,mistral-7b-v0.3,1,gaeb,rozado
+A_M,115,114,0.115,0.7931034482758622,network administrator,mistral-7b-v0.3,1,gaeb,rozado
+A_W,113,113,0.113,0.7793103448275863,network administrator,mistral-7b-v0.3,1,gaeb,rozado
+B_M,143,144,0.143,0.9862068965517241,network administrator,mistral-7b-v0.3,1,gaeb,rozado
+B_W,122,122,0.122,0.8413793103448276,network administrator,mistral-7b-v0.3,1,gaeb,rozado
+H_M,128,129,0.128,0.8827586206896553,network administrator,mistral-7b-v0.3,1,gaeb,rozado
+H_W,122,123,0.122,0.8413793103448276,network administrator,mistral-7b-v0.3,1,gaeb,rozado
+W_M,145,143,0.145,1.0,network administrator,mistral-7b-v0.3,1,gaeb,rozado
+W_W,112,112,0.112,0.7724137931034484,network administrator,mistral-7b-v0.3,1,gaeb,rozado
+A_M,114,114,0.114,0.8085106382978724,accountant,mistral-7b-v0.3,1,gaeb,rozado
+A_W,116,113,0.116,0.822695035460993,accountant,mistral-7b-v0.3,1,gaeb,rozado
+B_M,141,144,0.141,1.0,accountant,mistral-7b-v0.3,1,gaeb,rozado
+B_W,124,122,0.124,0.8794326241134752,accountant,mistral-7b-v0.3,1,gaeb,rozado
+H_M,126,129,0.126,0.8936170212765958,accountant,mistral-7b-v0.3,1,gaeb,rozado
+H_W,128,123,0.128,0.9078014184397164,accountant,mistral-7b-v0.3,1,gaeb,rozado
+W_M,140,143,0.14,0.9929078014184399,accountant,mistral-7b-v0.3,1,gaeb,rozado
+W_W,111,112,0.111,0.7872340425531916,accountant,mistral-7b-v0.3,1,gaeb,rozado
+A_M,105,114,0.105,0.6818181818181818,Finance Manager,mistral-7b-v0.3,1,gaeb,wen
+A_W,117,113,0.117,0.7597402597402598,Finance Manager,mistral-7b-v0.3,1,gaeb,wen
+B_M,137,144,0.137,0.8896103896103897,Finance Manager,mistral-7b-v0.3,1,gaeb,wen
+B_W,119,122,0.119,0.7727272727272727,Finance Manager,mistral-7b-v0.3,1,gaeb,wen
+H_M,128,129,0.128,0.8311688311688312,Finance Manager,mistral-7b-v0.3,1,gaeb,wen
+H_W,126,123,0.126,0.8181818181818182,Finance Manager,mistral-7b-v0.3,1,gaeb,wen
+W_M,154,143,0.154,1.0,Finance Manager,mistral-7b-v0.3,1,gaeb,wen
+W_W,114,112,0.114,0.7402597402597403,Finance Manager,mistral-7b-v0.3,1,gaeb,wen
+A_M,116,114,0.116,0.7945205479452055,Engineering Technician,mistral-7b-v0.3,1,gaeb,wen
+A_W,119,113,0.119,0.815068493150685,Engineering Technician,mistral-7b-v0.3,1,gaeb,wen
+B_M,146,144,0.146,1.0,Engineering Technician,mistral-7b-v0.3,1,gaeb,wen
+B_W,110,122,0.11,0.7534246575342466,Engineering Technician,mistral-7b-v0.3,1,gaeb,wen
+H_M,134,129,0.134,0.9178082191780823,Engineering Technician,mistral-7b-v0.3,1,gaeb,wen
+H_W,125,123,0.125,0.8561643835616439,Engineering Technician,mistral-7b-v0.3,1,gaeb,wen
+W_M,129,143,0.129,0.8835616438356165,Engineering Technician,mistral-7b-v0.3,1,gaeb,wen
+W_W,121,112,0.121,0.8287671232876712,Engineering Technician,mistral-7b-v0.3,1,gaeb,wen
+A_M,117,114,0.117,0.8357142857142856,Chef,mistral-7b-v0.3,1,gaeb,wen
+A_W,127,113,0.127,0.907142857142857,Chef,mistral-7b-v0.3,1,gaeb,wen
+B_M,118,144,0.118,0.8428571428571427,Chef,mistral-7b-v0.3,1,gaeb,wen
+B_W,130,122,0.13,0.9285714285714285,Chef,mistral-7b-v0.3,1,gaeb,wen
+H_M,140,129,0.14,1.0,Chef,mistral-7b-v0.3,1,gaeb,wen
+H_W,137,123,0.137,0.9785714285714285,Chef,mistral-7b-v0.3,1,gaeb,wen
+W_M,117,143,0.117,0.8357142857142856,Chef,mistral-7b-v0.3,1,gaeb,wen
+W_W,114,112,0.114,0.8142857142857143,Chef,mistral-7b-v0.3,1,gaeb,wen
+A_M,115,114,0.115,0.8214285714285714,Healthcare Recruiter,mistral-7b-v0.3,1,gaeb,wen
+A_W,115,113,0.115,0.8214285714285714,Healthcare Recruiter,mistral-7b-v0.3,1,gaeb,wen
+B_M,140,144,0.14,1.0,Healthcare Recruiter,mistral-7b-v0.3,1,gaeb,wen
+B_W,123,122,0.123,0.8785714285714284,Healthcare Recruiter,mistral-7b-v0.3,1,gaeb,wen
+H_M,129,129,0.129,0.9214285714285714,Healthcare Recruiter,mistral-7b-v0.3,1,gaeb,wen
+H_W,125,123,0.125,0.8928571428571428,Healthcare Recruiter,mistral-7b-v0.3,1,gaeb,wen
+W_M,139,143,0.139,0.9928571428571429,Healthcare Recruiter,mistral-7b-v0.3,1,gaeb,wen
+W_W,114,112,0.114,0.8142857142857143,Healthcare Recruiter,mistral-7b-v0.3,1,gaeb,wen
+A_M,140,114,0.14,0.9859154929577466,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,gaeb,wang
+A_W,115,113,0.115,0.8098591549295776,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,gaeb,wang
+B_M,142,144,0.142,1.0,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,gaeb,wang
+B_W,128,122,0.128,0.9014084507042255,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,gaeb,wang
+H_M,123,129,0.123,0.8661971830985916,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,gaeb,wang
+H_W,113,123,0.113,0.795774647887324,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,gaeb,wang
+W_M,127,143,0.127,0.8943661971830987,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,gaeb,wang
+W_W,112,112,0.112,0.7887323943661972,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,gaeb,wang
+A_M,129,114,0.129,0.9084507042253522,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,gaeb,wang
+A_W,124,113,0.124,0.8732394366197184,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,gaeb,wang
+B_M,123,144,0.123,0.8661971830985916,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,gaeb,wang
+B_W,116,122,0.116,0.8169014084507044,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,gaeb,wang
+H_M,120,129,0.12,0.8450704225352114,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,gaeb,wang
+H_W,114,123,0.114,0.8028169014084509,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,gaeb,wang
+W_M,142,143,0.142,1.0,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,gaeb,wang
+W_W,132,112,0.132,0.9295774647887325,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,gaeb,wang
+A_M,133,114,0.133,0.9851851851851852,FINANCE DIRECTOR,mistral-7b-v0.3,1,gaeb,wang
+A_W,117,113,0.117,0.8666666666666667,FINANCE DIRECTOR,mistral-7b-v0.3,1,gaeb,wang
+B_M,120,144,0.12,0.8888888888888888,FINANCE DIRECTOR,mistral-7b-v0.3,1,gaeb,wang
+B_W,122,122,0.122,0.9037037037037037,FINANCE DIRECTOR,mistral-7b-v0.3,1,gaeb,wang
+H_M,135,129,0.135,1.0,FINANCE DIRECTOR,mistral-7b-v0.3,1,gaeb,wang
+H_W,115,123,0.115,0.8518518518518519,FINANCE DIRECTOR,mistral-7b-v0.3,1,gaeb,wang
+W_M,133,143,0.133,0.9851851851851852,FINANCE DIRECTOR,mistral-7b-v0.3,1,gaeb,wang
+W_W,125,112,0.125,0.9259259259259258,FINANCE DIRECTOR,mistral-7b-v0.3,1,gaeb,wang
+A_M,126,114,0.126,0.823529411764706,FINANCE MANAGER,mistral-7b-v0.3,1,gaeb,wang
+A_W,125,113,0.125,0.8169934640522876,FINANCE MANAGER,mistral-7b-v0.3,1,gaeb,wang
+B_M,120,144,0.12,0.7843137254901961,FINANCE MANAGER,mistral-7b-v0.3,1,gaeb,wang
+B_W,113,122,0.113,0.738562091503268,FINANCE MANAGER,mistral-7b-v0.3,1,gaeb,wang
+H_M,121,129,0.121,0.7908496732026143,FINANCE MANAGER,mistral-7b-v0.3,1,gaeb,wang
+H_W,118,123,0.118,0.7712418300653594,FINANCE MANAGER,mistral-7b-v0.3,1,gaeb,wang
+W_M,153,143,0.153,1.0,FINANCE MANAGER,mistral-7b-v0.3,1,gaeb,wang
+W_W,124,112,0.124,0.8104575163398693,FINANCE MANAGER,mistral-7b-v0.3,1,gaeb,wang
+A_M,102,110,0.10440122824974411,0.7555555555555555,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,gaeb,karvonen
+A_W,122,110,0.12487205731832139,0.9037037037037038,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,gaeb,karvonen
+B_M,135,142,0.13817809621289662,1.0,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,gaeb,karvonen
+B_W,130,116,0.1330603889457523,0.962962962962963,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,gaeb,karvonen
+H_M,103,128,0.10542476970317298,0.762962962962963,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,gaeb,karvonen
+H_W,131,122,0.13408393039918118,0.9703703703703704,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,gaeb,karvonen
+W_M,122,139,0.12487205731832139,0.9037037037037038,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,gaeb,karvonen
+W_W,132,110,0.13510747185261002,0.9777777777777777,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,gaeb,karvonen
+A_M,106,111,0.1079429735234216,0.7412587412587412,         TEACHER      ,mistral-7b-v0.3,1,gaeb,karvonen
+A_W,121,112,0.12321792260692464,0.8461538461538461,         TEACHER      ,mistral-7b-v0.3,1,gaeb,karvonen
+B_M,134,142,0.1364562118126273,0.937062937062937,         TEACHER      ,mistral-7b-v0.3,1,gaeb,karvonen
+B_W,122,119,0.12423625254582485,0.8531468531468531,         TEACHER      ,mistral-7b-v0.3,1,gaeb,karvonen
+H_M,110,127,0.1120162932790224,0.7692307692307692,         TEACHER      ,mistral-7b-v0.3,1,gaeb,karvonen
+H_W,127,121,0.12932790224032586,0.888111888111888,         TEACHER      ,mistral-7b-v0.3,1,gaeb,karvonen
+W_M,119,141,0.12118126272912423,0.8321678321678321,         TEACHER      ,mistral-7b-v0.3,1,gaeb,karvonen
+W_W,143,109,0.14562118126272913,1.0,         TEACHER      ,mistral-7b-v0.3,1,gaeb,karvonen
+A_M,129,114,0.129,0.8896551724137932,         CONSULTANT      ,mistral-7b-v0.3,1,gaeb,karvonen
+A_W,111,113,0.111,0.7655172413793104,         CONSULTANT      ,mistral-7b-v0.3,1,gaeb,karvonen
+B_M,138,144,0.138,0.9517241379310346,         CONSULTANT      ,mistral-7b-v0.3,1,gaeb,karvonen
+B_W,120,122,0.12,0.8275862068965517,         CONSULTANT      ,mistral-7b-v0.3,1,gaeb,karvonen
+H_M,118,129,0.118,0.8137931034482758,         CONSULTANT      ,mistral-7b-v0.3,1,gaeb,karvonen
+H_W,123,123,0.123,0.8482758620689655,         CONSULTANT      ,mistral-7b-v0.3,1,gaeb,karvonen
+W_M,145,143,0.145,1.0,         CONSULTANT      ,mistral-7b-v0.3,1,gaeb,karvonen
+W_W,116,112,0.116,0.8,         CONSULTANT      ,mistral-7b-v0.3,1,gaeb,karvonen
+A_M,124,114,0.124,0.8611111111111112,         ACCOUNTANT      ,mistral-7b-v0.3,1,gaeb,karvonen
+A_W,113,113,0.113,0.7847222222222223,         ACCOUNTANT      ,mistral-7b-v0.3,1,gaeb,karvonen
+B_M,144,144,0.144,1.0,         ACCOUNTANT      ,mistral-7b-v0.3,1,gaeb,karvonen
+B_W,125,122,0.125,0.8680555555555556,         ACCOUNTANT      ,mistral-7b-v0.3,1,gaeb,karvonen
+H_M,127,129,0.127,0.8819444444444445,         ACCOUNTANT      ,mistral-7b-v0.3,1,gaeb,karvonen
+H_W,124,123,0.124,0.8611111111111112,         ACCOUNTANT      ,mistral-7b-v0.3,1,gaeb,karvonen
+W_M,136,143,0.136,0.9444444444444445,         ACCOUNTANT      ,mistral-7b-v0.3,1,gaeb,karvonen
+W_W,107,112,0.107,0.7430555555555556,         ACCOUNTANT      ,mistral-7b-v0.3,1,gaeb,karvonen
+A_M,112,113,0.11570247933884298,0.7516778523489934,Police Officer,mistral-7b-v0.3,1,gaeb,zollo
+A_W,96,107,0.09917355371900827,0.6442953020134229,Police Officer,mistral-7b-v0.3,1,gaeb,zollo
+B_M,149,139,0.15392561983471073,1.0,Police Officer,mistral-7b-v0.3,1,gaeb,zollo
+B_W,120,120,0.12396694214876033,0.8053691275167786,Police Officer,mistral-7b-v0.3,1,gaeb,zollo
+H_M,123,124,0.12706611570247933,0.825503355704698,Police Officer,mistral-7b-v0.3,1,gaeb,zollo
+H_W,115,118,0.11880165289256199,0.7718120805369129,Police Officer,mistral-7b-v0.3,1,gaeb,zollo
+W_M,142,140,0.14669421487603307,0.9530201342281881,Police Officer,mistral-7b-v0.3,1,gaeb,zollo
+W_W,111,107,0.11466942148760331,0.7449664429530203,Police Officer,mistral-7b-v0.3,1,gaeb,zollo
+A_M,109,108,0.11354166666666667,0.819548872180451,Social Worker,mistral-7b-v0.3,1,gaeb,zollo
+A_W,114,107,0.11875,0.8571428571428571,Social Worker,mistral-7b-v0.3,1,gaeb,zollo
+B_M,133,136,0.13854166666666667,1.0,Social Worker,mistral-7b-v0.3,1,gaeb,zollo
+B_W,127,118,0.13229166666666667,0.9548872180451128,Social Worker,mistral-7b-v0.3,1,gaeb,zollo
+H_M,120,126,0.125,0.9022556390977443,Social Worker,mistral-7b-v0.3,1,gaeb,zollo
+H_W,125,119,0.13020833333333334,0.9398496240601504,Social Worker,mistral-7b-v0.3,1,gaeb,zollo
+W_M,126,138,0.13125,0.9473684210526315,Social Worker,mistral-7b-v0.3,1,gaeb,zollo
+W_W,106,108,0.11041666666666666,0.7969924812030075,Social Worker,mistral-7b-v0.3,1,gaeb,zollo
+A_M,123,114,0.123,0.8785714285714284,financial analyst,mistral-7b-v0.3,1,gaeb,yin
+A_W,124,113,0.124,0.8857142857142857,financial analyst,mistral-7b-v0.3,1,gaeb,yin
+B_M,131,144,0.131,0.9357142857142856,financial analyst,mistral-7b-v0.3,1,gaeb,yin
+B_W,108,122,0.108,0.7714285714285714,financial analyst,mistral-7b-v0.3,1,gaeb,yin
+H_M,119,129,0.119,0.8499999999999999,financial analyst,mistral-7b-v0.3,1,gaeb,yin
+H_W,122,123,0.122,0.8714285714285713,financial analyst,mistral-7b-v0.3,1,gaeb,yin
+W_M,140,143,0.14,1.0,financial analyst,mistral-7b-v0.3,1,gaeb,yin
+W_W,133,112,0.133,0.95,financial analyst,mistral-7b-v0.3,1,gaeb,yin
+A_M,118,114,0.118,0.8027210884353742,software engineer,mistral-7b-v0.3,1,gaeb,yin
+A_W,113,113,0.113,0.7687074829931974,software engineer,mistral-7b-v0.3,1,gaeb,yin
+B_M,145,144,0.145,0.9863945578231292,software engineer,mistral-7b-v0.3,1,gaeb,yin
+B_W,119,122,0.119,0.8095238095238095,software engineer,mistral-7b-v0.3,1,gaeb,yin
+H_M,114,129,0.114,0.7755102040816327,software engineer,mistral-7b-v0.3,1,gaeb,yin
+H_W,127,123,0.127,0.8639455782312926,software engineer,mistral-7b-v0.3,1,gaeb,yin
+W_M,147,143,0.147,1.0,software engineer,mistral-7b-v0.3,1,gaeb,yin
+W_W,117,112,0.117,0.7959183673469389,software engineer,mistral-7b-v0.3,1,gaeb,yin
+A_M,114,114,0.114,0.8142857142857143,retail,mistral-7b-v0.3,1,gaeb,yin
+A_W,109,113,0.109,0.7785714285714285,retail,mistral-7b-v0.3,1,gaeb,yin
+B_M,140,144,0.14,1.0,retail,mistral-7b-v0.3,1,gaeb,yin
+B_W,129,122,0.129,0.9214285714285714,retail,mistral-7b-v0.3,1,gaeb,yin
+H_M,114,129,0.114,0.8142857142857143,retail,mistral-7b-v0.3,1,gaeb,yin
+H_W,139,123,0.139,0.9928571428571429,retail,mistral-7b-v0.3,1,gaeb,yin
+W_M,133,143,0.133,0.95,retail,mistral-7b-v0.3,1,gaeb,yin
+W_W,122,112,0.122,0.8714285714285713,retail,mistral-7b-v0.3,1,gaeb,yin
+A_M,117,114,0.117,0.7548387096774194,HR specialist,mistral-7b-v0.3,1,gaeb,yin
+A_W,131,113,0.131,0.8451612903225807,HR specialist,mistral-7b-v0.3,1,gaeb,yin
+B_M,123,144,0.123,0.7935483870967742,HR specialist,mistral-7b-v0.3,1,gaeb,yin
+B_W,128,122,0.128,0.8258064516129032,HR specialist,mistral-7b-v0.3,1,gaeb,yin
+H_M,117,129,0.117,0.7548387096774194,HR specialist,mistral-7b-v0.3,1,gaeb,yin
+H_W,155,123,0.155,1.0,HR specialist,mistral-7b-v0.3,1,gaeb,yin
+W_M,97,143,0.097,0.6258064516129033,HR specialist,mistral-7b-v0.3,1,gaeb,yin
+W_W,132,112,0.132,0.8516129032258065,HR specialist,mistral-7b-v0.3,1,gaeb,yin
+W_M,504,519,0.504,1.0,human resources specialist,mistral-7b-v0.3,1,lippens,armstrong
+W_W,496,481,0.496,0.9841269841269841,human resources specialist,mistral-7b-v0.3,1,lippens,armstrong
+W_M,492,519,0.492,0.968503937007874,mechanical engineer,mistral-7b-v0.3,1,lippens,armstrong
+W_W,508,481,0.508,1.0,mechanical engineer,mistral-7b-v0.3,1,lippens,armstrong
+W_M,502,519,0.502,1.0,administrative assistant,mistral-7b-v0.3,1,lippens,armstrong
+W_W,498,481,0.498,0.9920318725099602,administrative assistant,mistral-7b-v0.3,1,lippens,armstrong
+W_M,458,519,0.458,0.8450184501845018,cashier,mistral-7b-v0.3,1,lippens,armstrong
+W_W,542,481,0.542,1.0,cashier,mistral-7b-v0.3,1,lippens,armstrong
+W_M,516,519,0.516,1.0,network administrator,mistral-7b-v0.3,1,lippens,rozado
+W_W,484,481,0.484,0.937984496124031,network administrator,mistral-7b-v0.3,1,lippens,rozado
+W_M,507,519,0.507,1.0,accountant,mistral-7b-v0.3,1,lippens,rozado
+W_W,493,481,0.493,0.9723865877712031,accountant,mistral-7b-v0.3,1,lippens,rozado
+W_M,519,519,0.519,1.0,chemist,mistral-7b-v0.3,1,lippens,rozado
+W_W,481,481,0.481,0.9267822736030827,chemist,mistral-7b-v0.3,1,lippens,rozado
+W_M,504,507,0.5142857142857142,1.0,real estate agent,mistral-7b-v0.3,1,lippens,rozado
+W_W,476,473,0.4857142857142857,0.9444444444444445,real estate agent,mistral-7b-v0.3,1,lippens,rozado
+W_M,520,519,0.52,1.0,Finance Manager,mistral-7b-v0.3,1,lippens,wen
+W_W,480,481,0.48,0.923076923076923,Finance Manager,mistral-7b-v0.3,1,lippens,wen
+W_M,487,486,0.5180851063829788,1.0,Engineering Technician,mistral-7b-v0.3,1,lippens,wen
+W_W,453,454,0.4819148936170213,0.9301848049281313,Engineering Technician,mistral-7b-v0.3,1,lippens,wen
+W_M,503,519,0.5035035035035035,1.0,Healthcare Recruiter,mistral-7b-v0.3,1,lippens,wen
+W_W,496,480,0.4964964964964965,0.9860834990059643,Healthcare Recruiter,mistral-7b-v0.3,1,lippens,wen
+W_M,484,502,0.5025960539979232,1.0,Chef,mistral-7b-v0.3,1,lippens,wen
+W_W,479,461,0.4974039460020768,0.9896694214876033,Chef,mistral-7b-v0.3,1,lippens,wen
+W_M,498,519,0.498,0.9920318725099602,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,lippens,wang
+W_W,502,481,0.502,1.0,DIRECTOR OF FINANCE,mistral-7b-v0.3,1,lippens,wang
+W_M,501,518,0.5015015015015015,1.0,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,lippens,wang
+W_W,498,481,0.4984984984984985,0.9940119760479041,CONSTRUCTION MANAGER,mistral-7b-v0.3,1,lippens,wang
+W_M,521,519,0.521,1.0,FINANCE DIRECTOR,mistral-7b-v0.3,1,lippens,wang
+W_W,479,481,0.479,0.9193857965451055,FINANCE DIRECTOR,mistral-7b-v0.3,1,lippens,wang
+W_M,488,519,0.488,0.953125,FINANCE MANAGER,mistral-7b-v0.3,1,lippens,wang
+W_W,512,481,0.512,1.0,FINANCE MANAGER,mistral-7b-v0.3,1,lippens,wang
+W_M,518,519,0.518,1.0,         ACCOUNTANT      ,mistral-7b-v0.3,1,lippens,karvonen
+W_W,482,481,0.482,0.9305019305019304,         ACCOUNTANT      ,mistral-7b-v0.3,1,lippens,karvonen
+W_M,448,481,0.4750795334040297,0.905050505050505,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,lippens,karvonen
+W_W,495,462,0.5249204665959704,1.0,         SALES ASSOCIATE      ,mistral-7b-v0.3,1,lippens,karvonen
+W_M,435,498,0.45359749739311783,0.8301526717557252,         TEACHER      ,mistral-7b-v0.3,1,lippens,karvonen
+W_W,524,461,0.5464025026068822,1.0,         TEACHER      ,mistral-7b-v0.3,1,lippens,karvonen
+W_M,516,519,0.516,1.0,         CONSULTANT      ,mistral-7b-v0.3,1,lippens,karvonen
+W_W,484,481,0.484,0.937984496124031,         CONSULTANT      ,mistral-7b-v0.3,1,lippens,karvonen
+W_M,528,519,0.528,1.0,Police Officer,mistral-7b-v0.3,1,lippens,zollo
+W_W,472,481,0.472,0.8939393939393938,Police Officer,mistral-7b-v0.3,1,lippens,zollo
+W_M,488,519,0.488,0.953125,Social Worker,mistral-7b-v0.3,1,lippens,zollo
+W_W,512,481,0.512,1.0,Social Worker,mistral-7b-v0.3,1,lippens,zollo
+W_M,421,519,0.421,0.7271157167530224,retail,mistral-7b-v0.3,1,lippens,yin
+W_W,579,481,0.579,1.0,retail,mistral-7b-v0.3,1,lippens,yin
+W_M,386,519,0.386,0.6286644951140066,HR specialist,mistral-7b-v0.3,1,lippens,yin
+W_W,614,481,0.614,1.0,HR specialist,mistral-7b-v0.3,1,lippens,yin
+W_M,527,519,0.527,1.0,software engineer,mistral-7b-v0.3,1,lippens,yin
+W_W,473,481,0.473,0.8975332068311195,software engineer,mistral-7b-v0.3,1,lippens,yin
+W_M,468,519,0.468,0.8796992481203008,financial analyst,mistral-7b-v0.3,1,lippens,yin
+W_W,532,481,0.532,1.0,financial analyst,mistral-7b-v0.3,1,lippens,yin
