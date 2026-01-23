@@ -625,6 +625,9 @@ def analyze_yin(args, config, all_together=False):
     # repeatedly for every job/analysis loop.
 
     parsed_data = []
+    exact_match_count = 0  # Track when gpt_race_order exactly matches demo_order
+    missing_names_count = 0  # Track number of instances when names are not found
+    example_sentence_with_missing_names = None  # Store one example sentence with missing names
 
     for fn in tqdm(files, desc="Parsing Files"):
         try:
@@ -638,16 +641,33 @@ def analyze_yin(args, config, all_together=False):
             
             # Determine GPT Order based on text position
             name2len = {}
+            has_missing_names = False  # Track if any names are not found in this sentence
             for name in real_order:
                 # Split sentence by name, take length of first part to find position
-                name2len[name] = len(sentence.split(name)[0])
+                name2len[name] = len(sentence.split(name.split(' ')[0])[0])
+                # Check if the name (or its first part) is actually in the sentence
+                name_first_part = name.split(' ')[0]
+                if name_first_part not in sentence and name not in sentence:
+                    has_missing_names = True
+            
+            # Count instances when names are not found
+            if has_missing_names:
+                missing_names_count += 1
+                # Store the first example sentence with missing names
+                if example_sentence_with_missing_names is None:
+                    example_sentence_with_missing_names = records['choices'][0]['message']['content']
+            
             name2len = dict(sorted(name2len.items(), key=lambda item: item[1]))
             gpt_order = list(name2len.keys())
 
-        
+            
             # Map back to demographics
             name2race = dict(zip(real_order, demo_order))
             gpt_race_order = [name2race.get(_) for _ in gpt_order]
+            
+            # Check if gpt_race_order exactly matches demo_order
+            if gpt_race_order == demo_order:
+                exact_match_count += 1
             
             # Store processed record
             parsed_data.append({
@@ -661,6 +681,55 @@ def analyze_yin(args, config, all_together=False):
         except Exception as e:
             # print(f"Error parsing {fn}: {e}")
             continue
+
+    # Save exact match statistics to a new file
+    if len(parsed_data) > 0:
+        exact_match_filepath = 'results/{}_sampling_{}_analysis_{}_exact_matches.csv'.format(
+            config['experimental_framework'], args.sampling, args.analysis
+        )
+        
+        # Check if file exists, if not create with headers
+        if not os.path.exists(exact_match_filepath):
+            exact_match_df = pd.DataFrame(columns=['model', 'name_bundle', 'job_bundle', 'number_of_instances', 'total_instances'])
+            exact_match_df.to_csv(exact_match_filepath, index=False)
+        
+        # Create new row with exact match statistics
+        exact_match_row = pd.DataFrame([{
+            'model': model,
+            'name_bundle': name_bundle,
+            'job_bundle': job_bundle,
+            'number_of_instances': exact_match_count,
+            'total_instances': len(parsed_data)
+        }])
+        
+        # Append to file
+        exact_match_row.to_csv(exact_match_filepath, mode='a', index=False, header=False)
+        print(f"Saved exact match statistics to {exact_match_filepath}: {exact_match_count}/{len(parsed_data)} = {exact_match_count/len(parsed_data):.4f}")
+
+    # Save missing names statistics to a file
+    if len(parsed_data) > 0:
+        missing_names_filepath = 'results/{}_sampling_{}_analysis_{}_missing_names.csv'.format(
+            config['experimental_framework'], args.sampling, args.analysis
+        )
+        
+        # Check if file exists, if not create with headers
+        if not os.path.exists(missing_names_filepath):
+            missing_names_df = pd.DataFrame(columns=['model', 'name_bundle', 'job_bundle', 'number_of_instances', 'total_instances', 'example_sentence'])
+            missing_names_df.to_csv(missing_names_filepath, index=False)
+        
+        # Create new row with missing names statistics
+        missing_names_row = pd.DataFrame([{
+            'model': model,
+            'name_bundle': name_bundle,
+            'job_bundle': job_bundle,
+            'number_of_instances': missing_names_count,
+            'total_instances': len(parsed_data),
+            'example_sentence': example_sentence_with_missing_names if example_sentence_with_missing_names is not None else ''
+        }])
+        
+        # Append to file
+        missing_names_row.to_csv(missing_names_filepath, mode='a', index=False, header=False)
+        print(f"Saved missing names statistics to {missing_names_filepath}: {missing_names_count}/{len(parsed_data)} = {missing_names_count/len(parsed_data):.4f}")
 
 
     # --- Step 2: Generate Original Detailed CSV (By Job, Specific Demos) ---
@@ -780,3 +849,4 @@ def analyze(args, config, all_together=False):
         analyze_yin(args, config, all_together)
     else:
         raise ValueError(f"experimental_framework {config['experimental_framework']} not supported")
+
