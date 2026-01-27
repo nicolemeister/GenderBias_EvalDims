@@ -6,7 +6,8 @@ MODELS = {
 }
 
 MODELS_GPT = {
-    "gpt-4o-mini": "gpt-4o-mini",
+    # "gpt-4o-mini": "gpt-4o-mini",
+    "gpt-4o-2024-11-20": "gpt-4o-2024-11-20",
     "gpt-5-nano-2025-08-07": "gpt-5-nano-2025-08-07",
 }
 

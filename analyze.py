@@ -26,6 +26,15 @@ def main():
     parser.add_argument('--overlay_type', type=str, default='overlays', help='Type of overlay to use.') # overlays or additional_overlays 
     parser.add_argument('--name', type=str, help='Name of the bundle.')
     parser.add_argument('--job', type=str, help='job of the bundle.')
+
+    parser.add_argument(
+        '--per_job', 
+        action='store_true', 
+        default=False, 
+        help='If set, check the list of things to relaunch and only let the code happen if it fits one of the conditions.'
+    )
+
+
     # parser.add_argument('--random_state', type=int, default=42, help='Random state for the experiment.')
     args = parser.parse_args()
     

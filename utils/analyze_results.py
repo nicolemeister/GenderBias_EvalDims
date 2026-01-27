@@ -17,7 +17,6 @@ from tqdm import tqdm
 import json
 from utils.variables import MODELS
 
-
 columns = [
     "Author",
     "Names",
@@ -77,107 +76,70 @@ def compute_ttest(df, sensitive_attribute_vector):
 
     return results, std, pvals
 
-
 def score_diff(df, sensitive_attribute_vector):
-
-    import numpy as np
-
-    # Define levels
-    gender_levels = ["men", "women"]
-    race_levels = ["white", "hispanic", "asian", "black"]
-
-    # Aggregate sum of 'value' by race and gender
-    agg = df.groupby(['race', 'gender'])['value'].sum().reset_index()
-
-    # Calculate overall sum of 'value'
-    total_value = agg['value'].sum()
-
-    # Calculate probability of being hired per group
-    agg['prob'] = agg['value'] / total_value
-
-    # Create a function to get probability for a group
-    def get_prob(race, gender):
-        row = agg[(agg['race'] == race) & (agg['gender'] == gender)]
-        if not row.empty:
-            return row['prob'].values[0]
-        else:
-            return 0
-
-    # Reference groups
-    ref_gender = 'men'
-    ref_race = 'white'
-
-    # Probability for reference groups
-    prob_ref_gender = agg[agg['gender'] == ref_gender]['prob'].sum()
-    prob_ref_race = agg[agg['race'] == ref_race]['prob'].sum()
-    prob_ref_combined = get_prob(ref_race, ref_gender)
-
-    # Compute relative probabilities
-
-    # 1. Female vs Male (all races)
-    prob_women = agg[agg['gender'] == 'women']['prob'].sum()
-    prob_men = agg[agg['gender'] == 'men']['prob'].sum()
-    rel_prob_female_vs_male = prob_women / prob_men if prob_men else None
-
-    # 2. Hispanic vs White (all genders)
-    prob_hispanic = agg[agg['race'] == 'hispanic']['prob'].sum()
-    prob_white = agg[agg['race'] == 'white']['prob'].sum()
-    rel_prob_hispanic_vs_white = prob_hispanic / prob_white if prob_white else None
-
-    # 3. Asian vs White (all genders)
-    prob_asian = agg[agg['race'] == 'asian']['prob'].sum()
-    rel_prob_asian_vs_white = prob_asian / prob_white if prob_white else None
-
-    # 4. Black vs White (all genders)
-    prob_black = agg[agg['race'] == 'black']['prob'].sum()
-    rel_prob_black_vs_white = prob_black / prob_white if prob_white else None
-
-    # 5. Black women vs White men
-    prob_black_women = get_prob('black', 'women')
-    prob_white_men = get_prob('white', 'men')
-    rel_prob_black_women_vs_white_men = prob_black_women / prob_white_men if prob_white_men else None
-
-    # Print reference probabilities (rounded to 2 decimal places)
-    print("Probability female:", round(prob_women, 4))
-    print("Probability male:", round(prob_men, 4))
-    print("Probability white:", round(prob_white, 4))
-    print("Probability hispanic:", round(prob_hispanic, 4))
-    print("Probability asian:", round(prob_asian, 4))
-    print("Probability black:", round(prob_black, 4))
-
-
-    results = []
-    std_errors = []
+    
+    # Initialize lists to store our three metrics
+    results = [] # Will store the Mean Difference (e.g., -5.2 points)
+    std = []     # Will store the Standard Error
+    pvals = []   # Will store the p-value
+    
     for attr in sensitive_attribute_vector:
+        
+        # 1. Define the two groups based on the attribute
         if attr == 'Woman':
-            score_diff = prob_women - prob_men
-            # Standard error for difference in means
-            group1 = df[df['gender'] == 'women']['value']
-            group2 = df[df['gender'] == 'men']['value']
-            std_error = np.sqrt(group1.var(ddof=1)/len(group1) + group2.var(ddof=1)/len(group2)) if len(group1) > 0 and len(group2) > 0 else None
-
+            group_target = df[df['gender'] == 'women']['value']
+            group_ref = df[df['gender'] == 'men']['value']
+            
         elif attr == 'Asian':
-            score_diff = prob_asian - prob_white
-            group1 = df[df['race'] == 'asian']['value']
-            group2 = df[df['race'] == 'white']['value']
-            std_error = np.sqrt(group1.var(ddof=1)/len(group1) + group2.var(ddof=1)/len(group2)) if len(group1) > 0 and len(group2) > 0 else None
-
+            group_target = df[df['race'] == 'asian']['value']
+            group_ref = df[df['race'] == 'white']['value']
+            
         elif attr == 'Black':
-            score_diff = prob_black - prob_white
-            group1 = df[df['race'] == 'black']['value']
-            group2 = df[df['race'] == 'white']['value']
-            std_error = np.sqrt(group1.var(ddof=1)/len(group1) + group2.var(ddof=1)/len(group2)) if len(group1) > 0 and len(group2) > 0 else None
+            group_target = df[df['race'] == 'black']['value']
+            group_ref = df[df['race'] == 'white']['value']
+            
+        elif attr == 'Hispanic':
+            group_target = df[df['race'] == 'hispanic']['value']
+            group_ref = df[df['race'] == 'white']['value']
+            
+        else:
+            # Append None if attribute is not recognized
+            results.append(None)
+            std.append(None)
+            pvals.append(None)
+            continue
 
-        elif attr == 'Hispanic':   
-            score_diff = prob_hispanic - prob_white
-            group1 = df[df['race'] == 'hispanic']['value']
-            group2 = df[df['race'] == 'white']['value']
-            std_error = np.sqrt(group1.var(ddof=1)/len(group1) + group2.var(ddof=1)/len(group2)) if len(group1) > 0 and len(group2) > 0 else None
+        # 2. Perform calculations if both groups have data
+        if len(group_target) > 0 and len(group_ref) > 0:
+            
+            # --- A. Average Difference (The "Effect Size") ---
+            # This answers "How many points difference?"
+            diff = group_target.mean() - group_ref.mean()
+            results.append(diff)
+            
+            # --- B. P-Value (Significance) ---
+            # We use Welch's t-test (equal_var=False) to match your manual SE formula
+            t_stat, p_val = ttest_ind(group_target, group_ref, equal_var=False, nan_policy='omit')
+            pvals.append(p_val)
 
-        results.append(score_diff)
-        std_errors.append(std_error)
+            # --- C. Standard Error (Precision) ---
+            # Manual calculation using Welch's formula
+            n1 = len(group_target)
+            n2 = len(group_ref)
+            v1 = group_target.var(ddof=1)
+            v2 = group_ref.var(ddof=1)
+            
+            std_err = np.sqrt(v1/n1 + v2/n2)
+            std.append(std_err)
+            
+        else:
+            results.append(None)
+            std.append(None)
+            pvals.append(None)
 
-    return results, std_errors
+    return results, std, pvals
+
+
 
 
 def impact_ratio(df, threshold_value, sensitive_attribute_vector):
@@ -498,7 +460,9 @@ def analyze_armstrong(args, config, all_together=False):
     # read in the data
     # data_filepath = "output_data/{}/model_{}_temp_{}_numtrials_{}_jobs_{}_names_{}_random_state_{}.csv".format(author, model, temp, num_trials, job_bundle, name_bundle, random_state)
     if all_together:
-        data_filepath = f"/nlp/scr/nmeist/EvalDims/output_data/armstrong/together/processed_batch_outputs/{model.replace('_', '-')}/name_{name_bundle}_job_{job_bundle}.csv"
+        model_fullname = MODELS[model]
+        model_fullname = model_fullname.split('/')[-1]
+        data_filepath = f"/nlp/scr/nmeist/EvalDims/output_data/armstrong/together/processed_batch_outputs/{model_fullname}/name_{name_bundle}_job_{job_bundle}.csv"
     else:
         try: data_filepath = "output_data/{}/model_{}_temp_{}_numtrials_{}_jobresumes_{}_names_{}_random_state_{}.csv".format(author, model, temp, num_trials, job_bundle, name_bundle, random_state)
         except: breakpoint()
@@ -538,7 +502,7 @@ def analyze_armstrong(args, config, all_together=False):
             # save a row with the distances
 
         elif metric == 'score_difference':
-            values, std = score_diff(df, sensitive_attribute_vector)
+            values, std, pvals= score_diff(df, sensitive_attribute_vector)
 
         elif metric == 'ttest':
             values, std, pvals = compute_ttest(df, sensitive_attribute_vector)

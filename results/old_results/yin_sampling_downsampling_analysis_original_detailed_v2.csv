@@ -1,4 +1,4 @@
-Author,Names,Jobs,Num_Trials,Model,Temperature,Metric,Sensitive_Attribute_Vector,Result_Vector,Std_Error_Vector,P_Value_Vector
+gender,top,top_og,selection_rate,disparate_impact_ratio,job,model,rank,name_bundle,job_bundler
 A_M,107,100,0.107,0.7588652482269505,cashier,gpt-4o-mini,1,armstrong,armstrong
 A_W,120,117,0.12,0.851063829787234,cashier,gpt-4o-mini,1,armstrong,armstrong
 B_M,139,137,0.139,0.9858156028368796,cashier,gpt-4o-mini,1,armstrong,armstrong

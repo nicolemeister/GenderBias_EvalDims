@@ -68,12 +68,13 @@ def clean_values(values: List[float], remove_zeros: bool = False, remove_outlier
 # ----------------------------
 # Plotting functions
 # ----------------------------
-def plot_global_density(clean_vals: List[float], metric: str, out_path: str) -> None:
+def plot_global_density(clean_vals: List[float], metric: str, out_path: str, yin_values: Optional[List[float]] = None) -> None:
     """Plot a single global density plot for all values."""
     
     if len(clean_vals) > 1 and np.std(clean_vals) > 1e-9:
         plt.figure(figsize=(10, 6))
         kde = gaussian_kde(clean_vals)
+        kde.set_bandwidth(bw_method=0.1)
         x_min, x_max = min(clean_vals), max(clean_vals)
         x_range = x_max - x_min
         x_grid = np.linspace(x_min - 0.1 * x_range, x_max + 0.1 * x_range, 500)
@@ -81,6 +82,7 @@ def plot_global_density(clean_vals: List[float], metric: str, out_path: str) -> 
         
         plt.plot(x_grid, y_grid, color="purple", lw=2, label="Density")
         plt.fill_between(x_grid, y_grid, color="purple", alpha=0.3)
+        
         plt.title(f'Density Plot of {metric} (All Data)\nGender: W')
         plt.xlabel(metric)
         plt.ylabel("Density")
@@ -92,6 +94,7 @@ def plot_global_density(clean_vals: List[float], metric: str, out_path: str) -> 
         # Fallback to histogram
         plt.figure(figsize=(10, 6))
         plt.hist(clean_vals, bins=100, alpha=0.6, color="purple", edgecolor='black')
+        
         plt.title(f'Distribution of {metric} (All Data)\nGender: W')
         plt.xlabel(metric)
         plt.ylabel("Frequency")
@@ -100,7 +103,7 @@ def plot_global_density(clean_vals: List[float], metric: str, out_path: str) -> 
         plt.close()
 
 
-def plot_global_histogram(clean_vals: List[float], metric: str, out_path: str) -> None:
+def plot_global_histogram(clean_vals: List[float], metric: str, out_path: str, yin_values: Optional[List[float]] = None) -> None:
     # Calculate the same limits as the density plot
     x_min, x_max = min(clean_vals), max(clean_vals)
     x_range = x_max - x_min
@@ -117,6 +120,8 @@ def plot_global_histogram(clean_vals: List[float], metric: str, out_path: str) -
     plt.xlabel(metric)
     plt.ylabel("Frequency")
     plt.grid(axis='y', alpha=0.3)
+    if yin_values:
+        plt.legend()
     plt.tight_layout()
     plt.savefig(out_path)
     plt.close()
@@ -127,7 +132,9 @@ def plot_split_density_cdf(
     metric: str, 
     split_type: str,
     out_root: str,
-    bls_values: Optional[Dict[str, float]] = None
+    bls_values: Optional[Dict[str, float]] = None,
+    yin_values: Optional[List[float]] = None,
+    yin_model: Optional[str] = None
 ) -> None:
     """Plot density, CDF, and histogram plots split by model/job/name."""
     if not split_dict:
@@ -268,8 +275,8 @@ def main() -> None:
     parser.add_argument("--input_file", type=str, default="/nlp/scr/nmeist/EvalDims/results/yin_sampling_downsampling_analysis_original_v2.csv", help="Path to input CSV.")
     parser.add_argument("--output_dir", type=str, default="results/figs/yin/all", help="Directory to save figures.")
     parser.add_argument("--split_by", type=str, default="all", 
-                       choices=["all", "model", "job", "name"], 
-                       help="How to split the data: 'all' (no split), 'model', 'job', or 'name'.")
+                       choices=["all", "model", "job", "job_name", "name"], 
+                       help="How to split the data: 'all' (no split), 'model', 'job' (by job_bundle), 'job_name' (by job), or 'name'.")
     parser.add_argument("--metric", type=str, default="all",
                        help="Metric to plot: 'all', 'selection_rate', or 'disparate_impact_ratio'.")
     args = parser.parse_args()
@@ -315,7 +322,28 @@ def main() -> None:
 
     # 4. Filter for 'W'
     #    (Now works easily because 'gender' is a real column)
-    working_df = df[df['gender'] == 'W'].copy()
+    if args.split_by == "job_name":
+        # For job_name split, filter for gender values ending with '_W', 
+        # and then group by job, model, name_bundle, job_bundle, summing selection_rate and averaging disparate_impact_ratio
+        filtered_df = df[df['gender'].str.endswith("_W")].copy()
+        if not filtered_df.empty:
+            group_cols = ['job', 'model', 'name_bundle', 'job_bundle']
+            agg_dict = {
+                'selection_rate': 'sum',
+                'disparate_impact_ratio': 'mean',
+                'gender': 'first',   # keep first gender value in each group
+                'top': 'sum',
+                'top_og': 'sum',
+                'rank': 'first'      # or 'mean', depending on how you want to handle ranks
+            }
+            # Only use columns that exist in the DataFrame
+            agg_dict = {k: v for k, v in agg_dict.items() if k in filtered_df.columns}
+            working_df = filtered_df.groupby(group_cols, as_index=False).agg(agg_dict)
+        else:
+            working_df = filtered_df  # will be empty DataFrame
+    else:
+        # Otherwise, filter for gender == 'W'
+        working_df = df[df['gender'] == 'W'].copy()
 
     # 3. Define Metrics
     if args.metric == "all":
@@ -326,6 +354,26 @@ def main() -> None:
     ensure_dirs(args.output_dir)
 
     print(f"Plotting metrics: {metrics_to_plot} (Split by: {args.split_by})")
+
+    # Extract yin values for each metric (where name_bundle=='yin' and job_bundle=='yin')
+    yin_values_dict = {}
+    yin_model_dict = {}
+    for metric in metrics_to_plot:
+        if metric in working_df.columns:
+            yin_subset = working_df[(working_df['name_bundle'] == 'yin') & (working_df['job_bundle'] == 'yin')]
+            yin_vals = yin_subset[metric].dropna().tolist()
+            yin_values_dict[metric] = clean_values(yin_vals) if yin_vals else []
+            # Get the model name(s) for yin data (use the most common one if multiple)
+            if not yin_subset.empty and 'model' in yin_subset.columns:
+                yin_models = yin_subset['model'].value_counts()
+                if len(yin_models) > 0:
+                    yin_model_dict[metric] = yin_models.index[0]  # Use most common model
+            if yin_values_dict[metric]:
+                print(f"Found {len(yin_values_dict[metric])} yin values for {metric}: {yin_values_dict[metric]}")
+                if metric in yin_model_dict:
+                    print(f"Yin data belongs to model: {yin_model_dict[metric]}")
+            else:
+                print(f"No yin values found for {metric}")
 
     # 4. Loop over Metrics
     for metric in metrics_to_plot:
@@ -358,15 +406,18 @@ def main() -> None:
             clean_vals = clean_values(all_collected_values)
 
             if clean_vals:
+                yin_vals = yin_values_dict.get(metric, [])
                 plot_global_density(
                     clean_vals, 
                     metric, 
-                    f"{args.output_dir}/{metric}_global_density_all.png"
+                    f"{args.output_dir}/{metric}_global_density_all.png",
+                    yin_vals
                 )
                 plot_global_histogram(
                     clean_vals,
                     metric,
-                    f"{args.output_dir}/{metric}_global_histogram_all.png"
+                    f"{args.output_dir}/{metric}_global_histogram_all.png",
+                    yin_vals
                 )
             else:
                 print(f"Warning: No valid numeric values found for metric {metric} after cleaning.")
@@ -387,7 +438,9 @@ def main() -> None:
                 if model_values:
                     split_dict[model_name] = model_values
             
-            plot_split_density_cdf(split_dict, metric, "model", args.output_dir)
+            yin_vals = yin_values_dict.get(metric, [])
+            yin_model = yin_model_dict.get(metric, None)
+            plot_split_density_cdf(split_dict, metric, "model", args.output_dir, yin_values=yin_vals, yin_model=yin_model)
 
         elif args.split_by == "job":
             # Split by job (use job_bundle if available, otherwise job)
@@ -406,7 +459,30 @@ def main() -> None:
                 if job_values:
                     split_dict[job_val] = job_values
             
-            plot_split_density_cdf(split_dict, metric, "job", args.output_dir, bls_values)
+            yin_vals = yin_values_dict.get(metric, [])
+            yin_model = yin_model_dict.get(metric, None)
+            plot_split_density_cdf(split_dict, metric, "job", args.output_dir, bls_values, yin_vals, yin_model)
+
+        elif args.split_by == "job_name":
+            # Split by job_name (actual job names like "cashier", "administrative assistant", etc.)
+            print(f"Generating plots split by job_name for {metric}...")
+            if "job" not in working_df.columns:
+                print("Error: 'job' column not found in data.")
+                continue
+            
+            # Clean job names: strip whitespace and lowercase
+            unique_job_names = working_df["job"].str.strip().str.lower().unique()
+            split_dict = {}
+            
+            for job_name in unique_job_names:
+                job_subset = working_df[working_df["job"] == job_name]
+                job_values = job_subset[metric].dropna().tolist()
+                if job_values:
+                    split_dict[job_name] = job_values
+            
+            yin_vals = yin_values_dict.get(metric, [])
+            yin_model = yin_model_dict.get(metric, None)
+            plot_split_density_cdf(split_dict, metric, "job_name", args.output_dir, yin_values=yin_vals, yin_model=yin_model)
 
         elif args.split_by == "name":
             # Split by name
@@ -424,8 +500,9 @@ def main() -> None:
                 if name_values:
                     split_dict[name_val] = name_values
             
-            plot_split_density_cdf(split_dict, metric, "name", args.output_dir)
+            yin_vals = yin_values_dict.get(metric, [])
+            yin_model = yin_model_dict.get(metric, None)
+            plot_split_density_cdf(split_dict, metric, "name", args.output_dir, yin_values=yin_vals, yin_model=yin_model)
 
 if __name__ == "__main__":
     main()
-
