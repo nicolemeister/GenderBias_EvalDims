@@ -86,7 +86,7 @@ def score_diff(df, sensitive_attribute_vector):
     for attr in sensitive_attribute_vector:
         
         # 1. Define the two groups based on the attribute
-        if attr == 'Woman':
+        if attr == 'Woman' or attr.startswith('Woman_'):
             group_target = df[df['gender'] == 'women']['value']
             group_ref = df[df['gender'] == 'men']['value']
             
@@ -520,7 +520,95 @@ def analyze_armstrong(args, config, all_together=False):
         new_rows_list.append(new_row_dict)
 
     # eventually 
+    # Handle per_job case
+    if args.per_job == True:
+        # Get unique jobs from the dataframe
+        unique_jobs = df['role'].unique() if 'role' in df.columns else []
+        
+        if len(unique_jobs) == 0:
+            print("Warning: No unique jobs found in dataframe. Cannot compute per_job analysis.")
+            return
+        
+        # Loop through each unique job
+        for job in unique_jobs:
+            # Filter dataframe to this job
+            df_job = df[df['role'] == job].copy()
+            
+            if len(df_job) == 0:
+                continue
+            
+            # Modify sensitive_attribute_vector to include job-specific attributes
+            # Replace 'Woman' with 'Woman_{job}' in the sensitive attribute vector
+            job_sensitive_attribute_vector = []
+            for attr in sensitive_attribute_vector:
+                if attr == 'Woman':
+                    job_sensitive_attribute_vector.append(f'Woman_{job}')
+                else:
+                    job_sensitive_attribute_vector.append(attr)
+            
+            # Compute metrics for this job
+            for metric in metrics_to_compute:
+                print(f"Computing {metric} for job {job}...")
+                if metric == 'regression_coefficients':
+                    values, std, pvals = compute_regression_coefficients(df_job, job_sensitive_attribute_vector, args.analysis)
+                    # save a row with the coefficients
+                    print(data_filepath, pvals)
+                
+                elif metric == 'wasserstein_distance':
+                    values, std = compute_wasserstein_distance(df_job, job_sensitive_attribute_vector)
+                    # save a row with the distances
+
+                elif metric == 'score_difference':
+                    values, std, pvals = score_diff(df_job, job_sensitive_attribute_vector)
+
+                elif metric == 'ttest':
+                    values, std, pvals = compute_ttest(df_job, job_sensitive_attribute_vector)
+                    
+                elif 'impact_ratio' in metric:
+                    values, std = impact_ratio(df_job, float(metric.split('_')[-1]), job_sensitive_attribute_vector)
+
+                new_row_dict = new_row_template.copy()
+                new_row_dict['Metric'] = metric
+                new_row_dict['Sensitive_Attribute_Vector'] = job_sensitive_attribute_vector
+                new_row_dict['Result_Vector'] = values
+                new_row_dict['Std_Error_Vector'] = std
+                new_row_dict['P_Value_Vector'] = pvals
+                new_row_dict['Random_State'] = random_state
+                new_rows_list.append(new_row_dict)
+    else:
+        # Original logic: compute metrics for all data
+        for metric in metrics_to_compute:
+            print(f"Computing {metric}...")
+            if metric == 'regression_coefficients':
+                values, std, pvals = compute_regression_coefficients(df, sensitive_attribute_vector, args.analysis)
+                # save a row with the coefficients
+                print(data_filepath, pvals)
+            
+            elif metric == 'wasserstein_distance':
+                values, std = compute_wasserstein_distance(df, sensitive_attribute_vector)
+                # save a row with the distances
+
+            elif metric == 'score_difference':
+                values, std = score_diff(df, sensitive_attribute_vector)
+
+            elif metric == 'ttest':
+                values, std, pvals = compute_ttest(df, sensitive_attribute_vector)
+                
+            elif 'impact_ratio' in metric:
+                values, std = impact_ratio(df, float(metric.split('_')[-1]), sensitive_attribute_vector)
+
+            new_row_dict = new_row_template.copy()
+            new_row_dict['Metric'] = metric
+            new_row_dict['Sensitive_Attribute_Vector'] = sensitive_attribute_vector
+            new_row_dict['Result_Vector'] = values
+            new_row_dict['Std_Error_Vector'] = std
+            new_row_dict['P_Value_Vector'] = pvals
+            new_row_dict['Random_State'] = random_state
+            new_rows_list.append(new_row_dict)
+
+
     new_rows = pd.DataFrame(new_rows_list)
+
     # Drop all-NA columns from new_rows to avoid FutureWarning before concatenation
     new_rows = new_rows.dropna(axis=1, how='all')
     # if perturbation_results_filepath doesnt exist, create a csv with the right columns

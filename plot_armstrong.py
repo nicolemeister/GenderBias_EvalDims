@@ -125,9 +125,71 @@ def woman_index(groups: Optional[List[str]]) -> int:
         return 0
 
 
+def extract_job_name_from_attribute(attr: str) -> Optional[str]:
+    """Extract job name from attribute like 'Woman_{job_name}'."""
+    if not attr or not isinstance(attr, str):
+        return None
+    if attr.startswith("Woman_"):
+        job_name = attr[6:]  # Remove "Woman_" prefix
+        return job_name.strip().lower()
+    return None
+
+
+def get_job_specific_values_from_row(row: pd.Series) -> List[Tuple[str, float]]:
+    """
+    Extract job-specific values from a row where Sensitive_Attribute_Vector contains
+    entries like 'Woman_{job_name}'. Returns a list of (job_name, value) tuples.
+    """
+    result = []
+    
+    groups = row.get("Sensitive_Attribute_Vector", None)
+    rv = row.get("Result_Vector", None)
+    
+    if not isinstance(groups, list) or not isinstance(rv, list):
+        return result
+    
+    for idx, attr in enumerate(groups):
+        if isinstance(attr, str) and attr.startswith("Woman_"):
+            job_name = extract_job_name_from_attribute(attr)
+            if job_name and idx < len(rv):
+                try:
+                    value = float(rv[idx])
+                    result.append((job_name, value))
+                except (ValueError, TypeError):
+                    continue
+    
+    return result
+
+
 def ensure_dirs(*paths: str) -> None:
     for p in paths:
         os.makedirs(p, exist_ok=True)
+
+
+def add_pval_suffix_to_path(file_path: str, p_value_threshold: Optional[float]) -> str:
+    """Add p-value threshold suffix to filename if threshold is provided."""
+    if p_value_threshold is None:
+        return file_path
+    
+    # Convert p-value to string format suitable for filename (e.g., 0.05 -> "pval0.05")
+    pval_str = f"pval{p_value_threshold}".replace(".", "_")
+    
+    # Split path into directory, base filename, and extension
+    dir_path = os.path.dirname(file_path)
+    filename = os.path.basename(file_path)
+    
+    # Split filename into name and extension
+    if "." in filename:
+        name, ext = filename.rsplit(".", 1)
+        new_filename = f"{name}_{pval_str}.{ext}"
+    else:
+        new_filename = f"{filename}_{pval_str}"
+    
+    # Reconstruct path
+    if dir_path:
+        return os.path.join(dir_path, new_filename)
+    else:
+        return new_filename
 
 
 def pad_ylim(values: List[float], frac: float = 0.05) -> Tuple[float, float]:
@@ -157,13 +219,14 @@ def clean_values(values: List[float], remove_zeros: bool = True, remove_outliers
 # ----------------------------
 # Plotting functions
 # ----------------------------
-def plot_global_density(values: List[float], metric: str, out_path: str) -> None:
+def plot_global_density(values: List[float], metric: str, out_path: str, vlines: Optional[List[Tuple[float, str]]] = None, sig_values: Optional[List[Tuple[float, float]]] = None, p_value_threshold: Optional[float] = None) -> None:
     """Plot a single global density plot for all values."""
     clean_vals = clean_values(values)
     
     if len(clean_vals) > 1 and np.std(clean_vals) > 1e-9:
         plt.figure(figsize=(10, 6))
         kde = gaussian_kde(clean_vals)
+        # kde.set_bandwidth(bw_method=0.1)
         x_min, x_max = min(clean_vals), max(clean_vals)
         x_range = x_max - x_min
         x_grid = np.linspace(x_min - 0.1 * x_range, x_max + 0.1 * x_range, 500)
@@ -171,26 +234,45 @@ def plot_global_density(values: List[float], metric: str, out_path: str) -> None
         
         plt.plot(x_grid, y_grid, color="purple", lw=2, label="Density")
         plt.fill_between(x_grid, y_grid, color="purple", alpha=0.3)
+        
+        # Add vertical lines if provided
+        if vlines:
+            for x_val, label in vlines:
+                plt.axvline(x=x_val, color='red', linestyle='--', linewidth=1.5, alpha=0.7, label=label)
+        
         plt.title(f'Density Plot of {metric} (All Data)')
         plt.xlabel(metric)
         plt.ylabel("Density")
         plt.grid(axis='y', alpha=0.3)
+        if vlines:
+            plt.legend(loc='best')
         plt.tight_layout()
-        plt.savefig(out_path)
+        final_path = add_pval_suffix_to_path(out_path, p_value_threshold)
+        plt.savefig(final_path)
         plt.close()
     else:
         # Fallback to histogram
         plt.figure(figsize=(10, 6))
-        plt.hist(clean_vals, bins=100, alpha=0.6, color="purple", edgecolor='black')
+        counts, bins, patches = plt.hist(clean_vals, bins=100, alpha=0.6, color="purple", edgecolor='black')
+        
+        # Add vertical lines if provided
+        if vlines:
+            for x_val, label in vlines:
+                plt.axvline(x=x_val, color='red', linestyle='--', linewidth=1.5, alpha=0.7, label=label)
+        
         plt.title(f'Distribution of {metric} (All Data)')
         plt.xlabel(metric)
         plt.ylabel("Frequency")
+        if vlines:
+            plt.legend(loc='best')
         plt.tight_layout()
-        plt.savefig(out_path.replace('density', 'histogram'))
+        hist_path = out_path.replace('density', 'histogram')
+        final_path = add_pval_suffix_to_path(hist_path, p_value_threshold)
+        plt.savefig(final_path)
         plt.close()
 
 
-def plot_global_histogram(values: List[float], metric: str, out_path: str) -> None:
+def plot_global_histogram(values: List[float], metric: str, out_path: str, vlines: Optional[List[Tuple[float, str]]] = None, sig_values: Optional[List[Tuple[float, float]]] = None, p_value_threshold: Optional[float] = None) -> None:
     clean_vals = clean_values(values)
     
     # Calculate the same limits as the density plot
@@ -200,7 +282,12 @@ def plot_global_histogram(values: List[float], metric: str, out_path: str) -> No
     limit_max = x_max + 0.1 * x_range
 
     plt.figure(figsize=(10, 6))
-    plt.hist(clean_vals, bins=100, alpha=0.6, color="purple", edgecolor='black')
+    counts, bins, patches = plt.hist(clean_vals, bins=100, alpha=0.6, color="purple", edgecolor='black')
+    
+    # Add vertical lines if provided
+    if vlines:
+        for x_val, label in vlines:
+            plt.axvline(x=x_val, color='red', linestyle='--', linewidth=1.5, alpha=0.7, label=label)
     
     # Explicitly set the x-axis limits
     plt.xlim(limit_min, limit_max)
@@ -209,8 +296,11 @@ def plot_global_histogram(values: List[float], metric: str, out_path: str) -> No
     plt.xlabel(metric)
     plt.ylabel("Frequency")
     plt.grid(axis='y', alpha=0.3)
+    if vlines:
+        plt.legend(loc='best')
     plt.tight_layout()
-    plt.savefig(out_path)
+    final_path = add_pval_suffix_to_path(out_path, p_value_threshold)
+    plt.savefig(final_path)
     plt.close()
 
 
@@ -219,7 +309,11 @@ def plot_split_density_cdf(
     metric: str, 
     split_type: str,
     out_root: str,
-    bls_values: Optional[Dict[str, float]] = None
+    bls_values: Optional[Dict[str, float]] = None,
+    vlines: Optional[List[Tuple[float, str]]] = None,
+    model_vlines: Optional[Dict[str, float]] = None,
+    sig_values_dict: Optional[Dict[str, List[Tuple[float, float]]]] = None,
+    p_value_threshold: Optional[float] = None
 ) -> None:
     """Plot density, CDF, and histogram plots split by model/job/name."""
     if not split_dict:
@@ -264,7 +358,7 @@ def plot_split_density_cdf(
                 label_text = str(key)
             
             # Plot Histogram
-            ax_hist.hist(clean_vals, 
+            hist_result = ax_hist.hist(clean_vals, 
                         bins=hist_bins if isinstance(hist_bins, np.ndarray) else 30,
                         alpha=0.5, 
                         color=colors_list[idx], 
@@ -272,17 +366,27 @@ def plot_split_density_cdf(
                         label=label_text,
                         density=False)  # Use frequency, not density
             
+            # Extract counts and bins from histogram result
+            if isinstance(hist_result, tuple) and len(hist_result) >= 2:
+                counts_hist = hist_result[0]
+                bins_hist = hist_result[1]
+            else:
+                counts_hist = None
+                bins_hist = hist_bins if isinstance(hist_bins, np.ndarray) else np.linspace(min(clean_vals), max(clean_vals), 30)
+            
             if len(clean_vals) > 1 and np.std(clean_vals) > 1e-9:
                 # Plot Density
                 try:
                     kde = gaussian_kde(clean_vals)
+                    # kde.set_bandwidth(bw_method=0.1)
                     x_min, x_max = min(clean_vals), max(clean_vals)
                     x_range = x_max - x_min
                     if x_range == 0:
                         x_range = 1.0
                     x_grid = np.linspace(x_min - 0.2 * x_range, x_max + 0.2 * x_range, 200)
+                    y_grid = kde(x_grid)
                     
-                    ax_den.plot(x_grid, kde(x_grid), 
+                    ax_den.plot(x_grid, y_grid, 
                                color=colors_list[idx], 
                                lw=2, 
                                alpha=0.8, 
@@ -309,15 +413,51 @@ def plot_split_density_cdf(
                 has_plotted = True
     
     if has_plotted:
+        # Calculate y_max for vertical line positioning
+        # For histogram, estimate max count from data distribution
+        if all_clean_vals:
+            hist_counts, _ = np.histogram(all_clean_vals, bins=30)
+            y_max_hist = max(hist_counts) if len(hist_counts) > 0 else 1.0
+        else:
+            y_max_hist = 1.0
+        
+        y_max_den = 0.0
+        if all_clean_vals:
+            try:
+                kde_all = gaussian_kde(all_clean_vals)
+                # kde.set_bandwidth(bw_method=0.1)
+                x_test = np.linspace(min(all_clean_vals), max(all_clean_vals), 200)
+                y_max_den = max(kde_all(x_test))
+            except:
+                y_max_den = 1.0
+        
+        # Add vertical lines if provided
+        if vlines:
+            for x_val, label in vlines:
+                ax_hist.axvline(x=x_val, color='red', linestyle='--', linewidth=1.5, alpha=0.7, label=label)
+                ax_den.axvline(x=x_val, color='red', linestyle='--', linewidth=1.5, alpha=0.7, label=label)
+                ax_cdf.axvline(x=x_val, color='red', linestyle='--', linewidth=1.5, alpha=0.7, label=label)
+        
+        # Add model-specific vertical lines if provided
+        if model_vlines and split_type == "model":
+            for model_name, x_val in model_vlines.items():
+                if model_name in split_dict:  # Only add line if model is in the plot
+                    ax_hist.axvline(x=x_val, color='orange', linestyle='--', linewidth=1.5, alpha=0.7, label=model_name)
+                    ax_den.axvline(x=x_val, color='orange', linestyle='--', linewidth=1.5, alpha=0.7, label=model_name)
+                    ax_cdf.axvline(x=x_val, color='orange', linestyle='--', linewidth=1.5, alpha=0.7, label=model_name)
+        
         # Save Histogram Plot
         ax_hist.set_title(f'Comparison of {metric} Histogram by {split_type.capitalize()}')
         ax_hist.set_xlabel(metric)
         ax_hist.set_ylabel("Frequency")
         ax_hist.grid(True, linestyle="--", alpha=0.3, axis='y')
-        ax_hist.legend(title=split_type.capitalize(), bbox_to_anchor=(1.05, 1), loc='upper left')
+        # Combine data series legend with vertical line legend
+        handles, labels = ax_hist.get_legend_handles_labels()
+        ax_hist.legend(handles, labels, title=split_type.capitalize(), bbox_to_anchor=(1.05, 1), loc='upper left')
         fig_hist.tight_layout()
         
         hist_path = f"{out_root}/{metric}_combined_histogram_by_{split_type}.png"
+        hist_path = add_pval_suffix_to_path(hist_path, p_value_threshold)
         print(f"Saving combined histogram plot to {hist_path}")
         fig_hist.savefig(hist_path)
         
@@ -326,10 +466,13 @@ def plot_split_density_cdf(
         ax_den.set_xlabel(metric)
         ax_den.set_ylabel("Density")
         ax_den.grid(True, linestyle="--", alpha=0.3)
-        ax_den.legend(title=split_type.capitalize(), bbox_to_anchor=(1.05, 1), loc='upper left')
+        # Combine data series legend with vertical line legend
+        handles, labels = ax_den.get_legend_handles_labels()
+        ax_den.legend(handles, labels, title=split_type.capitalize(), bbox_to_anchor=(1.05, 1), loc='upper left')
         fig_den.tight_layout()
         
         den_path = f"{out_root}/{metric}_combined_density_by_{split_type}.png"
+        den_path = add_pval_suffix_to_path(den_path, p_value_threshold)
         print(f"Saving combined density plot to {den_path}")
         fig_den.savefig(den_path)
         
@@ -338,10 +481,13 @@ def plot_split_density_cdf(
         ax_cdf.set_xlabel(metric)
         ax_cdf.set_ylabel("Cumulative Probability")
         ax_cdf.grid(True, linestyle="--", alpha=0.3)
-        ax_cdf.legend(title=split_type.capitalize(), bbox_to_anchor=(1.05, 1), loc='upper left')
+        # Combine data series legend with vertical line legend
+        handles, labels = ax_cdf.get_legend_handles_labels()
+        ax_cdf.legend(handles, labels, title=split_type.capitalize(), bbox_to_anchor=(1.05, 1), loc='upper left')
         fig_cdf.tight_layout()
         
         cdf_path = f"{out_root}/{metric}_combined_cdf_by_{split_type}.png"
+        cdf_path = add_pval_suffix_to_path(cdf_path, p_value_threshold)
         print(f"Saving combined CDF plot to {cdf_path}")
         fig_cdf.savefig(cdf_path)
     else:
@@ -363,8 +509,10 @@ def main() -> None:
     parser.add_argument("--model", type=str, default="all", help="Model to use (or 'all').")
     parser.add_argument("--metric", type=str, default="regression_coefficients", help="Metric to plot.")
     parser.add_argument("--split_by", type=str, default="all", 
-                       choices=["all", "model", "job", "name"], 
-                       help="How to split the data: 'all' (no split), 'model', 'job', or 'name'.")
+                       choices=["all", "model", "job", "job_name", "name"], 
+                       help="How to split the data: 'all' (no split), 'model', 'job', 'job_name', or 'name'.")
+    parser.add_argument("--p_value_threshold", type=float, default=None,
+                       help="If provided, annotate values with p-value below this threshold in plots.")
     args = parser.parse_args()
 
     # BLS values for job legend (optional)
@@ -483,6 +631,17 @@ def main() -> None:
 
     metric = args.metric
 
+    # Define vertical reference lines for score_difference
+    score_diff_vlines = None
+    score_diff_model_vlines = None
+    if metric == "score_difference":
+        score_diff_vlines = [
+            (0.0, "x=0"),
+            # (0.6168749999999932, "Our Reproduced Armstrong Results")
+        ]
+        score_diff_model_vlines = {
+        }
+
     # ----------------------------
     # Main plotting logic based on split_by
     # ----------------------------
@@ -490,12 +649,16 @@ def main() -> None:
         # Collect all values across all models
         print(f"Collecting all values for {metric}...")
         all_collected_values = []
+        sig_values = []  # List of (x_val, value) tuples for significant p-values
         
         if data_format == "armstrong":
             for _, row in df.iterrows():
                 if row.get("Metric") == metric:
-                    val, _, _ = get_woman_stats(row)
+                    val, _, p = get_woman_stats(row)
                     all_collected_values.append(val)
+                    # Track significant values if p-value threshold is set
+                    if args.p_value_threshold is not None and p is not None and p < args.p_value_threshold:
+                        sig_values.append((val, val))
         else:
             # For yin format
             if "gender" in df.columns:
@@ -506,15 +669,23 @@ def main() -> None:
                 all_collected_values = working_subset[metric].dropna().tolist()
         
         if all_collected_values:
+            vlines = score_diff_vlines if metric == "score_difference" else None
+            sig_vals = sig_values if args.p_value_threshold is not None else None
             plot_global_density(
                 all_collected_values, 
                 metric, 
-                f"{out_root}/{metric}_global_density_all.png"
+                f"{out_root}/{metric}_global_density_all.png",
+                vlines=vlines,
+                sig_values=sig_vals,
+                p_value_threshold=args.p_value_threshold
             )
             plot_global_histogram(
                 all_collected_values,
                 metric,
-                f"{out_root}/{metric}_global_histogram_all.png"
+                f"{out_root}/{metric}_global_histogram_all.png",
+                vlines=vlines,
+                sig_values=sig_vals,
+                p_value_threshold=args.p_value_threshold
             )
 
     elif args.split_by == "model":
@@ -526,17 +697,27 @@ def main() -> None:
         
         unique_models = df["Model"].unique()
         split_dict = {}
+        sig_values_dict = {}  # Dict mapping model_name -> list of (x_val, value) tuples
         
         for model_name in unique_models:
             model_subset = df[(df["Model"] == model_name) & (df["Metric"] == metric)]
             model_values = []
+            model_sig_values = []
             for _, row in model_subset.iterrows():
-                val, _, _ = get_woman_stats(row)
+                val, _, p = get_woman_stats(row)
                 model_values.append(val)
+                # Track significant values if p-value threshold is set
+                if args.p_value_threshold is not None and p is not None and p < args.p_value_threshold:
+                    model_sig_values.append((val, val))
             if model_values:
                 split_dict[model_name] = model_values
+                if model_sig_values:
+                    sig_values_dict[model_name] = model_sig_values
         
-        plot_split_density_cdf(split_dict, metric, "model", out_root)
+        vlines = score_diff_vlines if metric == "score_difference" else None
+        model_vlines = score_diff_model_vlines if metric == "score_difference" else None
+        sig_vals = sig_values_dict if args.p_value_threshold is not None else None
+        plot_split_density_cdf(split_dict, metric, "model", out_root, vlines=vlines, model_vlines=model_vlines, sig_values_dict=sig_vals, p_value_threshold=args.p_value_threshold)
 
     elif args.split_by == "job":
         # Split by job
@@ -547,17 +728,50 @@ def main() -> None:
         
         unique_jobs = df["Jobs"].unique()
         split_dict = {}
+        sig_values_dict = {}  # Dict mapping job_val -> list of (x_val, value) tuples
         
         for job_val in unique_jobs:
             job_subset = df[(df["Jobs"] == job_val) & (df["Metric"] == metric)]
             job_values = []
+            job_sig_values = []
             for _, row in job_subset.iterrows():
-                val, _, _ = get_woman_stats(row)
+                val, _, p = get_woman_stats(row)
                 job_values.append(val)
+                # Track significant values if p-value threshold is set
+                if args.p_value_threshold is not None and p is not None and p < args.p_value_threshold:
+                    job_sig_values.append((val, val))
             if job_values:
                 split_dict[job_val] = job_values
+                if job_sig_values:
+                    sig_values_dict[job_val] = job_sig_values
         
-        plot_split_density_cdf(split_dict, metric, "job", out_root, bls_values)
+        vlines = score_diff_vlines if metric == "score_difference" else None
+        sig_vals = sig_values_dict if args.p_value_threshold is not None else None
+        plot_split_density_cdf(split_dict, metric, "job", out_root, bls_values, vlines=vlines, sig_values_dict=sig_vals, p_value_threshold=args.p_value_threshold)
+
+    elif args.split_by == "job_name":
+        # Split by job_name (extracted from Sensitive_Attribute_Vector like "Woman_{job_name}")
+        print(f"Generating plots split by job_name for {metric}...")
+        if "Sensitive_Attribute_Vector" not in df.columns:
+            print("Error: 'Sensitive_Attribute_Vector' column not found in data.")
+            return
+        
+        split_dict = {}
+        
+        # Filter to rows with the target metric
+        metric_subset = df[df["Metric"] == metric]
+        
+        for _, row in metric_subset.iterrows():
+            job_value_pairs = get_job_specific_values_from_row(row)
+            for job_name, value in job_value_pairs:
+                if job_name not in split_dict:
+                    split_dict[job_name] = []
+                split_dict[job_name].append(value)
+
+        if split_dict:
+            plot_split_density_cdf(split_dict, metric, "job_name", out_root)
+        else:
+            print("No job_name data found in Sensitive_Attribute_Vector.")
 
     elif args.split_by == "name":
         # Split by name
@@ -568,17 +782,26 @@ def main() -> None:
         
         unique_names = df["Names"].unique()
         split_dict = {}
+        sig_values_dict = {}  # Dict mapping name_val -> list of (x_val, value) tuples
         
         for name_val in unique_names:
             name_subset = df[(df["Names"] == name_val) & (df["Metric"] == metric)]
             name_values = []
+            name_sig_values = []
             for _, row in name_subset.iterrows():
-                val, _, _ = get_woman_stats(row)
+                val, _, p = get_woman_stats(row)
                 name_values.append(val)
+                # Track significant values if p-value threshold is set
+                if args.p_value_threshold is not None and p is not None and p < args.p_value_threshold:
+                    name_sig_values.append((val, val))
             if name_values:
                 split_dict[name_val] = name_values
+                if name_sig_values:
+                    sig_values_dict[name_val] = name_sig_values
         
-        plot_split_density_cdf(split_dict, metric, "name", out_root)
+        vlines = score_diff_vlines if metric == "score_difference" else None
+        sig_vals = sig_values_dict if args.p_value_threshold is not None else None
+        plot_split_density_cdf(split_dict, metric, "name", out_root, vlines=vlines, sig_values_dict=sig_vals, p_value_threshold=args.p_value_threshold)
 
     # ----------------------------
     # Grid Generation (Heatmap/Bar Chart logic) - Only for armstrong format
@@ -684,7 +907,6 @@ def main() -> None:
 if __name__ == "__main__":
     main()
 
-
 '''
 # Plot all data together
 python plot_armstrong.py --split_by all --metric regression_coefficients
@@ -697,5 +919,11 @@ python plot_armstrong.py --split_by job --metric regression_coefficients
 
 # Split by name
 python plot_armstrong.py --split_by name --metric regression_coefficients
+
+# Split by job_name
+python plot_armstrong.py --split_by job_name --metric score_difference
+
+
+python plot_armstrong.py --split_by all --metric score_difference --p_value_threshold 0.05
 
 '''
