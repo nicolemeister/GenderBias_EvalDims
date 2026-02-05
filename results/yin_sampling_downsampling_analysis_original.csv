@@ -1,4 +1,4 @@
-Author,Names,Jobs,Num_Trials,Model,Temperature,Metric,Sensitive_Attribute_Vector,Result_Vector,Std_Error_Vector,P_Value_Vector
+gender,top,top_og,selection_rate,disparate_impact_ratio,job,model,rank,name_bundle,job_bundle
 M,1989,1988,0.49725,0.9890601690701144,ALL,gpt-4o-mini,1,armstrong,armstrong
 W,2011,2012,0.50275,1.0,ALL,gpt-4o-mini,1,armstrong,armstrong
 M,1894,1988,0.4735,0.899335232668566,ALL,gpt-4o-mini,1,armstrong,rozado

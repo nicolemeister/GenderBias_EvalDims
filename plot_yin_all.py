@@ -1,12 +1,28 @@
 import argparse
 import os
 from typing import Any, Dict, List, Optional, Tuple
-
+from collections import defaultdict
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from scipy.stats import gaussian_kde
 import ast
+
+from utils.variables import colors, metric_to_plot, linestyles
+
+# Font size defaults (make titles, labels, legend and ticks larger)
+TITLE_FONT_SIZE = 22
+LABEL_FONT_SIZE = 18
+LEGEND_FONT_SIZE = 14
+TICK_FONT_SIZE = 14
+plt.rcParams.update({
+    'axes.titlesize': TITLE_FONT_SIZE,
+    'axes.labelsize': LABEL_FONT_SIZE,
+    'legend.fontsize': LEGEND_FONT_SIZE,
+    'legend.title_fontsize': LEGEND_FONT_SIZE,
+    'xtick.labelsize': TICK_FONT_SIZE,
+    'ytick.labelsize': TICK_FONT_SIZE
+})
 
 
 # ----------------------------
@@ -102,34 +118,86 @@ def clean_values(values: List[float], remove_zeros: bool = False, remove_outlier
 # ----------------------------
 # Plotting functions
 # ----------------------------
-def plot_global_density(clean_vals: List[float], metric: str, out_path: str, yin_values: Optional[List[float]] = None, vlines: Optional[List[Tuple[float, str]]] = None, sig_values: Optional[List[Tuple[float, float]]] = None, p_value_threshold: Optional[float] = None) -> None:
-    """Plot a single global density plot for all values."""
-    
+
+def plot_violin_plot(clean_split_dict: Dict[str, List[float]], metric: str, split_type: str, out_root: str, sig_values_dict: Optional[Dict[str, List[Tuple[float, float]]]] = None, p_value_threshold: Optional[float] = None) -> None:
+    return
+
+
+def plot_boxwhisker_plot(clean_split_dict: Dict[str, List[float]], metric: str, split_type: str, out_root: str, sig_values_dict: Optional[Dict[str, List[Tuple[float, float]]]] = None, p_value_threshold: Optional[float] = None) -> None:
+    return
+
+
+def plot_global_density(
+    clean_vals: List[float],
+    metric: str,
+    out_path: str,
+    split_by: str = "all",
+    vlines: Optional[List[Tuple[float, str]]] = None,
+    sig_values: Optional[List[Tuple[float, float]]] = None,
+    p_value_threshold: Optional[float] = None,
+    bw_threshold: Optional[float] = None,
+    color: Optional[str] = "purple",
+) -> None:
+    """Plot a single global density plot for all values (Armstrong-style)."""
+
+    # Expect `clean_vals` to already be cleaned by caller
     if len(clean_vals) > 1 and np.std(clean_vals) > 1e-9:
         plt.figure(figsize=(10, 6))
         kde = gaussian_kde(clean_vals)
-        # kde.set_bandwidth(bw_method=0.1)
-        x_min, x_max = min(clean_vals), max(clean_vals)
-        x_range = x_max - x_min
-        x_grid = np.linspace(x_min - 0.1 * x_range, x_max + 0.1 * x_range, 500)
+        if bw_threshold is not None:
+            kde.set_bandwidth(bw_method=bw_threshold)
+
+        # Use fixed centered range like Armstrong implementation
+        x_min_centered = 0.35
+        x_max_centered = 0.65
+        x_grid = np.linspace(x_min_centered, x_max_centered, 500)
         y_grid = kde(x_grid)
-        
-        plt.plot(x_grid, y_grid, color="purple", lw=2, label="Density")
-        plt.fill_between(x_grid, y_grid, color="purple", alpha=0.3)
-        
+
+        # Compute probability mass below and above threshold (0.0)
+        threshold = 0.5
+        below_mask = x_grid <= threshold
+        above_mask = x_grid > threshold
+        if below_mask.any():
+            prob_below = np.trapz(y_grid[below_mask], x_grid[below_mask])
+        else:
+            prob_below = 0.0
+        if above_mask.any():
+            prob_above = np.trapz(y_grid[above_mask], x_grid[above_mask])
+        else:
+            prob_above = 0.0
+
+        # Plot density line and fill below/above threshold with distinct colors
+        plt.plot(x_grid, y_grid, color="purple", lw=2)
+        plt.fill_between(x_grid[below_mask], y_grid[below_mask], color="darkblue", alpha=0.5, label="Preference for Men\nAcross Settings")
+        plt.fill_between(x_grid[above_mask], y_grid[above_mask], color="purple", alpha=0.3, label="Preference for Women\nAcross Settings")
+
+        # Add vertical line at threshold
+        plt.axvline(x=threshold, color="black", linestyle="--", linewidth=1.0, alpha=0.7)
+
         # Add vertical lines if provided
         if vlines:
-            for x_val, label in vlines:
-                plt.axvline(x=x_val, color='red', linestyle='--', linewidth=1.5, alpha=0.7, label=label)
-        
-        # Plot significant values if provided (just the values, no extra text)
-        if sig_values:
-            for x_val, _ in sig_values:
-                plt.axvline(x=x_val, color='green', linestyle=':', linewidth=1, alpha=0.5)
-        
-        plt.title(f'Density Plot of {metric} (All Data)\nGender: W')
-        plt.xlabel(metric)
-        plt.ylabel("Density")
+            for i, (x_val, label) in enumerate(vlines):
+                plt.axvline(x=x_val, color=colors[i], linestyle=linestyles[i % len(linestyles)], linewidth=1.5, alpha=0.7, label=label)
+
+        # Annotate probability masses as percentages
+        total_prob = prob_below + prob_above if (prob_below + prob_above) > 0 else 1.0
+        below_pct = 100.0 * prob_below / total_prob
+        above_pct = 100.0 * prob_above / total_prob
+
+        ax = plt.gca()
+        ax.set_xlim((0.35, 0.65))
+
+        # Place annotations near top
+        axis_y = 0.13
+        left_x = 0.41
+        right_x = 0.6
+        fontsize = 25
+        plt.text(left_x, axis_y, f"{below_pct:.0f}%", ha="left", va="top", transform=ax.transAxes, fontsize=fontsize)
+        plt.text(right_x, axis_y, f"{above_pct:.0f}%", ha="right", va="top", transform=ax.transAxes, fontsize=fontsize)
+
+        plt.title(f'Density Plot for Yin et. al ({split_by})')
+        plt.xlabel(metric_to_plot.get(metric, metric))
+        plt.ylabel("Probability Density")
         plt.grid(axis='y', alpha=0.3)
         if vlines:
             plt.legend(loc='best')
@@ -141,19 +209,30 @@ def plot_global_density(clean_vals: List[float], metric: str, out_path: str, yin
         # Fallback to histogram
         plt.figure(figsize=(10, 6))
         plt.hist(clean_vals, bins=100, alpha=0.6, color="purple", edgecolor='black')
-        
+
+        # Add vertical line at threshold (0.0)
+        threshold = 0.0
+        plt.axvline(x=threshold, color="black", linestyle="--", linewidth=1.0, alpha=0.7)
+
+        # Compute proportions for annotation
+        total_count = len(clean_vals)
+        if total_count > 0:
+            below_count = sum(1 for v in clean_vals if v <= threshold)
+            above_count = sum(1 for v in clean_vals if v > threshold)
+            below_pct = 100.0 * below_count / total_count
+            above_pct = 100.0 * above_count / total_count
+            ax = plt.gca()
+            ax.set_xlim((min(clean_vals), max(clean_vals)))
+            plt.text(0.01, 0.95, f"Below 0.0: {below_pct:.1f}% ({below_count}/{total_count})", transform=ax.transAxes, fontsize=12, va='top')
+            plt.text(0.99, 0.95, f"Above 0.0: {above_pct:.1f}% ({above_count}/{total_count})", transform=ax.transAxes, fontsize=12, va='top', ha='right')
+
         # Add vertical lines if provided
         if vlines:
             for x_val, label in vlines:
                 plt.axvline(x=x_val, color='red', linestyle='--', linewidth=1.5, alpha=0.7, label=label)
-        
-        # Plot significant values if provided
-        if sig_values:
-            for x_val, _ in sig_values:
-                plt.axvline(x=x_val, color='green', linestyle=':', linewidth=1, alpha=0.5)
-        
-        plt.title(f'Distribution of {metric} (All Data)\nGender: W')
-        plt.xlabel(metric)
+
+        plt.title(f'Distribution of {metric_to_plot.get(metric, metric)} (All Data)\nGender: W')
+        plt.xlabel(metric_to_plot.get(metric, metric))
         plt.ylabel("Frequency")
         if vlines:
             plt.legend(loc='best')
@@ -210,7 +289,8 @@ def plot_split_density_cdf(
     vlines: Optional[List[Tuple[float, str]]] = None,
     model_vlines: Optional[Dict[str, float]] = None,
     sig_values_dict: Optional[Dict[str, List[Tuple[float, float]]]] = None,
-    p_value_threshold: Optional[float] = None
+    p_value_threshold: Optional[float] = None,
+    bw_threshold: Optional[float] = None,
 ) -> None:
     """Plot density, CDF, and histogram plots split by model/job/name."""
     if not split_dict:
@@ -267,7 +347,8 @@ def plot_split_density_cdf(
                 # Plot Density
                 try:
                     kde = gaussian_kde(clean_vals)
-                    # kde.set_bandwidth(bw_method=0.1)
+                    if bw_threshold is not None:
+                        kde.set_bandwidth(bw_method=bw_threshold)
                     x_min, x_max = min(clean_vals), max(clean_vals)
                     x_range = x_max - x_min
                     if x_range == 0:
@@ -341,9 +422,11 @@ def plot_split_density_cdf(
         # Save Density Plot
         ax_den.set_title(f'Comparison of {metric} Density by {split_type.capitalize()}\nGender: W')
         ax_den.set_xlabel(metric)
-        ax_den.set_ylabel("Density")
+        ax_den.set_ylabel("Probability Density")
         ax_den.grid(True, linestyle="--", alpha=0.3)
         ax_den.legend(title=split_type.capitalize(), bbox_to_anchor=(1.05, 1), loc='upper left')
+        ax_den.set_xlim((0.35, 0.650))
+        
         fig_den.tight_layout()
         
         den_path = f"{out_root}/{metric}_combined_density_by_{split_type}.png"
@@ -383,7 +466,8 @@ def plot_split_density_cdf_with_bundle(
     vlines: Optional[List[Tuple[float, str]]] = None,
     model_vlines: Optional[Dict[str, float]] = None,
     sig_values_dict: Optional[Dict[str, List[Tuple[float, float]]]] = None,
-    p_value_threshold: Optional[float] = None
+    p_value_threshold: Optional[float] = None,
+    bw_threshold: Optional[float] = None,
 ) -> None:
     """Plot density, CDF, and histogram plots split by job_name within a job_bundle.
     
@@ -443,7 +527,8 @@ def plot_split_density_cdf_with_bundle(
                 # Plot Density
                 try:
                     kde = gaussian_kde(clean_vals)
-                    # kde.set_bandwidth(bw_method=0.1)
+                    if bw_threshold is not None:
+                        kde.set_bandwidth(bw_method=bw_threshold)
                     x_min, x_max = min(clean_vals), max(clean_vals)
                     x_range = x_max - x_min
                     if x_range == 0:
@@ -515,12 +600,13 @@ def plot_split_density_cdf_with_bundle(
         fig_hist.savefig(final_hist_path)
         
         # Save Density Plot (with job_bundle in filename)
-        ax_den.set_title(f'Comparison of {metric} Density by {split_type.capitalize()}\nJob Bundle: {job_bundle}\nGender: W')
-        ax_den.set_xlabel(metric)
-        ax_den.set_ylabel("Density")
+        ax_den.set_title(f'Comparison of {metric_to_plot[metric]} Density by {split_type.capitalize()}\nJob Bundle: {job_bundle}\nGender: W')
+        ax_den.set_xlabel(metric_to_plot[metric])
+        ax_den.set_ylabel("Probability Density")
         ax_den.grid(True, linestyle="--", alpha=0.3)
         ax_den.legend(title=split_type.capitalize(), bbox_to_anchor=(1.05, 1), loc='upper left')
-        ax_den.set_xlim((0.4, 0.650))
+        ax_den.set_xlim((0.35, 0.650))
+        
         fig_den.tight_layout()
         
         den_path = f"{out_root}/{metric}_combined_density_by_{split_type}_job_bundle_{job_bundle}.png"
@@ -565,6 +651,13 @@ def main() -> None:
 
     parser.add_argument("--bw_threshold", type=float, default=None,
                        help="If provided, only plot the density graph with the provided threshold for bandwidth selection.")
+
+    parser.add_argument(
+        "--color",
+        type=str,
+        default="purple",
+        help="Base color for density plots (default: purple).",
+    )
 
     args = parser.parse_args()
 
@@ -628,6 +721,7 @@ def main() -> None:
     # 4. Filter for 'W'
     #    (Now works easily because 'gender' is a real column)
     if args.split_by == "job_name" or args.split_by == 'job_bundle_job':
+
         # For job_name split, filter for gender values ending with '_W', 
         # and then group by job, model, name_bundle, job_bundle, summing selection_rate and averaging disparate_impact_ratio
         filtered_df = df[df['gender'].str.endswith("_W")].copy()
@@ -655,26 +749,38 @@ def main() -> None:
         metrics_to_plot = ["selection_rate", "disparate_impact_ratio"]
         if "selection_rate" in df.columns:
             metrics_to_plot.append("selection_rate")
+        if "disparate_impact_ratio" in df.columns:
+            metrics_to_plot.append("disparate_impact_ratio")
     else:
         metrics_to_plot = [args.metric]
     
     # Define vertical reference lines for selection_rate
-    score_diff_vlines = None
-    score_diff_model_vlines = None
+    vlines = None
+    model_vlines = None
+
+    out_root = f"results/figs/yin/all"
 
     if "selection_rate" in metrics_to_plot:
-        score_diff_vlines = [
-            (0.5, "x=0.5"),
-            (0.50275, "Our Reproduced Yin Results"),
-            # (0.51125, "Yin Results")
+        vlines = [
+            # (0.5, "No Preference"),
+            (0.50275, "Reproduced Yin et. al Setting"),
+            (0.51125, "Reported Yin et. al Setting")
         ]
-        score_diff_model_vlines = {
+        model_vlines = {
             # "gpt-4o-2024-11-20": 0.50275,
             # "gpt-5-nano-2025-08-07": 0.49525,
             # "mistral-small-24b": 0.53625,
             # "meta-llama-3.1-8b-instruct-turbo": 0.545,
             # "meta-llama-3.3-70b-instruct-turbo": 0.5036496350364964,
             # "mistral-7b-v0.3,1.0": 0.515
+        }
+    if "disparate_impact_ratio" in metrics_to_plot: 
+        vlines = [
+            # (0.8, "4/5 Rule"),
+            (0.9354861601, "Reproduced Yin et. al Setting"),
+            (0.9340223665, "Reported Yin et. al Setting")
+        ]
+        model_vlines = {
         }
     
     ensure_dirs(args.output_dir)
@@ -757,16 +863,17 @@ def main() -> None:
 
             if clean_vals:
                 yin_vals = yin_values_dict.get(metric, [])
-                vlines = score_diff_vlines if metric == "selection_rate" else None
 
                 plot_global_density(
                     clean_vals, 
                     metric, 
                     f"{args.output_dir}/{metric}_global_density_all.png",
-                    yin_vals,
+                    split_by=args.split_by,
                     vlines=vlines,
                     sig_values=clean_sig_values,
-                    p_value_threshold=args.p_value_threshold
+                    p_value_threshold=args.p_value_threshold,
+                    bw_threshold=args.bw_threshold,
+                    color=getattr(args, "color", "purple"),
                 )
                 plot_global_histogram(
                     clean_vals,
@@ -819,11 +926,40 @@ def main() -> None:
                     split_dict[model_name] = model_values
                     if model_sig_values:
                         sig_values_dict[model_name] = model_sig_values
+
+                    
+
+                    os.makedirs(f"{out_root}/{args.split_by}/{model_name}", exist_ok=True)
+                    if args.p_value_threshold is not None:
+                        all_collected_values = model_sig_values.copy()
+                    else:
+                        all_collected_values = model_values.copy()
+                    if args.p_value_threshold is not None: 
+                        plot_global_density(
+                            all_collected_values, 
+                            metric, 
+                            f"{out_root}/{args.split_by}/{model_name}/{metric}_combined_density_by_{args.split_by}.png",
+                            split_by =f'model: {model_name}',
+                            vlines=vlines,
+                            sig_values=model_sig_values if args.p_value_threshold is not None else None,
+                            p_value_threshold=args.p_value_threshold,
+                            bw_threshold=args.bw_threshold
+                        )
+                    else: 
+                        plot_global_density(
+                            all_collected_values, 
+                            metric, 
+                            f"{out_root}/{args.split_by}/{model_name}/{metric}_combined_density_by_{args.split_by}.png",
+                            split_by =f'model: {model_name}',
+                            vlines=vlines,
+                            sig_values=model_sig_values if args.p_value_threshold is not None else None,
+                            p_value_threshold=args.p_value_threshold,
+                            bw_threshold=args.bw_threshold
+                        )
             
             yin_vals = yin_values_dict.get(metric, [])
             yin_model = yin_model_dict.get(metric, None)
-            vlines = score_diff_vlines if metric == "selection_rate" else None
-            model_vlines = score_diff_model_vlines if metric == "selection_rate" else None
+
             clean_sig_values_dict = {}
             for key, sig_vals in sig_values_dict.items():
                 clean_vals_list = clean_values([v[0] for v in sig_vals])
@@ -833,8 +969,18 @@ def main() -> None:
                 yin_values=yin_vals, yin_model=yin_model,
                 vlines=vlines, model_vlines=model_vlines,
                 sig_values_dict=clean_sig_values_dict if clean_sig_values_dict else None,
-                p_value_threshold=args.p_value_threshold
+                p_value_threshold=args.p_value_threshold,
+                bw_threshold=args.bw_threshold,
             )
+
+            plot_violin_plot(split_dict, metric, args.split_by, args.output_dir, 
+                sig_values_dict=clean_sig_values_dict if clean_sig_values_dict else None,
+                p_value_threshold=args.p_value_threshold,)
+
+            plot_boxwhisker_plot(split_dict, metric, args.split_by, args.output_dir, 
+                sig_values_dict=clean_sig_values_dict if clean_sig_values_dict else None,
+                p_value_threshold=args.p_value_threshold,)
+
 
         elif args.split_by == "job":
             # Split by job (use job_bundle if available, otherwise job)
@@ -876,10 +1022,39 @@ def main() -> None:
                     split_dict[job_val] = job_values
                     if job_sig_values:
                         sig_values_dict[job_val] = job_sig_values
+
+                    os.makedirs(f"{out_root}/{args.split_by}/{job_val}", exist_ok=True)
+                    if args.p_value_threshold is not None:
+                        all_collected_values = job_sig_values.copy()
+                    else:
+                        all_collected_values = job_values.copy()
+                    if args.p_value_threshold is not None: 
+                        plot_global_density(
+                            all_collected_values, 
+                            metric, 
+                            f"{out_root}/{args.split_by}/{job_val}/{metric}_combined_density_by_{args.split_by}.png",
+                            split_by =f'job: {job_val}',
+                            vlines=vlines,
+                            sig_values=job_sig_values if args.p_value_threshold is not None else None,
+                            p_value_threshold=args.p_value_threshold,
+                            bw_threshold=args.bw_threshold
+                        )
+                    else: 
+                        plot_global_density(
+                            all_collected_values, 
+                            metric, 
+                            f"{out_root}/{args.split_by}/{job_val}/{metric}_combined_density_by_{args.split_by}.png",
+                            split_by =f'job: {job_val}',
+                            vlines=vlines,
+                            sig_values=job_sig_values if args.p_value_threshold is not None else None,
+                            p_value_threshold=args.p_value_threshold,
+                            bw_threshold=args.bw_threshold
+                        )
+
+                
             
             yin_vals = yin_values_dict.get(metric, [])
             yin_model = yin_model_dict.get(metric, None)
-            vlines = score_diff_vlines if metric == "selection_rate" else None
             clean_sig_values_dict = {}
             for key, sig_vals in sig_values_dict.items():
                 clean_vals_list = clean_values([v[0] for v in sig_vals])
@@ -887,8 +1062,17 @@ def main() -> None:
             plot_split_density_cdf(
                 split_dict, metric, "job", args.output_dir, bls_values, yin_vals, yin_model,
                 vlines=vlines, sig_values_dict=clean_sig_values_dict if clean_sig_values_dict else None,
-                p_value_threshold=args.p_value_threshold
+                p_value_threshold=args.p_value_threshold,
+                bw_threshold=args.bw_threshold,
             )
+
+            plot_violin_plot(split_dict, metric, args.split_by, args.output_dir, 
+                sig_values_dict=clean_sig_values_dict if clean_sig_values_dict else None,
+                p_value_threshold=args.p_value_threshold,)
+
+            plot_boxwhisker_plot(split_dict, metric, args.split_by, args.output_dir, 
+                sig_values_dict=clean_sig_values_dict if clean_sig_values_dict else None,
+                p_value_threshold=args.p_value_threshold,)
 
         elif args.split_by == "job_name":
             # Split by job_name (actual job names like "cashier", "administrative assistant", etc.)
@@ -933,7 +1117,6 @@ def main() -> None:
             
             yin_vals = yin_values_dict.get(metric, [])
             yin_model = yin_model_dict.get(metric, None)
-            vlines = score_diff_vlines if metric == "selection_rate" else None
             clean_sig_values_dict = {}
             for key, sig_vals in sig_values_dict.items():
                 clean_vals_list = clean_values([v[0] for v in sig_vals])
@@ -941,7 +1124,8 @@ def main() -> None:
             plot_split_density_cdf(
                 split_dict, metric, "job_name", args.output_dir, yin_values=yin_vals, yin_model=yin_model,
                 vlines=vlines, sig_values_dict=clean_sig_values_dict if clean_sig_values_dict else None,
-                p_value_threshold=args.p_value_threshold
+                p_value_threshold=args.p_value_threshold,
+                bw_threshold=args.bw_threshold,
             )
 
         elif args.split_by == "name":
@@ -983,10 +1167,38 @@ def main() -> None:
                     split_dict[name_val] = name_values
                     if name_sig_values:
                         sig_values_dict[name_val] = name_sig_values
+
+
+                    os.makedirs(f"{out_root}/{args.split_by}/{name_val}", exist_ok=True)
+                    if args.p_value_threshold is not None:
+                        all_collected_values = name_sig_values.copy()
+                    else:
+                        all_collected_values = name_values.copy()
+                    if args.p_value_threshold is not None: 
+                        plot_global_density(
+                            all_collected_values, 
+                            metric, 
+                            f"{out_root}/{args.split_by}/{name_val}/{metric}_combined_density_by_{args.split_by}.png",
+                            split_by =f'name: {name_val}',
+                            vlines=vlines,
+                            sig_values=name_sig_values if args.p_value_threshold is not None else None,
+                            p_value_threshold=args.p_value_threshold,
+                            bw_threshold=args.bw_threshold
+                        )
+                    else: 
+                        plot_global_density(
+                            all_collected_values, 
+                            metric, 
+                            f"{out_root}/{args.split_by}/{name_val}/{metric}_combined_density_by_{args.split_by}.png",
+                            split_by =f'name: {name_val}',
+                            vlines=vlines,
+                            sig_values=name_sig_values if args.p_value_threshold is not None else None,
+                            p_value_threshold=args.p_value_threshold,
+                            bw_threshold=args.bw_threshold
+                        )
             
             yin_vals = yin_values_dict.get(metric, [])
             yin_model = yin_model_dict.get(metric, None)
-            vlines = score_diff_vlines if metric == "selection_rate" else None
             clean_sig_values_dict = {}
             for key, sig_vals in sig_values_dict.items():
                 clean_vals_list = clean_values([v[0] for v in sig_vals])
@@ -994,8 +1206,17 @@ def main() -> None:
             plot_split_density_cdf(
                 split_dict, metric, "name", args.output_dir, yin_values=yin_vals, yin_model=yin_model,
                 vlines=vlines, sig_values_dict=clean_sig_values_dict if clean_sig_values_dict else None,
-                p_value_threshold=args.p_value_threshold
+                p_value_threshold=args.p_value_threshold,
+                bw_threshold=args.bw_threshold,
             )
+
+            plot_violin_plot(split_dict, metric, args.split_by, args.output_dir, 
+                sig_values_dict=clean_sig_values_dict if clean_sig_values_dict else None,
+                p_value_threshold=args.p_value_threshold,)
+
+            plot_boxwhisker_plot(split_dict, metric, args.split_by, args.output_dir, 
+                sig_values_dict=clean_sig_values_dict if clean_sig_values_dict else None,
+                p_value_threshold=args.p_value_threshold,)
 
         elif args.split_by == "job_bundle_job":
             # Split by job_bundle, then by job name within each bundle
@@ -1010,6 +1231,10 @@ def main() -> None:
             
             unique_job_bundles = working_df["job_bundle"].unique()
             print(f"Found {len(unique_job_bundles)} unique job bundles: {unique_job_bundles}")
+            
+            # Track all job names and their values across all bundles for lollipop chart
+            all_job_values = {}  # Dict mapping job_name -> list of metric values
+            all_job_values_models = defaultdict(dict)  # Dict mapping job_name -> {model name: mean} (most common)
             
             for job_bundle in unique_job_bundles:
                 print(f"\nProcessing job_bundle: '{job_bundle}'...")
@@ -1056,7 +1281,20 @@ def main() -> None:
                         split_dict[job_name] = job_values
                         if job_sig_values:
                             sig_values_dict[job_name] = job_sig_values
-                
+                    
+                    # Track job values across all bundles for lollipop chart
+                    if job_name not in all_job_values:
+                        all_job_values[job_name] = []
+                    all_job_values[job_name].extend(job_values)
+
+                    for model in job_subset['model'].unique():
+                        model_subset = job_subset[job_subset['model'] == model]
+                        model_metric_vals = model_subset[metric].dropna().tolist()
+                        clean_model_vals = clean_values(model_metric_vals)
+                        if clean_model_vals:
+                            mean_val = np.mean(clean_model_vals)
+                            all_job_values_models[job_name][model] = mean_val
+
                 if split_dict:
                     print(f"Creating plots for job_bundle '{job_bundle}' with {len(split_dict)} job names...")
                     # Create output directory for this job bundle
@@ -1066,7 +1304,6 @@ def main() -> None:
                     
                     yin_vals = yin_values_dict.get(metric, [])
                     yin_model = yin_model_dict.get(metric, None)
-                    vlines = score_diff_vlines if metric == "selection_rate" else None
                     clean_sig_values_dict = {}
                     for key, sig_vals in sig_values_dict.items():
                         clean_vals_list = clean_values([v[0] for v in sig_vals])
@@ -1078,11 +1315,92 @@ def main() -> None:
                         job_bundle=job_bundle,
                         yin_values=yin_vals, yin_model=yin_model,
                         vlines=vlines, sig_values_dict=clean_sig_values_dict if clean_sig_values_dict else None,
-                        p_value_threshold=args.p_value_threshold
+                        p_value_threshold=args.p_value_threshold,
+                        bw_threshold=args.bw_threshold,
                     )
                     print(f"Completed plots for job_bundle '{job_bundle}'.\n")
                 else:
                     print(f"No data to plot for job_bundle '{job_bundle}'.")
+            
+            # Create lollipop chart for all job names across all bundles
+            if all_job_values:
+                print(f"\nCreating lollipop chart for {metric} across all job bundles...")
+                
+                # Calculate average value per job name
+                job_averages = {}
+                for job_name, values in all_job_values.items():
+                    clean_vals = clean_values(values)
+                    if clean_vals:
+                        job_averages[job_name] = np.mean(clean_vals)
+                
+                if job_averages:
+                    # Sort by average value for better visualization
+                    sorted_jobs = sorted(job_averages.items(), key=lambda x: x[1])
+                    job_names = [j[0] for j in sorted_jobs]
+                    job_avgs = [j[1] for j in sorted_jobs]
+
+                    # Build a list of all models encountered for consistent coloring
+                    all_models = set()
+                    for jm in all_job_values_models.values():
+                        all_models.update(jm.keys())
+                    all_models = sorted(all_models)
+
+                    # Choose a colormap and map each model to a color
+                    if len(all_models) <= 10:
+                        cmap = plt.cm.get_cmap('tab10')
+                    else:
+                        cmap = plt.cm.get_cmap('tab20')
+                    model_colors = {m: cmap(i % cmap.N) for i, m in enumerate(all_models)}
+
+                    # Create lollipop chart centered at 0.5
+                    fig, ax = plt.subplots(figsize=(12, max(6, len(job_names) * 0.35)))
+
+                    # Create baseline lines from 0.5 to each job average (use darkblue/purple as before)
+                    y_pos = np.arange(len(job_names))
+                    baseline_colors = ['darkblue' if avg < 0.5 else 'purple' for avg in job_avgs]
+                    ax.hlines(y_pos, 0.5, job_avgs, colors=baseline_colors, linewidth=2.5)
+
+                    # Plot one small colored dot per model for each job name (no jitter)
+                    legend_handles = {}
+                    for i, job_name in enumerate(job_names):
+                        models_dict = all_job_values_models.get(job_name, {})
+                        if not models_dict:
+                            # Fallback: plot the job average as a larger marker with baseline color
+                            ax.scatter(job_avgs[i], i, c=[baseline_colors[i]], s=100, zorder=4, edgecolors='black', linewidth=1.2)
+                            continue
+
+                        for model_name, mean_val in models_dict.items():
+                            col = model_colors.get(model_name, (0.5, 0.5, 0.5))
+                            sc = ax.scatter(mean_val, i, color=[col], s=40, zorder=4, edgecolors='black', linewidth=0.6)
+                            if model_name not in legend_handles:
+                                legend_handles[model_name] = sc
+
+                    # Add vertical line at 0.5 (threshold)
+                    ax.axvline(x=0.5, color='black', linestyle='--', linewidth=1.5, alpha=0.7)
+
+                    ax.set_yticks(y_pos)
+                    ax.set_yticklabels(job_names, fontsize=11)
+                    ax.set_xlabel(f'{metric_to_plot.get(metric, metric)}', fontsize=12, fontweight='bold')
+                    ax.set_ylabel('Job Name', fontsize=12, fontweight='bold')
+                    ax.set_title(f'Average {metric_to_plot.get(metric, metric)} by Job Name\n(Across All Job Bundles, Gender: W)', fontsize=13, fontweight='bold')
+                    ax.grid(True, axis='x', alpha=0.3, linestyle='--')
+
+                    # Set x-axis limits to show good range around 0.5
+                    min_val = min(job_avgs)
+                    max_val = max(job_avgs)
+                    padding = 0.02
+                    ax.set_xlim(left=min_val - padding, right=max_val + padding)
+
+                    # Add legend for models (if any)
+                    if legend_handles:
+                        ax.legend(legend_handles.values(), legend_handles.keys(), title='Model', bbox_to_anchor=(1.05, 1), loc='upper left')
+
+                    plt.tight_layout()
+                    lollipop_path = os.path.join(args.output_dir, f"{metric}_lollipop_all_job_bundles.png")
+                    lollipop_path = add_pval_suffix_to_path(lollipop_path, args.p_value_threshold)
+                    print(f"Saving lollipop chart to {lollipop_path}")
+                    fig.savefig(lollipop_path, dpi=150)
+                    plt.close(fig)
 
 if __name__ == "__main__":
     main()
@@ -1091,9 +1409,13 @@ if __name__ == "__main__":
 
 '''
 
-python plot_yin_all.py --split_by model; python plot_yin_all.py --split_by name; python plot_yin_all.py --split_by job
+python plot_yin_all.py --split_by job_bundle_job --input_file /nlp/scr/nmeist/EvalDims/results/yin_sampling_downsampling_analysis_original_detailed.csv --p_value_threshold 0.05
 
-python plot_yin_all.py --split_by job_bundle_job
+
+python plot_yin_all.py --split_by all --metric selection_rate; 
+python plot_yin_all.py --split_by model --metric selection_rate;  python plot_yin_all.py --split_by name --metric selection_rate;  python plot_yin_all.py --split_by job --metric selection_rate; 
+python plot_yin_all.py --split_by job_bundle_job --input_file /nlp/scr/nmeist/EvalDims/results/yin_sampling_downsampling_analysis_original_detailed.csv --metric selection_rate; 
+
 
 
 '''

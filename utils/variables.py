@@ -17,3 +17,7 @@ MODELS_GPT = {
 
 NAMES = ['armstrong', 'rozado', 'wen', 'wang', 'seshadri', 'karvonen', 'zollo', 'yin', 'gaeb', 'lippens']
 JOBS = ['armstrong', 'rozado', 'wen', 'wang', 'karvonen', 'zollo', 'yin']
+
+colors = ["purple", "darkblue", "green", "orange", "brown", "pink", "gray", "olive", "cyan", "magenta"]
+linestyles = ['--', '-.', ':']
+metric_to_plot = {'selection_rate': 'Selection Rate', 'score_difference': 'Score Difference', 'disparate_impact_ratio': 'Disparate Impact Ratio', 'regression_coefficients': 'Regression Coefficient'}
